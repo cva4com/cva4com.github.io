@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CVA4</title>
+    <link>https://cva4.com/posts/</link>
+    <description>Recent content in Posts on CVA4</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Sep 2024 19:12:02 +0700</lastBuildDate>
+    <atom:link href="https://cva4.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://cva4.com/posts/my-first-post/</link>
+      <pubDate>Tue, 03 Sep 2024 19:12:02 +0700</pubDate>
+      <guid>https://cva4.com/posts/my-first-post/</guid>
+      <description>Welcome! This is my very first post. All of this is written using Markdown.</description>
+    </item>
+  </channel>
+</rss>
