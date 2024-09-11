@@ -2,6 +2,11 @@ baseURL: https://cva4.com/
 languageCode: en-us
 title: CVA4
 theme: hextra
+
+defaultContentLanguage: en
+enableInlineShortcodes: true
+enableGitInfo: false
+enableRobotsTXT: true
 languages:
   en:
     languageName: English
@@ -21,3 +26,10 @@ params:
     displayPoweredBy: false
     enable: true
     width: normal
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      pageRef: /about
+      weight: 1
