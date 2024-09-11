@@ -27,13 +27,19 @@ layout: hextra-home
   Bạn không cần phải giới thiệu về bản thân!
 {{< /hextra/hero-subtitle >}}
 </div>
+
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-button text="Bắt đầu" link="http://app.cva4.com" >}}
+</div>
 {{< /hextra/hero-container >}}
 
+{{< hextra/hero-container >}}
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-section >}}
   Dịch vụ của chúng tôi
 {{< /hextra/hero-section >}}
 </div>
+{{< /hextra/hero-container >}}
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card

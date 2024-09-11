@@ -27,13 +27,19 @@ layout: hextra-home
   when You don't need introduce yourself!
 {{< /hextra/hero-subtitle >}}
 </div>
+
+<div class="hx-mt-6 hx-mb-6">
+{{< hextra/hero-button text="Get Started" link="http://app.cva4.com" >}}
+</div>
 {{< /hextra/hero-container >}}
 
+{{< hextra/hero-container >}}
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-section >}}
   Our Services
 {{< /hextra/hero-section >}}
 </div>
+{{< /hextra/hero-container >}}
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card

@@ -29,7 +29,11 @@ params:
 
 menu:
   main:
+    - identifier: docs
+      name: Documentation
+      pageRef: /docs
+      weight: 1
     - identifier: about
       name: About
       pageRef: /about
-      weight: 1
+      weight: 2
