@@ -14,6 +14,18 @@
                 href="https://cva4.com/vi/categories/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/about/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/</loc>
     <xhtml:link
                 rel="alternate"

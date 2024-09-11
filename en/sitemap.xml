@@ -21,6 +21,18 @@
     <loc>https://cva4.com/posts/</loc>
     <lastmod>2024-09-03T19:12:02+07:00</lastmod>
   </url><url>
+    <loc>https://cva4.com/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/about/"
+                />
+  </url><url>
     <loc>https://cva4.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
