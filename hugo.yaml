@@ -4,6 +4,13 @@ title: CVA4
 theme: hextra
 languages:
   en:
+    languageName: English
+    weight: 1
+    title: CVA4
+  vi:
+    languageName: Tiếng Việt
+    languageCode: vi
+    weight: 2
     title: CVA4
 params:
   navbar:

@@ -11,38 +11,34 @@ layout: hextra-home
 >}}
 <div class="hx-mt-12 hx-mb-6">
 {{< hextra/hero-headline >}}
-  CV in A4 Template
+  CV in A4
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-subtitle >}}
-  👋 Welcome to our public space.
+  👋 Chào mừng đến với trang web của chúng tôi.
 {{< /hextra/hero-subtitle >}}
 </div>
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-subtitle >}}
-  Try for the day
-  when You don't need introduce yourself!
+  Hãy cố gắng để đến một ngày mà
+  Bạn không cần phải giới thiệu về bản thân!
 {{< /hextra/hero-subtitle >}}
 </div>
 {{< /hextra/hero-container >}}
 
-<br/><br/>
-
-<p>a</p>
-
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-section >}}
-  Our Services
+  Dịch vụ của chúng tôi
 {{< /hextra/hero-section >}}
 </div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="CV in A4 Template"
-    subtitle="FREE A4 Size CV Resume Template."
+    title="Mẫu CV Xin Việc chuẩn A4"
+    subtitle="In ấn CV xin việc khổ A4 chuyên nghiệp."
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/screenshot.webp"
     imageClass="hx-top-[20%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
@@ -50,8 +46,8 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
-    title="Hệ thống thị giác máy tính"
-    subtitle="Ứng dụng sử dụng công nghệ DeepFace."
+    title="Computer Vision"
+    subtitle="Project for applications deployed with DeepFace."
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/screenshot.webp"
     imageClass="hx-top-[20%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
