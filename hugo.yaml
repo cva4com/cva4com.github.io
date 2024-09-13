@@ -33,7 +33,11 @@ menu:
       name: Documentation
       pageRef: /docs
       weight: 1
+    - identifier: showcase
+      name: Showcase
+      pageRef: /showcase
+      weight: 2
     - identifier: about
       name: About
       pageRef: /about
-      weight: 2
+      weight: 3
