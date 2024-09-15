@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cva4.com/sponsor/</loc>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/sponsor/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/sponsor/"
+                />
+  </url><url>
     <loc>https://cva4.com/showcase/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -15,8 +28,21 @@
                 href="https://cva4.com/showcase/"
                 />
   </url><url>
+    <loc>https://cva4.com/download/</loc>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/download/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/download/"
+                />
+  </url><url>
     <loc>https://cva4.com/docs/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -29,13 +55,13 @@
                 />
   </url><url>
     <loc>https://cva4.com/posts/my-first-post/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
   </url><url>
     <loc>https://cva4.com/posts/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
   </url><url>
     <loc>https://cva4.com/about/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -48,7 +74,17 @@
                 />
   </url><url>
     <loc>https://cva4.com/blog/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/blog/"
+                />
   </url><url>
     <loc>https://cva4.com/categories/</loc>
     <xhtml:link
@@ -63,7 +99,7 @@
                 />
   </url><url>
     <loc>https://cva4.com/</loc>
-    <lastmod>2024-09-13T23:12:05+07:00</lastmod>
+    <lastmod>2024-09-15T20:03:49+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"

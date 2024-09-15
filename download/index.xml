@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CVA4 – Donwload</title>
+    <link>https://cva4.com/download/</link>
+    <description>Recent content in Donwload on CVA4</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Sep 2024 17:52:13 +0700</lastBuildDate>
+    
+	  <atom:link href="https://cva4.com/download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
