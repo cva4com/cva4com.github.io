@@ -1,9 +1,21 @@
-+++
-title = '12 trang web xây dựng sơ yếu lý lịch tốt nhất năm 2024'
-linkTitle = 'Trang web xây dựng sơ yếu lý lịch tốt nhất'
-date = 2024-09-14T21:54:37+07:00
-draft = false
-+++
+---
+title: '12 trang web xây dựng sơ yếu lý lịch tốt nhất năm 2024'
+linkTitle: 'Trang web xây dựng sơ yếu lý lịch tốt nhất'
+date: 2024-09-14T21:54:37+07:00
+authors:
+  - name: Conrad Benz
+    link: https://resumegenius.com/author/conrad
+    image: https://resumegenius.com/wp-content/uploads/conrad-benz-resume-genius-headshot.jpg
+  - name: Resume Genius
+    link: https://resumegenius.com/blog/resume-help/best-resume-builder-website
+    image: https://resumegenius.com/wp-content/uploads/2020/02/resume-genius-favicon-1.png
+    # image: https://resumegenius.com/wp-content/uploads/geoffrey-scott-resume-genius-headshot.jpg?w=360
+tags:
+  - Resume Builders
+  - One-page
+  - Templates
+excludeSearch: false
+---
 
 Mọi người đều biết rằng viết sơ yếu lý lịch có thể tốn thời gian và khó khăn. Đó là lý do tại sao tôi dành thời gian để kiểm tra và đánh giá kỹ lưỡng các trình tạo sơ yếu lý lịch trực tuyến hàng đầu.
 
@@ -341,5 +353,5 @@ Bất kỳ công cụ tạo sơ yếu lý lịch tốt nào cũng nên cung cấ
 
 ----
 
-Tác giả: [Conrad Benz](https://resumegenius.com/author/conrad)\
+Tác giả: [Conrad Benz](https://resumegenius.com/author/conrad)  
 Nguồn: https://resumegenius.com/blog/resume-help/best-resume-builder-website

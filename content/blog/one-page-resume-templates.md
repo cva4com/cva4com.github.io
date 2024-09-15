@@ -1,9 +1,21 @@
-+++
-title = 'The Best Resume Builders for 2024: Top 12 Online Resume Builder Websites'
-linkTitle = 'Top One-page Resume Templates'
-date = 2024-09-14T21:54:37+07:00
-draft = false
-+++
+---
+title: 'The Best Resume Builders for 2024: Top 12 Online Resume Builder Websites'
+linkTitle: 'Top One-page Resume Templates'
+date: 2024-09-14T21:54:37+07:00
+authors:
+  - name: Conrad Benz
+    link: https://resumegenius.com/author/conrad
+    image: https://resumegenius.com/wp-content/uploads/conrad-benz-resume-genius-headshot.jpg
+  - name: Resume Genius
+    link: https://resumegenius.com/blog/resume-help/best-resume-builder-website
+    image: https://resumegenius.com/wp-content/uploads/2020/02/resume-genius-favicon-1.png
+    # image: https://resumegenius.com/wp-content/uploads/geoffrey-scott-resume-genius-headshot.jpg?w=360
+tags:
+  - Resume Builders
+  - One-page
+  - Templates
+excludeSearch: false
+---
 
 Everyone knows that writing a resume can be time-consuming and difficult. That’s why I’ve taken the time to thoroughly test and evaluate the top online resume builders.
 
@@ -341,5 +353,5 @@ Any good resume maker should offer these features and more, and help you write a
 
 ----
 
-Written by: [Conrad Benz](https://resumegenius.com/author/conrad)\
+Written by: [Conrad Benz](https://resumegenius.com/author/conrad)  
 Source: https://resumegenius.com/blog/resume-help/best-resume-builder-website
