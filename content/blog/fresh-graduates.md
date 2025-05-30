@@ -146,7 +146,7 @@ Nếu bạn không tìm được việc phù hợp và cũng không tìm đượ
 
 Trung tâm Dịch vụ việc làm Hà Nội quan sát thấy một số ngành nghề có nguy cơ thất nghiệp cao dựa trên tỷ trọng lao động hưởng bảo hiểm thất nghiệp trong tháng 3/2025 gồm: Công nghệ thông tin - viễn thông; dệt may - da giày; tài chính - ngân hàng - kế toán - kiểm toán...
 
-Nhóm tuổi 25-34 chiếm tỷ lệ 42,79% trong tháng 3, tăng nhẹ so với 40,44% của tháng 2/2025, và tăng đáng kể so với 39,32% của tháng 1.
+Nhóm tuổi 25-34 chiếm tỷ lệ 42,79% trong tháng 3, tăng nhẹ so với 40,44% của tháng 2/2025, và tăng đáng kể so với 39,32% của tháng 1.  
 Nhóm tuổi 35-54 cũng chiếm tỷ lệ cao (46,26% trong tháng 3), tăng nhẹ so với tháng 2, nhưng giảm so với tháng 1 (50,61%).
 
 Hãy xem đó là thử thách trong đời luôn luôn phải suy nghĩ tích cực, không được lùi bước và tiêu cực vì chúng ta còn nhiều cơ hội nếu chúng ta chịu cố gắng, thì hạnh phúc, may mắn sẽ mỉm cười cho những ai có ý chí và niềm tin.
@@ -154,7 +154,7 @@ Hãy xem đó là thử thách trong đời luôn luôn phải suy nghĩ tích c
 Và để đón nhận những thách thức như vậy bạn cần nên trang bị cho mình khi còn đang học, trao dồi những kỹ năng và năng lực cho mình như đi làm thêm vừa kiếm thêm thu nhập vừa có kinh nghiệm sống, tham gia các khóa học kỹ năng hay các buổi ngoại khóa: nâng cao được tinh thần làm việc nhóm, mạnh dạn trước đám đông, xây dựng các mối quan hệ có ích… để khi gặp phải chúng ta bớt sốc và vượt qua tốt hơn nha các bạn.
 
 
-# III. Bản thân và Tâm lý
+# III. Bản thân và Yếu tố bên ngoài
 
 ## 🧭 11. Định hướng nghề nghiệp mơ hồ
 
