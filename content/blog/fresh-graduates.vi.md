@@ -3,7 +3,7 @@ title: '19 thách thức của sinh viên mới tốt nghiệp khi tìm việc l
 linkTitle: 'Podcast Hành trình Sự nghiệp Thành công'
 date: 2025-04-30T10:54:37+07:00
 authors:
-  - name: CV A4
+  - name: CVA4.com
     link: https://www.youtube.com/@CVA4IT
     image: https://cva4.com/images/bmc_qr.png
 tags:
