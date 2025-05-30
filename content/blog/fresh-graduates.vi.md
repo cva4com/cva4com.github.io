@@ -68,7 +68,7 @@ Khiến sinh viên khó đáp ứng yêu cầu thực tế của nhà tuyển d�
 
 Làn sóng thất nghiệp của cử nhân một phần xuất phát từ khả năng về ngoại ngữ, nhất là khả năng tiếng Anh. Trong thời buổi hội nhập quốc tế mạnh mẽ như hiện nay, dường như tiếng Anh chính là một tấm vé hạng sang để chúng ta hội nhập, đồng thời có cơ hội bước vào một vị trí nào đó trong tất cả các ngành nghề của xã hội. 
 
-Hơn 60% công việc yêu cầu ngoại ngữ, nhưng nhiều sinh viên không đạt trình độ cần thiết.
+Đa số công việc yêu cầu ngoại ngữ, nhưng nhiều sinh viên không đạt trình độ cần thiết.
 Hạn chế cơ hội ở các công ty quốc tế, doanh nghiệp FDI (doanh nghiệp có vốn đầu tư nước ngoài) hoặc tập đoàn đa quốc gia.
 
 Còn nhiều và rất nhiều các công ty trong và ngoài nước yêu cầu ứng viên khi nộp hồ sơ phải có chứng chỉ TOEIC như là một tiêu chuẩn để đánh giá năng lực sử dụng Tiếng Anh của ứng viên.
@@ -192,10 +192,10 @@ Nhưng sinh viên mới ra trường thường chưa xây dựng được các m
 #### 📍 13. Bất lợi địa lý
 
 Cục Thống kê vừa công bố Bảng xếp hạng chỉ số giá sinh hoạt theo không gian (SCOLI) năm 2024 ho thấy Hà Nội tiếp tục là địa phương có giá sinh hoạt cao nhất cả nước.
-Đứng sau là Quảng Ninh, TP.HCM, Hải Phòng và Đà Nẵng.
+Đứng sau là Quảng Ninh, Sài Gòn, Hải Phòng và Đà Nẵng.
 
 Chi phí sinh hoạt ở các thành phố lớn tăng cao.
-- Hà Nội/TP.HCM: 9.2 triệu/tháng
+- Hà Nội, Sài Gòn: 9.2 triệu/tháng
 - Đà Nẵng: 6.7 triệu/tháng
 
 Suy thoái kinh tế và ít cơ hội việc làm ở khu vực nông thôn ảnh hưởng đến tìm việc.
@@ -219,7 +219,7 @@ Thiếu trải nghiệm và chưa được đào tạo kỹ trong nhà trường
 Không biết cách viết CV chuyên nghiệp, trình  bày không sạch đẹp, không rõ ràng, Sai CHÍNH TẢ, không chấm phẩy, căn lề lộn xộn, chỗ thừa chỗ thụt, font thì nhấp nhô kiểu copy chỗ nọ chỗ kia vào.
 CV không trình bày đúng, rõ yêu cầu của từng vị trí công việc.
 
-CV nó phản ánh phải 60% con người thật của bạn. Hồi xưa các cụ bảo nét chữ nết người thì mình còn tặc lưỡi thôi mình chữ xấu không luyện nổi chứ giờ đánh máy rồi mà còn ẩu quá như này thì...
+CV nó phản ánh phải con người thật của bạn. Hồi xưa các cụ bảo nét chữ nết người thì mình còn tặc lưỡi thôi mình chữ xấu không luyện nổi chứ giờ đánh máy rồi mà còn ẩu quá như này thì...
 
 Tuy nhiên, có một số người chỉ vì để CV được “mười phân vẹn mười” mà tô vẽ hồ sơ quá đà, thổi phồng bản thân không đúng với thực lực.
 Việc ứng viên thổi phồng CV quá mức có thể gây khó khăn và mất thời gian cho cả hai bên trong quá trình tuyển dụng.
