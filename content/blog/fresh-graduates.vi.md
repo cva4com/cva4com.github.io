@@ -47,7 +47,7 @@ Chương trình đào tạo không đáp ứng nhu cầu doanh nghiệp, dẫn �
 #### 🛠️ 3. Kỹ năng thực tiễn yếu
 
 Nhiều kỹ năng chỉ có thể học được khi làm việc thực tế.
-Sinh viên thiếu kỹ năng `thực hành` như sử dụng phần mềm, viết email, báo cáo tài chính cơ bản hoặc quản lý dự án... do chương trình đào tạo nặng lý thuyết.
+Sinh viên thiếu kỹ năng `thực hành` như sử dụng phần mềm, viết email, sử dụng máy tính, máy photocopy, máy in, lập kế hoạch, khảo sát thị trường, gửi báo cáo, báo cáo tài chính cơ bản hoặc quản lý dự án... do chương trình đào tạo nặng lý thuyết.
 
 Nhiều sinh viên mới ra trường cảm thấy bỡ ngỡ khi bước vào môi trường làm việc, cần thời gian dài để thích nghi và học thêm nhiều điều mới.
 Doanh nghiệp phải đầu tư thêm thời gian và chi phí để đào tạo lại nhân viên mới.
@@ -56,7 +56,7 @@ Doanh nghiệp phải đầu tư thêm thời gian và chi phí để đào tạ
 
 #### 🤝 4. Kỹ năng mềm kém
 
-Kỹ năng giao tiếp, làm việc nhóm, thuyết trình, tư duy logic, sáng tạo, phản biện, giải quyết vấn đề, giải quyết xung đột, quản lý cảm xúc và quản lý thời gian thường còn hạn chế, thiếu chuyên nghiệp, không được rèn luyện.
+Kỹ năng giao tiếp, làm việc nhóm, phân tích, tìm kiếm, thuyết trình, thuyết phục, đàm phán, tư duy logic, sáng tạo, phản biện, giải quyết vấn đề, giải quyết xung đột, quản lý cảm xúc, quản lý thời gian và tổ chức công việc thường còn hạn chế, thiếu chuyên nghiệp, không được rèn luyện.
 
 Ngoài ra các bạn còn gặp khó khăn trong việc chuyển đổi môi trường.
 Môi trường học thuật và môi trường làm việc có những yêu cầu khác nhau.
