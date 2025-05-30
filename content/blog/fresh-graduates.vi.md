@@ -12,7 +12,7 @@ excludeSearch: false
 draft: false
 ---
 
-![Fresh Graduates](/images/2025/woman-wearing-regalia-holding-her-degree-graduation.jpg)
+![Mind map](/images/2025/fresh-graduates.png)
 
 Tìm được một công việc tốt là mong muốn của tất cả mọi người.
 Tuy nhiên, thị trường lao động ngày càng cạnh tranh đặt ra không ít khó khăn cho các tân cử nhân Việt Nam trên hành trình tìm kiếm việc làm đầu tiên.
@@ -79,7 +79,7 @@ Còn nhiều và rất nhiều các công ty trong và ngoài nước yêu cầu
 4. Vietcombank yêu cầu đầu vào 650 TOEIC trở lên – vì thế mà lương + thưởng của VCB cao hơn các ngân hàng khác.
 5. FPT yêu cầu nhân viên phải đạt 500 TOEIC tiếng Anh mới đủ điều kiện làm việc. Một số vị trí yêu cầu mức điểm trên 800 TOEIC.
 6. Vietnam Airlines yêu cầu 400 TOEIC đầu vào cho các vị trí. Sinh viên thi tuyển làm phi công cũng cần số điểm là 400 TOEIC đầu vào.
-7. VNext Software (một công ty Nhật Bản) yêu cầu TOEIC 850+ cho vị trí Accountant, HR, Admin.
+7. VNext Software (một công ty Nhật Bản) yêu cầu TOEIC > 850 cho vị trí Accountant, HR, Admin.
 8. Samsung yêu cầu bài thi GSAT và TOEIC đầu vào. Nhân viên R&D của Samsung yêu cầu phải có 530 TOEIC. 
 9. Fujitsu yêu cầu 730 TOEIC cho nhân viên thường xuyên phải sử dụng tiếng Anh, 600 TOEIC cho Engineer, Researcher, Planner, Sales personnel; 500 TOEIC đối với các vị trí khác.
 10. Đối với Packard Bell (Pháp), Kỹ sư Kiểm soát Chất lượng cần đạt 650 TOEIC, Cán bộ Mua hàng cần đạt 850 TOEIC.
@@ -159,7 +159,7 @@ Và để đón nhận những thách thức như vậy bạn cần nên trang b
 #### 🧭 11. Định hướng nghề nghiệp mơ hồ
 
 Bạn đã hướng nghiệp không phù hợp để rồi dẫn đến việc lựa chọn sai ngành học.
-Tại thị trường Việt Nam, thường có tới 40% việc định hướng nghề nghiệp phụ thuộc vào phụ huynh.
+Tại thị trường Việt Nam, việc định hướng nghề nghiệp phụ thuộc vào phụ huynh.
 Các bậc cha mẹ vẫn thường thiên về những ngành nghề an toàn hoặc ổn định cho con.
 Khi định hướng, họ hướng con cái theo nghề họ thích mà không biết khả năng, sở thích của con nằm ở đâu. 
 
@@ -291,6 +291,9 @@ Dù không nhất thiết phải bắt đầu với công việc lý tưởng, n
 - Chứng minh năng lực qua portfolio/dự án cá nhân
 - Xây dựng thương hiệu cá nhân trên LinkedIn, Facebook, Youtube, Tiktok
 - Làm remote cho công ty nước ngoài
+
+
+![Fresh Graduates](/images/2025/woman-wearing-regalia-holding-her-degree-graduation.jpg)
 
 Hãy theo dõi và xem bài viết sau để đi tìm cách thức khắc phục các vấn đề này.
 
