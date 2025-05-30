@@ -20,6 +20,8 @@ Dù được trang bị kiến thức chuyên môn từ giảng đường, nhi�
 
 Có tới khoảng 70% sinh viên lo lắng về vấn đề việc làm phù hợp khi mới bước chân ra khỏi cánh cổng trường đại học.
 
+{{< youtube aUvTh_kLO9U >}}
+
 ## I. Kinh nghiệm và Kỹ năng
 
 #### 🔧 1. Thiếu `kinh nghiệm` làm việc
