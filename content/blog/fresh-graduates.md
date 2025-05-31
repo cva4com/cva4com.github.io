@@ -3,9 +3,9 @@ title: '6 Reasons Why It is So Hard to Get a Job After College With Helpful Tips
 linkTitle: 'Podcast Journey to Career Success'
 date: 2025-02-20T10:54:37+07:00
 authors:
-  - name: Indeed Editorial Team
-- link: https://www.indeed.com/career-advice/about-us
-- image: https://cva4.com/images/SQUARE-Indeed_Logo_RGB.avif
+  - name: 'Indeed Editorial Team'
+    link: https://www.indeed.com/career-advice/about-us
+    image: https://cva4.com/images/SQUARE-Indeed_Logo_RGB.avif
 tags:
   - Fresh Graduates
   - After College
