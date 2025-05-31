@@ -1,5 +1,5 @@
 ---
-title: '6 Reasons Why It is So Hard to Get a Job After College (With Helpful Tips)'
+title: '6 Reasons Why It is So Hard to Get a Job After College With Helpful Tips'
 linkTitle: 'Podcast Journey to Career Success'
 date: 2025-02-20T10:54:37+07:00
 authors:
