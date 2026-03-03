@@ -11,5 +11,5 @@ A collection of great stories that readers shouldn't miss.
 ## List of stories
 
 {{< cards >}}
-  {{< card link="aesop" title="Truyện ngụ ngôn Aesop" icon="bookmark" >}}
+  {{< card link="aesop" title="Aesop Fables" icon="bookmark" >}}
 {{< /cards >}}

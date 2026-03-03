@@ -57,7 +57,27 @@ Hirundo, cum linum coeptum esset seri, suadebat aliis aviculis impedire sementem
 
 ### AI Version
 
-{{< youtube dQw4w9WgXcQ >}}
+{{< youtube L5DbvcKSKk0 >}}
+
+High above the rolling hills, a wise Swallow watched a Farmer as he walked across his brown, earthy field. The Farmer was carefully throwing tiny seeds into the dirt. The Swallow, who had traveled to many far-off lands, knew exactly what those seeds were. They were flax seeds, and she knew that once they grew tall, the Farmer would use them to make nets to catch birds. She felt a shiver of worry in her wings.
+
+The Swallow flew down to a nearby hedge where a cheerful Sparrow was resting. "Friend," the Swallow chirped urgently, "look at what the Farmer is planting! We must eat those flax seeds right now. If we don't, they will grow into nets that will trap us all." The Swallow hopped from twig to twig, trying to show the Sparrow where the seeds lay hidden in the dirt.
+
+The Sparrow just puffed out his feathers and looked toward a nearby bush. A colorful Finch was already there, chirping about how wonderful the morning was. "Why eat those dry seeds?" the Sparrow asked with a laugh. "Look at the sweet berries and fat worms we have here! There is plenty of food that tastes much better." The Sparrow and the Finch fluttered their wings, excited to go and play in the sun.
+
+Time passed, and the warm rain fell. Soon, tiny green blades of flax began to peek through the soil. The Swallow saw them and found the Finch resting by a stream. "It is not too late!" the Swallow cried. "Pull up the sprouts one by one. If they grow any taller, you won't be able to stop them. I can fly away to other countries when danger comes, but you will be stuck here!"
+
+The Finch simply shook her head and flew back to the Sparrow. "That Swallow is so troublesome," the Finch complained. "She is always worrying about nothing." The Sparrow nodded in agreement, and the two birds flew high into the air, chasing each other through the trees. they thought the Swallow was being very silly, and they didn't want her to ruin their fun.
+
+The flax grew taller and taller until the field was a sea of beautiful blue flowers. But the Swallow knew the beauty was a trap. One sunny afternoon, the Farmer returned to his field. He began to cut down the long, sturdy stalks of the flax. He gathered them into heavy bundles and carried them away to his barn, his face set with hard work.
+
+Inside his quiet barn, the Farmer worked for many days. He dried the flax, spun it into long, tough strings, and began to tie them together. Loop by loop, knot by knot, a giant net began to take shape on the wooden floor. It was strong and nearly invisible against the grass. The Farmer whistled as he finished his work, knowing his trap was almost ready.
+
+One morning, the Sparrow and the Finch were searching for seeds on the ground. Suddenly, a heavy shadow fell over them. Before they could spread their wings, the Farmer's net dropped down, pinning them to the earth. The more they struggled, the more the flax strings tangled around their legs. "Oh," the Sparrow cried, "the Swallow was right! We should have listened while the seeds were still small."
+
+From a high branch, the Swallow looked down and saw her friends trapped in the net. She felt a deep sadness in her heart. She had tried her best to warn them, but they had chosen to play instead of being careful. She knew there was nothing more she could do to save them now. The forest, which used to be so full of song, felt very quiet and lonely.
+
+The Swallow decided she could no longer live among those who would not listen to wisdom. She flew away from the deep woods and found a small house in the village. She built a cozy nest under the eaves of the roof, where she could live safely near humans. To this day, the Swallow stays close to our homes, remembering the lesson of the flax field: it is better to stop trouble when it is just a tiny seed.
 
 ### Moral
 
