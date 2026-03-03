@@ -3,18 +3,24 @@ title: About
 toc: false
 ---
 
-Hextra is designed to be a simple, fast, and flexible theme for building modern static websites. It is especially well-suited for documentation websites but can also be used for various types of sites, such as blogs, portfolios, and more.
+Welcome to CVA4 – a platform specializing in providing professional and free A4 CV templates. We aim to help you stand out in your job search, with the motto "Try for the day you don't need to introduce yourself anymore!" The website is designed to be simple and user-friendly, focusing on helping users create high-quality resumes without requiring complex design skills.
 
-Hugo, like Jekyll, is a static site generator. What sets Hugo apart is that it is a single binary, making it easy to install and run on various platforms. It is also extremely fast and reliable, capable of rendering a site with thousands of pages in milliseconds.
+Try for the day when You don’t need introduce yourself!
 
-Hextra is built with a mindset focused on having a minimal footprint. To get started, no extra dependencies like Node.js packages are required; all you need is a single YAML configuration file, along with your Markdown content. Thus, we can focus on writing quality content instead of setting up tooling.
 
-## Credits
+## Features
 
 Hextra cannot be built without the following tools and inspirations:
 
-- [Hugo](https://gohugo.io/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Heroicons](https://heroicons.com/)
-- [Nextra](https://nextra.vercel.app/)
-- [Next.js](https://nextjs.org/)
+- [CV Templates](hhttps://cva4.com/all/)
+- [Blog](https://cva4.com/blog/)
+
+These features help you get started quickly, especially if you're new and looking to improve your resume. Research shows that using professional templates can increase your chances of passing the initial screening by up to 30%, according to reputable recruitment sources.
+
+
+## Links
+
+Connect with us on social media
+
+- [Facebook](http://facebook.com/cva4com)
+- [GitHub](https://github.com/cva4com)

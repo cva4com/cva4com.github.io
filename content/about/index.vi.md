@@ -3,18 +3,22 @@ title: Giới thiệu
 toc: false
 ---
 
-Hextra is designed to be a simple, fast, and flexible theme for building modern static websites. It is especially well-suited for documentation websites but can also be used for various types of sites, such as blogs, portfolios, and more.
+Chào mừng bạn đến với CVA4 – nền tảng chuyên cung cấp các mẫu CV định dạng A4 chuyên nghiệp và miễn phí. Chúng tôi hướng đến việc giúp bạn nổi bật trong hành trình tìm kiếm việc làm, với khẩu hiệu "Hãy thử cho ngày mà bạn không cần phải giới thiệu bản thân nữa!" Trang web được thiết kế đơn giản, dễ sử dụng, tập trung vào việc hỗ trợ người dùng tạo resume chất lượng cao mà không cần kỹ năng thiết kế phức tạp.
 
-Hugo, like Jekyll, is a static site generator. What sets Hugo apart is that it is a single binary, making it easy to install and run on various platforms. It is also extremely fast and reliable, capable of rendering a site with thousands of pages in milliseconds.
+Hãy cố gắng để đến một ngày mà Bạn không cần phải giới thiệu về bản thân!
 
-Hextra is built with a mindset focused on having a minimal footprint. To get started, no extra dependencies like Node.js packages are required; all you need is a single YAML configuration file, along with your Markdown content. Thus, we can focus on writing quality content instead of setting up tooling.
 
-## Credits
+## Tính năng chính
 
-Hextra cannot be built without the following tools and inspirations:
+- [Mẫu CV](https://cva4.com/all/)
+- [Blog](https://cva4.com/vi/blog/)
 
-- [Hugo](https://gohugo.io/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Heroicons](https://heroicons.com/)
-- [Nextra](https://nextra.vercel.app/)
-- [Next.js](https://nextjs.org/)
+Những chức năng này giúp bạn nhanh chóng bắt đầu, đặc biệt nếu bạn là người mới và đang tìm cách cải thiện hồ sơ xin việc. Nghiên cứu cho thấy việc sử dụng template chuyên nghiệp có thể tăng tỷ lệ qua vòng sàng lọc lên đến 30%, dựa trên các nguồn uy tín về tuyển dụng.
+
+
+## Liên kết
+
+Kết nối với chúng tôi trên mạng xã hội
+
+- [Facebook](http://facebook.com/cva4com)
+- [GitHub](https://github.com/cva4com)

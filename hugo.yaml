@@ -67,16 +67,20 @@ menu:
       pageRef: /blog
       # url: "https://blog.cva4.com"
       weight: 5
+    - identifier: story
+      name: Story
+      pageRef: /story
+      weight: 6
     - identifier: sponsor
       name: Sponsor
       pageRef: /sponsor
-      weight: 6
+      weight: 7
     - identifier: about
       name: About
       pageRef: /about
-      weight: 7
-    - name: Search
       weight: 8
+    - name: Search
+      weight: 9
       params:
         type: search
 
