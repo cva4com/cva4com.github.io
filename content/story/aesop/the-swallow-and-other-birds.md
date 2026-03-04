@@ -1,6 +1,8 @@
 ---
 title: The Swallow and Other Birds
 weight: 2
+prev: /story/aesop/
+next: /story/aesop/aesop-at-the-shipyard/
 tags:
   - Aesop
   - Acorn
@@ -21,20 +23,28 @@ A Farmer, sowing his fields with flax, was observed by a Swallow, who, like the 
 
 ### Samuel Croxall
 
+![Samuel Croxall](/images/aesop/croxall-0294-swallow-other-birds-300x227.jpg)
+
 A FARMER was sowing his field with flax. The Swallow observed it; and desired the other birds to assist her in picking the seed up, and destroying it; telling them, that Flax was that pernicious material, of which the thread was composed which made the fowler’s nets, and by that means contributed to the ruin of so many innocent birds. But the poor Swallow, not having the good fortune to be regarded, the flax sprung up, and appeared above the ground. She then put them in mind once more of their impending danger, and wished them to pluck it up in the bud, before it went any farther. They still neglected her warnings; and the flax grew up into the high stalk. She yet again desired them to attack it, for that it was not yet too late. But all that she could get was, to be ridiculed and despised for a silly, pretending prophet. The Swallow, finding all her remonstrances availed nothing, was resolved to leave the society of such unthinking, careless creatures, before it was too late. So, quitting the woods, she repaired to the houses; and, forsaking the conversation of the birds, has ever since made her abode among the dwellings of men.
 
 #### The Application
 
 As men, we should always exercise so much humanity as to endeavour the welfare of mankind, particularly of our acquaintance and relations; and if, by nothing farther, at least by our good advice. When we have done this, and if occasion required, continued to repeat it a second or third time, we shall have acquitted ourselves sufficiently from any imputation upon their miscarriages; and haying nothing more to do, but to separate ourselves from them, that we may not be involved in their ruin, or be supposed to partake of their error. This is an excommunication which reason allows. For, as it would be cruel on the one side, to prosecute and hurt people for being mistaken; so, on the other, it would be indiscreet, and over complaisant, to keep them company through all their wrong notions, and act contrary to our opinion out of pure civility.
 
+![Samuel Croxall](/images/aesop/whittingham_swallow_other_birds.jpg "C. Whittingham (1814)")
+
 
 ### Thomas Bewick
+
+![Thomas Bewick](/images/aesop/Bewick-0105-Swallow-Other-Birds-300x219.jpg)
 
 A Swallow, observing a Farmer sowing his field with flax, called the Birds together, and informed them what he was about. She told them that flax was the material of which the thread was made that composed the fowler’s nets, so fatal to the feathered race, and strongly advised them to assist her in picking up the seed, and destroying it. The Birds heard her with indifference, and gave themselves no trouble about the matter. In a little time the flax sprung up, and appeared above the ground. She then put them in mind once more of their impending danger, and wished them to pluck it up in the bud, before it grew any farther. But they still slighted her warnings, and the flax grew up into stalk. She again urged them to attack it, for it was not yet too late; but they only ridiculed her for a silly pretending prophet. The Swallow, finding all her remonstrances availed nothing, was resolved to leave the society of such careless unthinking creatures, before it was too late: so quitting the woods, she repaired to the houses; and, forsaking the conversation of the Birds, has ever since taken up her abode among the dwellings of men.
 
 #### The Application
 
 Wise men read effects in their causes, and profit by them; but their advice is thrown away when given to the arrogant and self-conceited, who are too proud to listen to it. It is equally lost upon fools, who stupidly or obstinately shut their eyes against impending danger, till it is too late to prevent it. In both cases, those who have no foresight of their own, and those who despise the wholesome admonitions of their friends, deserve to suffer from the misfortunes which their own obstinacy, folly, or negligence, brings upon their heads. A great portion of mankind, from an overweening conceit of their own abilities, are unwilling to be advised by any one, and through this stubborn disposition, deprive themselves of the aids of friendship, and the benefits which the good-will of their more sensible neighbours would have conferred on them with pleasure.
+
+![Samuel Croxall](/images/aesop/Bewick-0106-Swallow-Other-Birds-Bottom-300x204.jpg "The vignette is about attending to wisdom—here in the form of an ancient monument, or of not doing so. In this it reflects the concern of the Application. Pro tempore, ‘for the time being’, emphasises the transience of a man, as does his being a traveller on a momentary rest. – The Bewick Society")
 
 
 ### L’Estrange version

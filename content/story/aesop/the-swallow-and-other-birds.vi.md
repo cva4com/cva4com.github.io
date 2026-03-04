@@ -1,6 +1,8 @@
 ---
 title: Chim én và các loài chim khác
 weight: 2
+prev: /story/aesop/
+next: /story/aesop/aesop-at-the-shipyard/
 tags:
   - Aesop
   - Acorn
@@ -21,20 +23,28 @@ Một người nông dân đang gieo hạt lanh trên cánh đồng của mình 
 
 ### Samuel Croxall
 
+![Samuel Croxall](/images/aesop/croxall-0294-swallow-other-birds-300x227.jpg)
+
 Một người nông dân đang gieo hạt lanh trên cánh đồng của mình. Chim én quan sát thấy điều đó và yêu cầu những con chim khác giúp mình nhặt hạt giống lên và tiêu hủy chúng; nói với chúng rằng lanh là một loại vật liệu độc hại, được dùng để làm sợi lưới bắt chim, và bằng cách đó đã góp phần gây hại cho rất nhiều loài chim vô tội. Nhưng chim én tội nghiệp, không may mắn được chúng để ý, cây lanh mọc lên và nhô lên khỏi mặt đất. Sau đó, nó lại nhắc nhở chúng về mối nguy hiểm sắp xảy ra và muốn chúng nhổ nó lên ngay khi còn non, trước khi nó phát triển thêm. Chúng vẫn phớt lờ lời cảnh báo của nó; và cây lanh mọc thành thân cao. Nó lại một lần nữa yêu cầu chúng tấn công nó, vì vẫn chưa quá muộn. Nhưng tất cả những gì nó nhận được là sự chế giễu và khinh bỉ vì một kẻ tự xưng là nhà tiên tri ngốc nghếch. Chim én, thấy rằng mọi lời khuyên can của mình đều vô ích, quyết định rời bỏ xã hội của những sinh vật thiếu suy nghĩ, bất cẩn như vậy, trước khi quá muộn. Vậy là, rời khỏi rừng, nàng đến sống trong những ngôi nhà; và từ bỏ cuộc trò chuyện với chim chóc, nàng đã chọn nơi ở của con người làm chỗ trú ngụ.
 
 #### Ứng dụng
 
 Là con người, chúng ta luôn phải thể hiện lòng nhân ái bằng cách nỗ lực vì hạnh phúc của nhân loại, đặc biệt là những người quen biết và họ hàng của mình; và nếu không làm được gì hơn, thì ít nhất cũng phải đưa ra lời khuyên tốt. Khi đã làm được điều này, và nếu cần thiết, tiếp tục lặp lại lần thứ hai hoặc thứ ba, chúng ta sẽ tự giải thoát mình khỏi mọi sự quy kết về những sai lầm của họ; và không còn gì để làm hơn ngoài việc tách biệt mình khỏi họ, để chúng ta không bị liên lụy vào sự hủy hoại của họ, hoặc bị cho là cùng chia sẻ sai lầm của họ. Đây là một sự khai trừ mà lý trí cho phép. Bởi vì, một mặt, sẽ là tàn nhẫn nếu truy tố và làm tổn thương người khác vì sự lầm lạc của họ; mặt khác, sẽ là thiếu khôn ngoan và quá dễ dãi nếu vẫn giữ mối quan hệ với họ trong suốt những quan niệm sai lầm của họ, và hành động trái ngược với ý kiến ​​của chúng ta chỉ vì phép lịch sự thuần túy.
 
+![Samuel Croxall](/images/aesop/whittingham_swallow_other_birds.jpg "C. Whittingham (1814)")
+
 
 ### Thomas Bewick
+
+![Thomas Bewick](/images/aesop/Bewick-0105-Swallow-Other-Birds-300x219.jpg)
 
 Một con én cái, quan sát một người nông dân đang gieo hạt lanh trên cánh đồng của mình, đã gọi các loài chim lại và cho chúng biết ông ta đang làm gì. Nó nói với chúng rằng lanh là nguyên liệu để làm sợi lưới bắt chim, thứ rất nguy hiểm đối với loài chim, và khuyên chúng nên giúp nó nhặt hạt giống và tiêu hủy chúng. Các loài chim nghe vậy với vẻ thờ ơ và không bận tâm đến việc đó. Chẳng mấy chốc, cây lanh mọc lên và nhô lên khỏi mặt đất. Nó lại nhắc nhở chúng về mối nguy hiểm sắp xảy ra và muốn chúng nhổ nó lên ngay khi còn non, trước khi nó lớn hơn nữa. Nhưng chúng vẫn coi thường lời cảnh báo của nó, và cây lanh mọc thành thân. Nó lại thúc giục chúng tấn công nó, vì vẫn chưa quá muộn; nhưng chúng chỉ chế giễu nó là một nhà tiên tri giả tạo ngớ ngẩn. Chim én, nhận thấy mọi lời khuyên can đều vô ích, quyết định rời bỏ cuộc sống của những sinh vật vô tâm, thiếu suy nghĩ ấy trước khi quá muộn: thế là rời khỏi rừng, nó đến những ngôi nhà; và từ bỏ cuộc sống giao du với các loài chim, từ đó về sau nó sống giữa những căn nhà của con người.
 
 #### Ứng dụng
 
 Người khôn ngoan nhìn thấy kết quả trong nguyên nhân của chúng và rút ra bài học từ đó; nhưng lời khuyên của họ trở nên vô ích khi dành cho những kẻ kiêu ngạo và tự phụ, những người quá kiêu hãnh để lắng nghe. Lời khuyên cũng vô ích đối với những kẻ ngu dốt, những người ngoan cố nhắm mắt làm ngơ trước nguy hiểm sắp xảy ra, cho đến khi quá muộn để ngăn chặn nó. Trong cả hai trường hợp, những người thiếu tầm nhìn xa và những người coi thường những lời khuyên bổ ích của bạn bè đều đáng phải gánh chịu những bất hạnh do sự ngoan cố, ngu dốt hoặc bất cẩn của chính họ gây ra. Một phần lớn nhân loại, do quá tự tin vào khả năng của mình, không muốn nhận lời khuyên từ bất kỳ ai, và thông qua thái độ cứng đầu này, họ tự tước đoạt đi sự giúp đỡ của tình bạn và những lợi ích mà lòng tốt của những người hàng xóm sáng suốt hơn sẽ vui vẻ dành cho họ.
+
+![Samuel Croxall](/images/aesop/Bewick-0106-Swallow-Other-Birds-Bottom-300x204.jpg "The vignette is about attending to wisdom—here in the form of an ancient monument, or of not doing so. In this it reflects the concern of the Application. Pro tempore, ‘for the time being’, emphasises the transience of a man, as does his being a traveller on a momentary rest. – The Bewick Society")
 
 
 ### Phiên bản L'Estrange
@@ -52,7 +62,7 @@ Người khôn ngoan nhìn thấy hậu quả trong nguyên nhân, nhưng kẻ n
 
 Khi cây lanh bắt đầu được gieo trồng, chim én khuyên các loài chim khác nên ngăn cản việc gieo trồng, nói rằng tất cả chúng đều đang bị phục kích. Chúng chế nhạo và gọi chim én là kẻ lắm mồm. Khi cây lanh mọc lên, chim én lại khuyên chúng nên nhổ bỏ cây; chúng lại chế nhạo. Khi cây lanh chín, chim én thúc giục chúng nên trải rộng cây trồng và vì chúng thậm chí không nghe lời khuyên của chim én vào lúc đó, nên chim én đã lập giao ước với con người và sống cùng họ. Đối với các loài chim khác, lưới và bẫy được làm từ cây lanh.
 
-#### Moral
+#### Bài học
 
 > Multi nec ipsi consulere sibi norunt, nec recte consulentem audiunt sed, cum in periculis versantur, tum demum incipiunt suam damnare socordiam.
 
