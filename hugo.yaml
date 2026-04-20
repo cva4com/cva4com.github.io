@@ -50,9 +50,13 @@ menu:
       name: CV Templates
       url: "/all/"
       weight: 1
-    - identifier: docs
-      name: Documentation
-      pageRef: /docs
+    # - identifier: docs
+    #   name: Documentation
+    #   pageRef: /docs
+    #   weight: 2
+    - identifier: tutorials
+      name: Tutorials
+      pageRef: /tuts
       weight: 2
     - identifier: showcase
       name: Showcase
