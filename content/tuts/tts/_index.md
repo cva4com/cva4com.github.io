@@ -2,7 +2,7 @@
 title: Text-to-Speech
 weight: 1
 prev: /tts
-next: /tts/kokoro
+next: /tts/tts-open-weights
 sidebar:
   open: true
 ---
@@ -50,7 +50,7 @@ Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of
 | #33 | Alibaba | Qwen3 TTS | 936 | N/A |
 | #34 | Coqui | XTTS v2 (Open Weights) | 885 | $40.4 /1M chars |
 | #35 | StyleTTS  | StyleTTS 2 (Open Weights) | 880 | $2.8 /1M chars |
-| #36 | MetaVoice | MetaVoice v1 | 767 | N/A |
+| #36 | MetaVoice | MetaVoice v1 (Open Weights) | 767 | N/A |
 
 Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.
 

@@ -5,7 +5,8 @@ title: CVA4
 theme: hextra
 
 enableRobotsTXT: true
-enableGitInfo: true
+# Parse Git commit
+enableGitInfo: false
 # enableEmoji: false
 hasCJKLanguage: true
 
@@ -35,12 +36,22 @@ module:
     extended: true
     min: "0.112.0"
 
+  # workspace: hugo.work
+  # imports:
+  #   - path: github.com/imfing/hextra
+
 markup:
+  highlight:
+    noClasses: false
   goldmark:
     renderer:
       unsafe: true
-  highlight:
-    noClasses: false
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
 
 enableInlineShortcodes: true
 
@@ -106,6 +117,8 @@ menu:
 params:
   description: CV in A4 page, Computer Vision and more
 
+  externalLinkDecoration: true
+
   navbar:
     displayTitle: true
     displayLogo: false
@@ -117,10 +130,6 @@ params:
       # link: /
     width: wide
 
-  page:
-    # full (100%), wide (90rem), normal (1280px)
-    width: normal
-
   theme:
     # light | dark | system
     default: system
@@ -130,11 +139,14 @@ params:
     enable: true
     displayCopyright: true
     displayPoweredBy: false
-    enable: true
     width: normal
 
+  # Display the last modification date
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
+
+  # Display the author name of the last modified date
+  displayUpdatedAuthor: false
 
   # Search
   # flexsearch is enabled by default
@@ -159,12 +171,44 @@ params:
       # date | lastmod | publishDate | title | weight
       sortBy: date
       sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 20
+
+    article:
+      displayPagination: true
+
+  archives:
+    # Source section used for the archives page.
+    section: blog
+    # Date format for archive list items.
+    dateFormat: "Jan 02"
+
+  toc:
+    displayTags: true
 
   highlight:
     copy:
       enable: true
       # hover | always
       display: hover
+
+  page:
+    # full (100%), wide (90rem), normal (80rem)
+    width: normal
+    # tabs:
+    #   sync: true
+    contextMenu:
+      enable: true
+      links:
+        - name: Open in ChatGPT
+          icon: chatgpt
+          url: "https://chatgpt.com/?hints=search&q=I%27m+looking+at+this+documentation%3A+{url}%0AHelp+me+understand+how+to+use+it."
+        - name: Open in Claude
+          icon: claude
+          url: "https://claude.ai/new?q=I%27m+looking+at+this+documentation%3A+{url}%0AHelp+me+understand+how+to+use+it."
+
+  imageZoom:
+    enable: true
 
   comments:
     enable: false
@@ -182,3 +226,4 @@ params:
       # emitMetadata: 0
       # inputPosition: top
       # lang: en
+      # theme: noborder_dark

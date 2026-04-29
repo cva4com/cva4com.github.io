@@ -1,8 +1,8 @@
 ---
 linkTitle: Kokoro 82M
 title: Install Kokoro 82M TTS on Windows with Conda
-weight: 2
-prev: /tts/
+weight: 3
+prev: /tts/tts-open-weights
 # next: /tts/a
 cascade:
   type: docs

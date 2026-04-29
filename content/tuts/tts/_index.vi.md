@@ -2,7 +2,7 @@
 title: Chuyển Văn bản thành Giọng nói
 weight: 1
 prev: /tts
-next: /tts/kokoro
+next: /tts/tts-open-weights
 sidebar:
   open: true
 ---
@@ -52,7 +52,7 @@ Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên h
 | #33 | Alibaba | Qwen3 TTS | 936 | N/A |
 | #34 | Coqui | XTTS v2 (Open Weights) | 885 | $40.4 /1M chars |
 | #35 | StyleTTS  | StyleTTS 2 (Open Weights) | 880 | $2.8 /1M chars |
-| #36 | MetaVoice | MetaVoice v1 | 767 | N/A |
+| #36 | MetaVoice | MetaVoice v1 (Open Weights) | 767 | N/A |
 
 Độ trễ dưới 200ms hiện nay đã có thể đạt được nhờ các kiến ​​trúc mạng thần kinh hiện đại, và việc sao chép giọng nói không cần huấn luyện từ đoạn âm thanh dài 3-15 giây đã trở thành tính năng tiêu chuẩn chứ không còn là tính năng cao cấp nữa.
 
