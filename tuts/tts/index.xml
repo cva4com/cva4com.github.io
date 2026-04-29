@@ -15,6 +15,170 @@
     
     
     <item>
+      <title>Text-to-Speech Open Weights</title>
+      <link>https://cva4.com/tuts/tts/tts-open-weights/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/tuts/tts/tts-open-weights/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Speech Arena Leaderboard&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;speech-arena-leaderboard&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#speech-arena-leaderboard&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Leaderboard text-to-speech APIs compared below using third-party data from &lt;a href=&#34;https://artificialanalysis.ai/text-to-speech/leaderboard&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Artificial Analysis leaderboard&lt;/a&gt; rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.&lt;/p&gt;
+&lt;p&gt;Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of blind user preference comparisons, with sub-250ms P90 latency.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Range&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Creator&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Model&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;ELO&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;API Pricing&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#1&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Fish Audio&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/fishaudio/s2-pro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fish Audio S2 Pro&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,124&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$15 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#2&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;StepFun&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/stepfun-ai/Step-Audio-EditX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Step Audio EditX&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,098&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#3&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;NVIDIA&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/nvidia/magpie_tts_multilingual_357m&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Magpie-Multilingual 357M&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,063&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#4&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Kokoro&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro 82M v1.0&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,055&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$0.7 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#5&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Mistral&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/mistralai/Voxtral-4B-TTS-2603&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Voxtral TTS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,053&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$16 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#6&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Maya Research&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/maya-research/maya1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maya1&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,049&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#7&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Fish Audio&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/fishaudio/fish-speech-1.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fish Audio 1.5&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,012&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$15 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#8&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Resemble AI&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/resemble-ai/chatterbox&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chatterbox&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,006&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$25 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#9&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Zyphra&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/Zyphra/Zonos&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zonos-v0.1&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;1,000&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$20 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#10&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Microsoft&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/microsoft/VibeVoice-1.5B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VibeVoice&lt;/a&gt; 7B&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;957&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#11&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;OpenVoice&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/myshell-ai/OpenVoiceV2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenVoice v2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;948&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$8.3 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#12&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Coqui&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/coqui/XTTS-v2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;XTTS v2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;885&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$40.4 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#13&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;StyleTTS&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/yl4579/StyleTTS2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;StyleTTS 2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;877&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;$2.8 /1M chars&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;#14&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;MetaVoice&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/metavoiceio/metavoice-src&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MetaVoice v1&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;764&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.&lt;/p&gt;
+&lt;h2&gt;Top 27 TTS AI Models by ELO&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;top-27-tts-ai-models-by-elo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#top-27-tts-ai-models-by-elo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D8_wft9Bd84?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2&gt;4. Kokoro 82M&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;4-kokoro-82m&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-kokoro-82m&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Quick Overview&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;quick-overview&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#quick-overview&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI&amp;rsquo;s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there&amp;rsquo;s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.&lt;/p&gt;
+&lt;h3&gt;Best For&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;best-for&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#best-for&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.&lt;/p&gt;
+&lt;h3&gt;Pros&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pros&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pros&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Open-source under Apache 2.0 license&lt;/li&gt;
+&lt;li&gt;~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far&lt;/li&gt;
+&lt;li&gt;82M parameters runs on mid-tier CPUs with no GPU requirement&lt;/li&gt;
+&lt;li&gt;Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x+ cheaper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Cons&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cons&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cons&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Self-hosted only with no managed API or enterprise support&lt;/li&gt;
+&lt;li&gt;6 languages currently (English, French, Korean, Japanese, Mandarin, British English)&lt;/li&gt;
+&lt;li&gt;Lower overall quality than commercial options in the top 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Pricing&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pricing&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pricing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.&lt;/p&gt;
+&lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
+  &lt;a
+    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;kokoro&#34;
+      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Kokoro 82M v1.0&lt;/span&gt;&lt;/a&gt;
+  &lt;a
+    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;miniconda&#34;
+      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Miniconda&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Install Kokoro 82M TTS on Windows with Conda</title>
       <link>https://cva4.com/tuts/tts/kokoro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
