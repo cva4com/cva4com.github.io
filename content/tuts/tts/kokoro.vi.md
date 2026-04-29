@@ -1,4 +1,5 @@
 ---
+linkTitle: Kokoro 82M
 title: Cài đặt Kokoro 82M TTS trên Windows bằng Conda
 weight: 2
 prev: /tts/
@@ -10,6 +11,10 @@ tags:
   - Kokoro
   - Open Weights
 ---
+
+## Video hướng dẫn
+
+{{< youtube -VLmk9PqOYo >}}
 
 ## Bước 1. Cài đặt Miniconda
 

@@ -219,5 +219,5 @@ Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu 
 
 {{< cards >}}
   {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}
-  {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}
+  {{< card link="miniconda" title="Miniconda" icon="book-open" >}}
 {{< /cards >}}

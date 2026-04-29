@@ -251,5 +251,5 @@ Budget-constrained teams comfortable with self-hosting who want decent quality a
 
 {{< cards >}}
   {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}
-  {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}
+  {{< card link="miniconda" title="Miniconda" icon="book-open" >}}
 {{< /cards >}}

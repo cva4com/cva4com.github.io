@@ -1,4 +1,5 @@
 ---
+linkTitle: Kokoro 82M
 title: Install Kokoro 82M TTS on Windows with Conda
 weight: 2
 prev: /tts/
@@ -10,6 +11,10 @@ tags:
   - Kokoro
   - Open Weights
 ---
+
+## Video tutorial
+
+{{< youtube -VLmk9PqOYo >}}
 
 ## Step 1. Install Miniconda Package
 
