@@ -12,6 +12,15 @@ tags:
   - Open Weights
 ---
 
+## Giới thiệu
+
+Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân.
+
+GitHub: https://github.com/hexgrad/kokoro  
+Hugging Face: https://hf.co/hexgrad/Kokoro-82M  
+Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS
+
+
 ## Video hướng dẫn
 
 {{< youtube -VLmk9PqOYo >}}
