@@ -23,7 +23,12 @@
       <description>
         
         
-        &lt;h2&gt;Video hướng dẫn&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-hướng-dẫn&#34;&gt;&lt;/span&gt;
+        &lt;h2&gt;Giới thiệu&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;giới-thiệu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gi%e1%bb%9bi-thi%e1%bb%87u&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân.&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/hexgrad/kokoro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/hexgrad/kokoro&lt;/a&gt;&lt;br&gt;
+Hugging Face: &lt;a href=&#34;https://hf.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/hexgrad/Kokoro-82M&lt;/a&gt;&lt;br&gt;
+Demo: &lt;a href=&#34;https://hf.co/spaces/hexgrad/Kokoro-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/spaces/hexgrad/Kokoro-TTS&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Video hướng dẫn&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-hướng-dẫn&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 
     

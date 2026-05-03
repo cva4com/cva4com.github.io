@@ -12,10 +12,7 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
   <title>Cài đặt Kokoro 82M TTS trên Windows bằng Conda – CVA4</title>
-  <meta name="description" content="Video hướng dẫn Bước 1. Cài đặt Miniconda Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
-Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
-Bước 2. Cài đặt eSpeak NG Thư viện espeak-ng (Bắt buộc đối với Windows) cần để chuyển đổi văn bản thành âm vị. Trên Windows:
-Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải xuống tệp .msi phù hợp (ví dụ: espeak-ng.msi) Chạy trình cài đặt đã tải xuống Làm theo hướng dẫn của trình hướng dẫn cài đặt Để biết cấu hình chi tiết cho Windows, hãy xem hướng dẫn chính thức của espeak-ng dành cho Windows" />
+  <meta name="description" content="Giới thiệu Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân." />
 
   
     <link rel="canonical" href="https://cva4.com/vi/tuts/tts/kokoro/" itemprop="url" />
@@ -24,10 +21,7 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
   
 
 <meta property="og:title" content="Cài đặt Kokoro 82M TTS trên Windows bằng Conda" />
-<meta property="og:description" content="Video hướng dẫn Bước 1. Cài đặt Miniconda Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
-Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
-Bước 2. Cài đặt eSpeak NG Thư viện espeak-ng (Bắt buộc đối với Windows) cần để chuyển đổi văn bản thành âm vị. Trên Windows:
-Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải xuống tệp .msi phù hợp (ví dụ: espeak-ng.msi) Chạy trình cài đặt đã tải xuống Làm theo hướng dẫn của trình hướng dẫn cài đặt Để biết cấu hình chi tiết cho Windows, hãy xem hướng dẫn chính thức của espeak-ng dành cho Windows" />
+<meta property="og:description" content="Giới thiệu Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cva4.com/vi/tuts/tts/kokoro/" /><meta property="article:section" content="tuts" />
 
@@ -35,18 +29,12 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
 
   
   <meta itemprop="name" content="Cài đặt Kokoro 82M TTS trên Windows bằng Conda">
-  <meta itemprop="description" content="Video hướng dẫn Bước 1. Cài đặt Miniconda Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
-Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
-Bước 2. Cài đặt eSpeak NG Thư viện espeak-ng (Bắt buộc đối với Windows) cần để chuyển đổi văn bản thành âm vị. Trên Windows:
-Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải xuống tệp .msi phù hợp (ví dụ: espeak-ng.msi) Chạy trình cài đặt đã tải xuống Làm theo hướng dẫn của trình hướng dẫn cài đặt Để biết cấu hình chi tiết cho Windows, hãy xem hướng dẫn chính thức của espeak-ng dành cho Windows">
-  <meta itemprop="wordCount" content="214">
+  <meta itemprop="description" content="Giới thiệu Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân.">
+  <meta itemprop="wordCount" content="301">
   <meta itemprop="keywords" content="TTS,Kokoro,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cài đặt Kokoro 82M TTS trên Windows bằng Conda">
-  <meta name="twitter:description" content="Video hướng dẫn Bước 1. Cài đặt Miniconda Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
-Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
-Bước 2. Cài đặt eSpeak NG Thư viện espeak-ng (Bắt buộc đối với Windows) cần để chuyển đổi văn bản thành âm vị. Trên Windows:
-Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải xuống tệp .msi phù hợp (ví dụ: espeak-ng.msi) Chạy trình cài đặt đã tải xuống Làm theo hướng dẫn của trình hướng dẫn cài đặt Để biết cấu hình chi tiết cho Windows, hãy xem hướng dẫn chính thức của espeak-ng dành cho Windows">
+  <meta name="twitter:description" content="Giới thiệu Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân.">
 
     <link rel="preload" href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" as="style" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
     <link href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" rel="stylesheet" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
@@ -256,6 +244,12 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
   
     <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
               <a
+                href="#gi%e1%bb%9bi-thi%e1%bb%87u"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Giới thiệu</a>
+            </li>
+          <li>
+              <a
                 href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
               >Video hướng dẫn</a>
@@ -286,6 +280,14 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
             </li>
           </ul>
   
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/vi/tuts/tts/qwen-tts/"
+    
+  >Qwen3-TTS
+    </a>
               
             </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -462,6 +464,14 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
             </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/vi/tuts/tts/qwen-tts/"
+    
+  >Qwen3-TTS
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/vi/tuts/tts/miniconda/"
     
   >Miniconda
@@ -537,6 +547,10 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
 <nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
     <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">Ở trang này</p><ul>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#gi%e1%bb%9bi-thi%e1%bb%87u">Giới thiệu
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
         <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn">Video hướng dẫn
         </a>
       </li>
@@ -582,7 +596,12 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
 
         <div class="content">
           <h1>Cài đặt Kokoro 82M TTS trên Windows bằng Conda</h1>
-          <h2>Video hướng dẫn<span class="hx-absolute -hx-mt-20" id="video-hướng-dẫn"></span>
+          <h2>Giới thiệu<span class="hx-absolute -hx-mt-20" id="giới-thiệu"></span>
+    <a href="#gi%e1%bb%9bi-thi%e1%bb%87u" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Kokoro là một mô hình TTS (Text-to-Speech) mã nguồn mở với 82 triệu tham số. Mặc dù có kiến ​​trúc nhẹ, nó mang lại chất lượng tương đương với các mô hình lớn hơn trong khi nhanh hơn và tiết kiệm chi phí hơn đáng kể. Với các tham số được cấp phép theo giấy phép Apache, Kokoro có thể được triển khai ở bất cứ đâu, từ môi trường sản xuất đến các dự án cá nhân.</p>
+<p>GitHub: <a href="https://github.com/hexgrad/kokoro" target="_blank" rel="noopener">https://github.com/hexgrad/kokoro</a><br>
+Hugging Face: <a href="https://hf.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener">https://hf.co/hexgrad/Kokoro-82M</a><br>
+Demo: <a href="https://hf.co/spaces/hexgrad/Kokoro-TTS" target="_blank" rel="noopener">https://hf.co/spaces/hexgrad/Kokoro-TTS</a></p>
+<h2>Video hướng dẫn<span class="hx-absolute -hx-mt-20" id="video-hướng-dẫn"></span>
     <a href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
 
     
@@ -703,10 +722,10 @@ Truy cập espeak-ng releases Nhấp vào Bản phát hành mới nhất Tải x
         title="TTS Open"
         class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
       ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>TTS Open</a><a
-        href="/vi/tuts/tts/miniconda/"
-        title="Miniconda"
+        href="/vi/tuts/tts/qwen-tts/"
+        title="Qwen3-TTS"
         class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
-      >Miniconda<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+      >Qwen3-TTS<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
         
       </main>
     </article>

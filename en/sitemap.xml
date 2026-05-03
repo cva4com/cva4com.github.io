@@ -74,6 +74,18 @@
                 href="https://cva4.com/tuts/tts/kokoro/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/tts/qwen-tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/qwen-tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/qwen-tts/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -540,6 +552,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/open-weights/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/qwen3-tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/qwen3-tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/qwen3-tts/"
                 />
   </url><url>
     <loc>https://cva4.com/tags/shipyard/</loc>
