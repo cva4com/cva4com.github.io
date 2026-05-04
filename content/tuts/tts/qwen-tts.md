@@ -21,10 +21,38 @@ Hugging Face: https://hf.co/collections/Qwen/qwen3-tts
 Demo: https://hf.co/spaces?q=Qwen3-TTS
 
 
+## Prerequisites
+
+System requirements:
+*   **Operating System:** Windows 10/11 (64-bit), macOS, or Linux (Debian/Ubuntu).
+*   **Python:** Version 3.12 required
+*   **Disk Space:** 10GB+ recommended (for dependencies and model cache). At least 400 MB for Miniconda; 3 GB+ for full Anaconda.
+*   **The GPU** is optional but HIGHLY Recommended for Performance
+*   **Internet:** For downloading dependencies and models from Hugging Face Hub.
+
+
+| Environment | Run this Command |
+| :-- | :-- |
+| CPU only  | pip3 install torch torchvision |
+| CUDA 11.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 |
+| CUDA 12.1 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 |
+| CUDA 12.6 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126 |
+| CUDA 12.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 |
+| CUDA 13.0 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130 |
+
+![PyTorch](/images/2026/pytorch.png)
+
+Note: CUDA version check by command
+
+```bash
+nvidia-smi
+```
+
+
 ## Video tutorial
 
-Coming soon
-<!-- {{< youtube -VLmk9PqOYo >}} -->
+{{< youtube a00--jPR9Ns >}}
+
 
 ## Step 1. Install Miniconda Package
 
@@ -108,3 +136,18 @@ python qwen3_tts_test.py
 ```
 
 The result will be the audio file `output.wav`
+
+
+## Audio samples
+
+| Speaker | Voice Description  |  Native language |
+| --- | --- | --- |
+| Vivian | Bright, slightly edgy young female voice. | Chinese |
+| Serena | Warm, gentle young female voice. | Chinese |
+| Uncle_Fu | Seasoned male voice with a low, mellow timbre. | Chinese |
+| Dylan | Youthful Beijing male voice with a clear, natural timbre. | Chinese (Beijing Dialect) |
+| Eric | Lively Chengdu male voice with a slightly husky brightness. | Chinese (Sichuan Dialect) |
+| Ryan | Dynamic male voice with strong rhythmic drive. | English |
+| Aiden | Sunny American male voice with a clear midrange. | English |
+| Ono_Anna | Playful Japanese female voice with a light, nimble timbre. | Japanese |
+| Sohee | Warm Korean female voice with rich emotion. | Korean |

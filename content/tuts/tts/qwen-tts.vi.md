@@ -21,10 +21,37 @@ Hugging Face: https://hf.co/collections/Qwen/qwen3-tts
 Demo: https://hf.co/spaces?q=Qwen3-TTS
 
 
+## Yêu cầu hệ thống
+
+* **Hệ điều hành:** Windows 10/11 (64-bit), macOS hoặc Linux (Debian/Ubuntu).
+* **Python:** Yêu cầu phiên bản 3.12
+* **Dung lượng ổ cứng:** Khuyến nghị 10GB trở lên (cho các thư viện phụ thuộc và bộ nhớ cache mô hình). Ít nhất 400 MB cho Miniconda; 3 GB trở lên cho Anaconda đầy đủ.
+* **GPU:** là tùy chọn nhưng RẤT KHUYÊN DÙNG để tăng hiệu suất
+* **Internet:** Để tải xuống các thư viện phụ thuộc và mô hình từ Hugging Face Hub.
+
+
+| Environment | Run this Command |
+| :-- | :-- |
+| CPU only  | pip3 install torch torchvision |
+| CUDA 11.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 |
+| CUDA 12.1 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 |
+| CUDA 12.6 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126 |
+| CUDA 12.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 |
+| CUDA 13.0 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130 |
+
+![PyTorch](/images/2026/pytorch.png)
+
+Lưu ý: Kiểm tra phiên bản CUDA bằng lệnh
+
+```bash
+nvidia-smi
+```
+
+
 ## Video hướng dẫn
 
-Sắp ra mắt
-<!-- {{< youtube -VLmk9PqOYo >}} -->
+{{< youtube a00--jPR9Ns >}}
+
 
 ## Bước 1. Cài đặt Miniconda
 
@@ -108,3 +135,18 @@ python qwen3_tts_test.py
 ```
 
 Kết quả sẽ là tệp âm thanh output.wav`
+
+
+## Âm thanh mẫu
+
+| Speaker | Voice Description  |  Native language |
+| --- | --- | --- |
+| Vivian | Giọng nữ trẻ trung, sáng sủa, hơi cá tính. | Tiếng Trung |
+| Serena | Giọng nữ trẻ trung, ấm áp, dịu dàng. | Tiếng Trung |
+| Uncle_Fu | Giọng nam dày dặn kinh nghiệm với âm sắc trầm ấm. | Tiếng Trung |
+| Dylan | Giọng nam trẻ trung đến từ Bắc Kinh với âm sắc trong trẻo, tự nhiên. | Tiếng Trung (Bắc Kinh) |
+| Eric | Giọng nam sôi nổi đến từ Thành Đô với độ sáng hơi khàn. | Tiếng Trung (Tứ Xuyên) |
+| Ryan | Giọng nam năng động với nhịp điệu mạnh mẽ. | Tiếng Anh |
+| Aiden | Giọng nam Mỹ tươi sáng với âm vực trung rõ ràng. | Tiếng Anh |
+| Ono_Anna | Giọng nữ Nhật Bản tinh nghịch với âm sắc nhẹ nhàng, linh hoạt. | Tiếng Nhật |
+| Sohee | Giọng nữ Hàn Quốc ấm áp với nhiều cảm xúc. | Tiếng Hàn |
