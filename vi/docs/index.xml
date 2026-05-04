@@ -335,16 +335,74 @@ Demo: &lt;a href=&#34;https://hf.co/spaces/hexgrad/Kokoro-TTS&#34; target=&#34;_
 &lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/QwenLM/Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/QwenLM/Qwen3-TTS&lt;/a&gt;&lt;br&gt;
 Hugging Face: &lt;a href=&#34;https://hf.co/collections/Qwen/qwen3-tts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/collections/Qwen/qwen3-tts&lt;/a&gt;&lt;br&gt;
 Demo: &lt;a href=&#34;https://hf.co/spaces?q=Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/spaces?q=Qwen3-TTS&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Yêu cầu hệ thống&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yêu-cầu-hệ-thống&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#y%c3%aau-c%e1%ba%a7u-h%e1%bb%87-th%e1%bb%91ng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hệ điều hành:&lt;/strong&gt; Windows 10/11 (64-bit), macOS hoặc Linux (Debian/Ubuntu).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; Yêu cầu phiên bản 3.12&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dung lượng ổ cứng:&lt;/strong&gt; Khuyến nghị 10GB trở lên (cho các thư viện phụ thuộc và bộ nhớ cache mô hình). Ít nhất 400 MB cho Miniconda; 3 GB trở lên cho Anaconda đầy đủ.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPU:&lt;/strong&gt; là tùy chọn nhưng RẤT KHUYÊN DÙNG để tăng hiệu suất&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internet:&lt;/strong&gt; Để tải xuống các thư viện phụ thuộc và mô hình từ Hugging Face Hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Environment&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Run this Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CPU only&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 11.8&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu118&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu118&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.1&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu121&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu121&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.6&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu126&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu126&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.8&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu128&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu128&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 13.0&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu130&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu130&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/pytorch.png&#34; alt=&#34;PyTorch&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lưu ý: Kiểm tra phiên bản CUDA bằng lệnh&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nvidia-smi&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
 &lt;h2&gt;Video hướng dẫn&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-hướng-dẫn&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sắp ra mắt&lt;/p&gt;
-&lt;!-- 
+    &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 
     
     &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/-VLmk9PqOYo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/a00--jPR9Ns?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
       &gt;&lt;/iframe&gt;
     &lt;/div&gt;
- --&gt;
+
 &lt;h2&gt;Bước 1. Cài đặt Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-1-cài-đặt-miniconda&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-1-c%c3%a0i-%c4%91%e1%ba%b7t-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tải xuống Miniconda: &lt;a href=&#34;https://www.anaconda.com/download/success?reg=skipped&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.anaconda.com/download/success?reg=skipped&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Liên kết trực tiếp: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
@@ -460,6 +518,63 @@ Demo: &lt;a href=&#34;https://hf.co/spaces?q=Qwen3-TTS&#34; target=&#34;_blank&#
   
 &lt;/div&gt;
 &lt;p&gt;Kết quả sẽ là tệp âm thanh output.wav`&lt;/p&gt;
+&lt;h2&gt;Âm thanh mẫu&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;âm-thanh-mẫu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%c3%a2m-thanh-m%e1%ba%abu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Speaker&lt;/th&gt;
+&lt;th&gt;Voice Description&lt;/th&gt;
+&lt;th&gt;Native language&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Vivian&lt;/td&gt;
+&lt;td&gt;Giọng nữ trẻ trung, sáng sủa, hơi cá tính.&lt;/td&gt;
+&lt;td&gt;Tiếng Trung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Serena&lt;/td&gt;
+&lt;td&gt;Giọng nữ trẻ trung, ấm áp, dịu dàng.&lt;/td&gt;
+&lt;td&gt;Tiếng Trung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Uncle_Fu&lt;/td&gt;
+&lt;td&gt;Giọng nam dày dặn kinh nghiệm với âm sắc trầm ấm.&lt;/td&gt;
+&lt;td&gt;Tiếng Trung&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dylan&lt;/td&gt;
+&lt;td&gt;Giọng nam trẻ trung đến từ Bắc Kinh với âm sắc trong trẻo, tự nhiên.&lt;/td&gt;
+&lt;td&gt;Tiếng Trung (Bắc Kinh)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Eric&lt;/td&gt;
+&lt;td&gt;Giọng nam sôi nổi đến từ Thành Đô với độ sáng hơi khàn.&lt;/td&gt;
+&lt;td&gt;Tiếng Trung (Tứ Xuyên)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ryan&lt;/td&gt;
+&lt;td&gt;Giọng nam năng động với nhịp điệu mạnh mẽ.&lt;/td&gt;
+&lt;td&gt;Tiếng Anh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Aiden&lt;/td&gt;
+&lt;td&gt;Giọng nam Mỹ tươi sáng với âm vực trung rõ ràng.&lt;/td&gt;
+&lt;td&gt;Tiếng Anh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ono_Anna&lt;/td&gt;
+&lt;td&gt;Giọng nữ Nhật Bản tinh nghịch với âm sắc nhẹ nhàng, linh hoạt.&lt;/td&gt;
+&lt;td&gt;Tiếng Nhật&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sohee&lt;/td&gt;
+&lt;td&gt;Giọng nữ Hàn Quốc ấm áp với nhiều cảm xúc.&lt;/td&gt;
+&lt;td&gt;Tiếng Hàn&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
       </description>
     </item>
