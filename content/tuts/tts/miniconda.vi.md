@@ -1,7 +1,7 @@
 ---
 linkTitle: Miniconda
 title: Cài đặt Miniconda
-weight: 5
+weight: 6
 prev: /tts
 # next: /tts/kokoro
 cascade:

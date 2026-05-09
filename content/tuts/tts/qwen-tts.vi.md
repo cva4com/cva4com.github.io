@@ -134,7 +134,7 @@ Chạy thử:
 python qwen3_tts_test.py
 ```
 
-Kết quả sẽ là tệp âm thanh output.wav`
+Kết quả sẽ là tệp âm thanh `output.wav`
 
 
 ## Âm thanh mẫu
