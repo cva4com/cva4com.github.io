@@ -86,6 +86,18 @@
                 href="https://cva4.com/tuts/tts/qwen-tts/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/tts/f5-tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/f5-tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/f5-tts/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -504,6 +516,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/conda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/f5-tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/f5-tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/f5-tts/"
                 />
   </url><url>
     <loc>https://cva4.com/tags/fables/</loc>
