@@ -55,8 +55,7 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube a00--jPR9Ns >}} -->
+{{< youtube nsYZWjd9I1Q >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -92,9 +91,6 @@ dependencies:
       # --- CPU only ---
       # - torch
       # - torchaudio
-
-      # ANTLR (ANother Tool for Language Recognition)
-      - antlr4-python3-runtime==4.9.3
 
       # Allow run Gradio app (web interface)
       - gradio

@@ -48,8 +48,7 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube a00--jPR9Ns >}} -->
+{{< youtube nsYZWjd9I1Q >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -85,9 +84,6 @@ dependencies:
       # --- CPU only ---
       # - torch
       # - torchaudio
-
-      # ANTLR (ANother Tool for Language Recognition)
-      - antlr4-python3-runtime==4.9.3
 
       # Allow run Gradio app (web interface)
       - gradio
