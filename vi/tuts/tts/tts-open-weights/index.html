@@ -13,16 +13,7 @@
 
   <title>Chuyển Văn bản thành Giọng nói Open – CVA4</title>
   <meta name="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.
-Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên hàng nghìn so sánh sở thích của người dùng ẩn danh, với độ trễ P90 dưới 250ms.
-Hạng Công ty Model ELO Giá API #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Độ trễ dưới 200ms hiện nay đã có thể đạt được nhờ các kiến ​​trúc mạng thần kinh hiện đại, và việc sao chép giọng nói không cần huấn luyện từ đoạn âm thanh dài 3-15 giây đã trở thành tính năng tiêu chuẩn chứ không còn là tính năng cao cấp nữa.
-Top 27 mô hình AI TTS theo xếp hạng theo ELO 4. Kokoro 82M Phù hợp cho: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
-Ưu điểm:
-Mã nguồn mở theo giấy phép Apache 2.0 Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay 82 triệu tham số chạy trên CPU tầm trung mà không cần GPU Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần Nhược điểm:
-Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp
-Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)
-Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10
-Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API." />
+Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp." />
 
   
     <link rel="canonical" href="https://cva4.com/vi/tuts/tts/tts-open-weights/" itemprop="url" />
@@ -31,160 +22,8 @@ Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán
   
 
 <meta property="og:title" content="Chuyển Văn bản thành Giọng nói Open" />
-<meta property="og:description" content="Bảng xếp hạng
-    Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.
-Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên hàng nghìn so sánh sở thích của người dùng ẩn danh, với độ trễ P90 dưới 250ms.
-
-
-
-Hạng
-Công ty
-Model
-ELO
-Giá API
-
-
-
-
-#1
-Fish Audio
-Fish Audio S2 Pro
-1,124
-$15 /1M chars
-
-
-#2
-StepFun
-Step Audio EditX
-1,098
-N/A
-
-
-#3
-NVIDIA
-Magpie-Multilingual 357M
-1,063
-N/A
-
-
-#4
-Kokoro
-Kokoro 82M v1.0
-1,055
-$0.7 /1M chars
-
-
-#5
-Mistral
-Voxtral TTS
-1,053
-$16 /1M chars
-
-
-#6
-Maya Research
-Maya1
-1,049
-N/A
-
-
-#7
-Fish Audio
-Fish Audio 1.5
-1,012
-$15 /1M chars
-
-
-#8
-Resemble AI
-Chatterbox
-1,006
-$25 /1M chars
-
-
-#9
-Zyphra
-Zonos-v0.1
-1,000
-$20 /1M chars
-
-
-#10
-Microsoft
-VibeVoice 7B
-957
-N/A
-
-
-#11
-OpenVoice
-OpenVoice v2
-948
-$8.3 /1M chars
-
-
-#12
-Alibaba
-Qwen3 TTS
-932
-N/A
-
-
-#13
-Coqui
-XTTS v2
-885
-$40.4 /1M chars
-
-
-#14
-StyleTTS
-StyleTTS 2
-877
-$2.8 /1M chars
-
-
-#15
-MetaVoice
-MetaVoice v1
-764
-N/A
-
-
-
-Độ trễ dưới 200ms hiện nay đã có thể đạt được nhờ các kiến ​​trúc mạng thần kinh hiện đại, và việc sao chép giọng nói không cần huấn luyện từ đoạn âm thanh dài 3-15 giây đã trở thành tính năng tiêu chuẩn chứ không còn là tính năng cao cấp nữa.
-Top 27 mô hình AI TTS theo xếp hạng theo ELO
-    
-
-    
-    
-      
-    
-
-4. Kokoro 82M
-    Phù hợp cho: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
-Ưu điểm:
-
-Mã nguồn mở theo giấy phép Apache 2.0
-Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay
-82 triệu tham số chạy trên CPU tầm trung mà không cần GPU
-Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần
-
-Nhược điểm:
-
-
-Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp
-
-
-Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)
-
-
-Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10
-
-
-Giá cả:
-Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API." />
+<meta property="og:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
+Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cva4.com/vi/tuts/tts/tts-open-weights/" /><meta property="article:section" content="tuts" />
 
@@ -193,31 +32,13 @@ Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu 
   
   <meta itemprop="name" content="Chuyển Văn bản thành Giọng nói Open">
   <meta itemprop="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.
-Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên hàng nghìn so sánh sở thích của người dùng ẩn danh, với độ trễ P90 dưới 250ms.
-Hạng Công ty Model ELO Giá API #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Độ trễ dưới 200ms hiện nay đã có thể đạt được nhờ các kiến ​​trúc mạng thần kinh hiện đại, và việc sao chép giọng nói không cần huấn luyện từ đoạn âm thanh dài 3-15 giây đã trở thành tính năng tiêu chuẩn chứ không còn là tính năng cao cấp nữa.
-Top 27 mô hình AI TTS theo xếp hạng theo ELO 4. Kokoro 82M Phù hợp cho: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
-Ưu điểm:
-Mã nguồn mở theo giấy phép Apache 2.0 Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay 82 triệu tham số chạy trên CPU tầm trung mà không cần GPU Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần Nhược điểm:
-Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp
-Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)
-Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10
-Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API.">
-  <meta itemprop="wordCount" content="502">
+Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.">
+  <meta itemprop="wordCount" content="602">
   <meta itemprop="keywords" content="TTS,Text-to-Speech,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Chuyển Văn bản thành Giọng nói Open">
   <meta name="twitter:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.
-Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên hàng nghìn so sánh sở thích của người dùng ẩn danh, với độ trễ P90 dưới 250ms.
-Hạng Công ty Model ELO Giá API #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Độ trễ dưới 200ms hiện nay đã có thể đạt được nhờ các kiến ​​trúc mạng thần kinh hiện đại, và việc sao chép giọng nói không cần huấn luyện từ đoạn âm thanh dài 3-15 giây đã trở thành tính năng tiêu chuẩn chứ không còn là tính năng cao cấp nữa.
-Top 27 mô hình AI TTS theo xếp hạng theo ELO 4. Kokoro 82M Phù hợp cho: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
-Ưu điểm:
-Mã nguồn mở theo giấy phép Apache 2.0 Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay 82 triệu tham số chạy trên CPU tầm trung mà không cần GPU Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần Nhược điểm:
-Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp
-Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)
-Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10
-Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API.">
+Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.">
 
     <link rel="preload" href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" as="style" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
     <link href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" rel="stylesheet" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
@@ -358,7 +179,7 @@ Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán
   </nav>
 </div>
 
-  <div class='hx-mx-auto hx-flex hx-max-w-screen-xl'>
+  <div class='hx-mx-auto hx-flex max-w-full'>
     <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] hx-fixed hx-inset-0 hx-z-10 hx-bg-black/80 dark:hx-bg-black/60 hx-hidden"></div>
 <aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-sticky">
   
@@ -431,9 +252,9 @@ Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán
             </li>
           <li>
               <a
-                href="#4-kokoro-82m"
+                href="#top-45-m%c3%b4-h%c3%acnh-ai-tts-tr%c3%aan-github"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >4. Kokoro 82M</a>
+              >Top 45 mô hình AI TTS trên GitHub</a>
             </li>
           </ul>
   
@@ -736,7 +557,7 @@ Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-kokoro-82m">4. Kokoro 82M
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#top-45-m%c3%b4-h%c3%acnh-ai-tts-tr%c3%aan-github">Top 45 mô hình AI TTS trên GitHub
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -897,29 +718,394 @@ Giá cả: Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán
       ></iframe>
     </div>
 
-<h2>4. Kokoro 82M<span class="hx-absolute -hx-mt-20" id="4-kokoro-82m"></span>
-    <a href="#4-kokoro-82m" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Phù hợp cho</strong>: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.</p>
-<p><strong>Ưu điểm</strong>:</p>
-<ul>
-<li>Mã nguồn mở theo giấy phép Apache 2.0</li>
-<li>Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay</li>
-<li>82 triệu tham số chạy trên CPU tầm trung mà không cần GPU</li>
-<li>Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần</li>
-</ul>
-<p><strong>Nhược điểm</strong>:</p>
-<ul>
-<li>
-<p>Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp</p>
-</li>
-<li>
-<p>Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)</p>
-</li>
-<li>
-<p>Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10</p>
-</li>
-</ul>
-<p><strong>Giá cả</strong>:
-Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API.</p>
+<h2>Top 45 mô hình AI TTS trên GitHub<span class="hx-absolute -hx-mt-20" id="top-45-mô-hình-ai-tts-trên-github"></span>
+    <a href="#top-45-m%c3%b4-h%c3%acnh-ai-tts-tr%c3%aan-github" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+<thead>
+<tr>
+<th style="text-align:left">Model</th>
+<th style="text-align:left">Languages</th>
+<th style="text-align:center">Voice Cloning</th>
+<th style="text-align:center">Streaming</th>
+<th style="text-align:center">ASR</th>
+<th style="text-align:left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="#chatterbox" >Chatterbox</a></td>
+<td style="text-align:left">23+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#dia" >Dia</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fireredtts2" >FireRedTTS2</a></td>
+<td style="text-align:left">7 langs</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fish-audio-s2-pro" >Fish Audio S2 Pro</a></td>
+<td style="text-align:left">80+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Research License</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fish-speech" >Fish Speech</a></td>
+<td style="text-align:left">8 langs</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fun-cosyvoice-30" >Fun-CosyVoice 3.0</a></td>
+<td style="text-align:left">9 + 18 dialects</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#glm-tts" >GLM-TTS</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#indextts2" >IndexTTS2</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#irodori-tts-500m-v2" >Irodori-TTS-500M-v2</a></td>
+<td style="text-align:left">Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kimi-audio" >Kimi-Audio</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">MIT/Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kittenTTS" >KittenTTS</a></td>
+<td style="text-align:left">En+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kokoro-82m" >Kokoro-82M</a></td>
+<td style="text-align:left">8 (54 voices)</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kokoclone" >KokoClone</a></td>
+<td style="text-align:left">7</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kugelaudio" >KugelAudio</a></td>
+<td style="text-align:left">23 EU</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#lemas-tts" >LEMAS-TTS</a></td>
+<td style="text-align:left">10</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#lfm2-audio-15b" >LFM2-Audio-1.5B</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">LFM</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#longcat-audiodit" >LongCat-AudioDiT</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#longcat-next" >LongCat-Next</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#luxtts" >LuxTTS</a></td>
+<td style="text-align:left">-</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#maya1" >Maya1</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#megatts3" >MegaTTS3</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#mimo-audio" >MiMo-Audio</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#miotts-26b" >MioTTS-2.6B</a></td>
+<td style="text-align:left">En/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">LFM</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#moss-tts" >MOSS-TTS</a></td>
+<td style="text-align:left">20</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#moss-tts-nano" >MOSS-TTS-Nano</a></td>
+<td style="text-align:left">20</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#neutts" >NeuTTS</a></td>
+<td style="text-align:left">En/Es/De/Fr</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#omnivoice" >OmniVoice</a></td>
+<td style="text-align:left">600+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#orpheus-tts" >Orpheus-TTS</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#qwen3-tts" >Qwen3-TTS</a></td>
+<td style="text-align:left">10</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#spark-tts" >Spark-TTS</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soprotts" >SoproTTS</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soulx-podcast" >SoulX-Podcast</a></td>
+<td style="text-align:left">Zh/En/Canto</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soulx-singer" >SoulX-Singer</a></td>
+<td style="text-align:left">Zh/En/Canto</td>
+<td style="text-align:center">✅ (Singing)</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#step-audio" >Step-Audio</a></td>
+<td style="text-align:left">Zh/En/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#step-audio-editx" >Step-Audio-EditX</a></td>
+<td style="text-align:left">Zh/En/Jp/Ko</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#supertonic-2" >Supertonic 2</a></td>
+<td style="text-align:left">5</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">OpenRAIL-M</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#t5gemma-tts" >T5Gemma-TTS</a></td>
+<td style="text-align:left">En/Zh/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#tinytts" >TinyTTS</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#vibevoice-realtime" >VibeVoice-Realtime</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#vieneu-tts" >VieNeu-TTS</a></td>
+<td style="text-align:left">Vi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxcpm" >VoxCPM</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxcpm2" >VoxCPM2</a></td>
+<td style="text-align:left">30</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxtral-4b-tts" >Voxtral-4B-TTS</a></td>
+<td style="text-align:left">9</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">CC BY-NC 4.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#zipvoice" >ZipVoice</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache-2.0</td>
+</tr>
+</tbody>
+</table>
+<!-- ## 4. Kokoro 82M
+
+**Phù hợp cho**: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
+
+**Ưu điểm**:
+- Mã nguồn mở theo giấy phép Apache 2.0
+- Khoảng 0,70 USD/1 triệu ký tự (chi phí tính toán tự lưu trữ), là lựa chọn rẻ nhất hiện nay
+- 82 triệu tham số chạy trên CPU tầm trung mà không cần GPU
+- Vượt trội hơn OpenAI TTS-1 HD về phân tích giọng nói nhân tạo mặc dù rẻ hơn hơn 100 lần
+
+**Nhược điểm**:
+- Chỉ hỗ trợ tự lưu trữ, không có API được quản lý hoặc hỗ trợ doanh nghiệp
+- Hiện tại hỗ trợ 6 ngôn ngữ (tiếng Anh, tiếng Pháp, tiếng Hàn, tiếng Nhật, tiếng Quan thoại, tiếng Anh Anh)
+
+- Chất lượng tổng thể thấp hơn so với các tùy chọn thương mại trong top 10
+
+**Giá cả**:
+Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API.
+
+
+more-->
 <div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
   <a
     class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="kokoro"
@@ -928,6 +1114,8 @@ Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu 
     class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="miniconda"
       ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>Miniconda</span></a>
 </div>
+
+
         </div>
         <div class="hx-mt-16"></div>
         <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a

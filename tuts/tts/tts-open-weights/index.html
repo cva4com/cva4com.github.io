@@ -14,10 +14,7 @@
   <title>Text-to-Speech Open Weights – CVA4</title>
   <meta name="description" content="Speech Arena Leaderboard Leaderboard text-to-speech APIs compared below using third-party data from Artificial Analysis leaderboard rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.
 Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of blind user preference comparisons, with sub-250ms P90 latency.
-Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.
-Top 27 TTS AI Models by ELO 4. Kokoro 82M Quick Overview Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI’s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there’s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.
-Best For Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.
-Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far 82M parameters runs on mid-tier CPUs with no GPU requirement Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x&#43; cheaper Cons Self-hosted only with no managed API or enterprise support 6 languages currently (English, French, Korean, Japanese, Mandarin, British English) Lower overall quality than commercial options in the top 10 Pricing ~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees." />
+Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1." />
 
   
     <link rel="canonical" href="https://cva4.com/tuts/tts/tts-open-weights/" itemprop="url" />
@@ -26,156 +23,9 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
   
 
 <meta property="og:title" content="Text-to-Speech Open Weights" />
-<meta property="og:description" content="Speech Arena Leaderboard
-    Leaderboard text-to-speech APIs compared below using third-party data from Artificial Analysis leaderboard rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.
+<meta property="og:description" content="Speech Arena Leaderboard Leaderboard text-to-speech APIs compared below using third-party data from Artificial Analysis leaderboard rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.
 Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of blind user preference comparisons, with sub-250ms P90 latency.
-
-
-
-Range
-Creator
-Model
-ELO
-API Pricing
-
-
-
-
-#1
-Fish Audio
-Fish Audio S2 Pro
-1,124
-$15 /1M chars
-
-
-#2
-StepFun
-Step Audio EditX
-1,098
-N/A
-
-
-#3
-NVIDIA
-Magpie-Multilingual 357M
-1,063
-N/A
-
-
-#4
-Kokoro
-Kokoro 82M v1.0
-1,055
-$0.7 /1M chars
-
-
-#5
-Mistral
-Voxtral TTS
-1,053
-$16 /1M chars
-
-
-#6
-Maya Research
-Maya1
-1,049
-N/A
-
-
-#7
-Fish Audio
-Fish Audio 1.5
-1,012
-$15 /1M chars
-
-
-#8
-Resemble AI
-Chatterbox
-1,006
-$25 /1M chars
-
-
-#9
-Zyphra
-Zonos-v0.1
-1,000
-$20 /1M chars
-
-
-#10
-Microsoft
-VibeVoice 7B
-957
-N/A
-
-
-#11
-OpenVoice
-OpenVoice v2
-948
-$8.3 /1M chars
-
-
-#12
-Alibaba
-Qwen3 TTS
-932
-N/A
-
-
-#13
-Coqui
-XTTS v2
-885
-$40.4 /1M chars
-
-
-#14
-StyleTTS
-StyleTTS 2
-877
-$2.8 /1M chars
-
-
-#15
-MetaVoice
-MetaVoice v1
-764
-N/A
-
-
-
-Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.
-Top 27 TTS AI Models by ELO
-    
-
-    
-    
-      
-    
-
-4. Kokoro 82M
-    Quick Overview
-    Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI&rsquo;s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there&rsquo;s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.
-Best For
-    Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.
-Pros
-    
-Open-source under Apache 2.0 license
-~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far
-82M parameters runs on mid-tier CPUs with no GPU requirement
-Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x&#43; cheaper
-
-Cons
-    
-Self-hosted only with no managed API or enterprise support
-6 languages currently (English, French, Korean, Japanese, Mandarin, British English)
-Lower overall quality than commercial options in the top 10
-
-Pricing
-    ~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees." />
+Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cva4.com/tuts/tts/tts-open-weights/" /><meta property="article:section" content="tuts" />
 
@@ -185,20 +35,14 @@ Pricing
   <meta itemprop="name" content="Text-to-Speech Open Weights">
   <meta itemprop="description" content="Speech Arena Leaderboard Leaderboard text-to-speech APIs compared below using third-party data from Artificial Analysis leaderboard rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.
 Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of blind user preference comparisons, with sub-250ms P90 latency.
-Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.
-Top 27 TTS AI Models by ELO 4. Kokoro 82M Quick Overview Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI’s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there’s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.
-Best For Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.
-Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far 82M parameters runs on mid-tier CPUs with no GPU requirement Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x&#43; cheaper Cons Self-hosted only with no managed API or enterprise support 6 languages currently (English, French, Korean, Japanese, Mandarin, British English) Lower overall quality than commercial options in the top 10 Pricing ~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.">
-  <meta itemprop="wordCount" content="393">
+Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.">
+  <meta itemprop="wordCount" content="514">
   <meta itemprop="keywords" content="TTS,Text-to-Speech,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Text-to-Speech Open Weights">
   <meta name="twitter:description" content="Speech Arena Leaderboard Leaderboard text-to-speech APIs compared below using third-party data from Artificial Analysis leaderboard rankings (as of April 2026), production reliability metrics, and deployment flexibility, covering latency benchmarks, language coverage, and integration options.
 Inworld AI TTS-1.5 Max ranks #1 with an ELO score of 1,208 based on thousands of blind user preference comparisons, with sub-250ms P90 latency.
-Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.0 1,055 $0.7 /1M chars #5 Mistral Voxtral TTS 1,053 $16 /1M chars #6 Maya Research Maya1 1,049 N/A #7 Fish Audio Fish Audio 1.5 1,012 $15 /1M chars #8 Resemble AI Chatterbox 1,006 $25 /1M chars #9 Zyphra Zonos-v0.1 1,000 $20 /1M chars #10 Microsoft VibeVoice 7B 957 N/A #11 OpenVoice OpenVoice v2 948 $8.3 /1M chars #12 Alibaba Qwen3 TTS 932 N/A #13 Coqui XTTS v2 885 $40.4 /1M chars #14 StyleTTS StyleTTS 2 877 $2.8 /1M chars #15 MetaVoice MetaVoice v1 764 N/A Sub-200ms latency is now achievable through modern neural architectures, and zero-shot voice cloning from 3-15 seconds of audio has become a standard feature set rather than premium.
-Top 27 TTS AI Models by ELO 4. Kokoro 82M Quick Overview Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI’s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there’s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.
-Best For Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.
-Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far 82M parameters runs on mid-tier CPUs with no GPU requirement Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x&#43; cheaper Cons Self-hosted only with no managed API or enterprise support 6 languages currently (English, French, Korean, Japanese, Mandarin, British English) Lower overall quality than commercial options in the top 10 Pricing ~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.">
+Range Creator Model ELO API Pricing #1 Fish Audio Fish Audio S2 Pro 1,124 $15 /1M chars #2 StepFun Step Audio EditX 1,098 N/A #3 NVIDIA Magpie-Multilingual 357M 1,063 N/A #4 Kokoro Kokoro 82M v1.">
 
     <link rel="preload" href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" as="style" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
     <link href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" rel="stylesheet" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
@@ -339,7 +183,7 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
   </nav>
 </div>
 
-  <div class='hx-mx-auto hx-flex hx-max-w-screen-xl'>
+  <div class='hx-mx-auto hx-flex max-w-full'>
     <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] hx-fixed hx-inset-0 hx-z-10 hx-bg-black/80 dark:hx-bg-black/60 hx-hidden"></div>
 <aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-sticky">
   
@@ -412,9 +256,9 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
             </li>
           <li>
               <a
-                href="#4-kokoro-82m"
+                href="#top-45-tts--voice-generation-models-from-github"
                 class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
-              >4. Kokoro 82M</a>
+              >Top 45 TTS &amp;amp; Voice Generation Models from GitHub</a>
             </li>
           </ul>
   
@@ -735,27 +579,7 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#4-kokoro-82m">4. Kokoro 82M
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#quick-overview">Quick Overview
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#best-for">Best For
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pros">Pros
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#cons">Cons
-        </a>
-      </li>
-      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
-        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pricing">Pricing
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#top-45-tts--voice-generation-models-from-github">Top 45 TTS &amp; Voice Generation Models from GitHub
         </a>
       </li></ul>
       <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400">
@@ -915,26 +739,401 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
       ></iframe>
     </div>
 
-<h2>4. Kokoro 82M<span class="hx-absolute -hx-mt-20" id="4-kokoro-82m"></span>
-    <a href="#4-kokoro-82m" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Quick Overview<span class="hx-absolute -hx-mt-20" id="quick-overview"></span>
-    <a href="#quick-overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI&rsquo;s TTS-1 HD). The tradeoff is that you host and maintain it yourself, there&rsquo;s no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.</p>
-<h3>Best For<span class="hx-absolute -hx-mt-20" id="best-for"></span>
-    <a href="#best-for" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.</p>
-<h3>Pros<span class="hx-absolute -hx-mt-20" id="pros"></span>
-    <a href="#pros" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
-<li>Open-source under Apache 2.0 license</li>
-<li>~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far</li>
-<li>82M parameters runs on mid-tier CPUs with no GPU requirement</li>
-<li>Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x+ cheaper</li>
-</ul>
-<h3>Cons<span class="hx-absolute -hx-mt-20" id="cons"></span>
-    <a href="#cons" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
-<li>Self-hosted only with no managed API or enterprise support</li>
-<li>6 languages currently (English, French, Korean, Japanese, Mandarin, British English)</li>
-<li>Lower overall quality than commercial options in the top 10</li>
-</ul>
-<h3>Pricing<span class="hx-absolute -hx-mt-20" id="pricing"></span>
-    <a href="#pricing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.</p>
+<h2>Top 45 TTS &amp; Voice Generation Models from GitHub<span class="hx-absolute -hx-mt-20" id="top-45-tts--voice-generation-models-from-github"></span>
+    <a href="#top-45-tts--voice-generation-models-from-github" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+<thead>
+<tr>
+<th style="text-align:left">Model</th>
+<th style="text-align:left">Languages</th>
+<th style="text-align:center">Voice Cloning</th>
+<th style="text-align:center">Streaming</th>
+<th style="text-align:center">ASR</th>
+<th style="text-align:left">License</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="#chatterbox" >Chatterbox</a></td>
+<td style="text-align:left">23+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#dia" >Dia</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fireredtts2" >FireRedTTS2</a></td>
+<td style="text-align:left">7 langs</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fish-audio-s2-pro" >Fish Audio S2 Pro</a></td>
+<td style="text-align:left">80+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Research License</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fish-speech" >Fish Speech</a></td>
+<td style="text-align:left">8 langs</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#fun-cosyvoice-30" >Fun-CosyVoice 3.0</a></td>
+<td style="text-align:left">9 + 18 dialects</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#glm-tts" >GLM-TTS</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#indextts2" >IndexTTS2</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#irodori-tts-500m-v2" >Irodori-TTS-500M-v2</a></td>
+<td style="text-align:left">Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kimi-audio" >Kimi-Audio</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">MIT/Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kittenTTS" >KittenTTS</a></td>
+<td style="text-align:left">En+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kokoro-82m" >Kokoro-82M</a></td>
+<td style="text-align:left">8 (54 voices)</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kokoclone" >KokoClone</a></td>
+<td style="text-align:left">7</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#kugelaudio" >KugelAudio</a></td>
+<td style="text-align:left">23 EU</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#lemas-tts" >LEMAS-TTS</a></td>
+<td style="text-align:left">10</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#lfm2-audio-15b" >LFM2-Audio-1.5B</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">LFM</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#longcat-audiodit" >LongCat-AudioDiT</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#longcat-next" >LongCat-Next</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#luxtts" >LuxTTS</a></td>
+<td style="text-align:left">-</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#maya1" >Maya1</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#megatts3" >MegaTTS3</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#mimo-audio" >MiMo-Audio</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#miotts-26b" >MioTTS-2.6B</a></td>
+<td style="text-align:left">En/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">LFM</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#moss-tts" >MOSS-TTS</a></td>
+<td style="text-align:left">20</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#moss-tts-nano" >MOSS-TTS-Nano</a></td>
+<td style="text-align:left">20</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#neutts" >NeuTTS</a></td>
+<td style="text-align:left">En/Es/De/Fr</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#omnivoice" >OmniVoice</a></td>
+<td style="text-align:left">600+</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#orpheus-tts" >Orpheus-TTS</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#qwen3-tts" >Qwen3-TTS</a></td>
+<td style="text-align:left">10</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#spark-tts" >Spark-TTS</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soprotts" >SoproTTS</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soulx-podcast" >SoulX-Podcast</a></td>
+<td style="text-align:left">Zh/En/Canto</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#soulx-singer" >SoulX-Singer</a></td>
+<td style="text-align:left">Zh/En/Canto</td>
+<td style="text-align:center">✅ (Singing)</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#step-audio" >Step-Audio</a></td>
+<td style="text-align:left">Zh/En/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#step-audio-editx" >Step-Audio-EditX</a></td>
+<td style="text-align:left">Zh/En/Jp/Ko</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#supertonic-2" >Supertonic 2</a></td>
+<td style="text-align:left">5</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">OpenRAIL-M</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#t5gemma-tts" >T5Gemma-TTS</a></td>
+<td style="text-align:left">En/Zh/Jp</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#tinytts" >TinyTTS</a></td>
+<td style="text-align:left">En</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#vibevoice-realtime" >VibeVoice-Realtime</a></td>
+<td style="text-align:left">Multi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">MIT</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#vieneu-tts" >VieNeu-TTS</a></td>
+<td style="text-align:left">Vi</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxcpm" >VoxCPM</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxcpm2" >VoxCPM2</a></td>
+<td style="text-align:left">30</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#voxtral-4b-tts" >Voxtral-4B-TTS</a></td>
+<td style="text-align:left">9</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">CC BY-NC 4.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="#zipvoice" >ZipVoice</a></td>
+<td style="text-align:left">Zh/En</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">Apache</td>
+</tr>
+</tbody>
+</table>
+<!-- ## 4. Kokoro 82M
+
+### Quick Overview
+
+Kokoro is the open-source option. At 82 million parameters, it runs on mid-tier CPUs without a GPU and scores ELO 1,060 on Artificial Analysis (#16, ahead of OpenAI's TTS-1 HD). The tradeoff is that you host and maintain it yourself, there's no managed API, and the language and voice selection is limited. Good for prototyping or cost-constrained teams with DevOps capacity.
+
+### Best For
+
+Budget-constrained teams comfortable with self-hosting who want decent quality at minimal cost, or developers who need full control over the model for custom fine-tuning and edge deployment.
+
+### Pros
+
+- Open-source under Apache 2.0 license
+- ~$0.70/1M characters (self-hosted compute cost), making it the cheapest option by far
+- 82M parameters runs on mid-tier CPUs with no GPU requirement
+- Outranks OpenAI TTS-1 HD on Artificial Analysis despite being 100x+ cheaper
+
+### Cons
+
+- Self-hosted only with no managed API or enterprise support
+- 6 languages currently (English, French, Korean, Japanese, Mandarin, British English)
+- Lower overall quality than commercial options in the top 10
+
+### Pricing
+
+~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.
+
+more-->
 <div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
   <a
     class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="kokoro"
@@ -943,6 +1142,8 @@ Pros Open-source under Apache 2.0 license ~$0.70/1M characters (self-hosted comp
     class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="miniconda"
       ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>Miniconda</span></a>
 </div>
+
+
         </div>
         <div class="hx-mt-16"></div>
         <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
