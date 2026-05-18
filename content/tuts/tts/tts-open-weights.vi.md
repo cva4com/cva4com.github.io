@@ -45,7 +45,56 @@ Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên h
 {{< youtube D8_wft9Bd84 >}}
 
 
-## 4. Kokoro 82M
+## Top 45 mô hình AI TTS trên GitHub
+
+| Model | Languages | Voice Cloning | Streaming | ASR | License |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| [Chatterbox](#chatterbox) | 23+ | ✅ | ✅ | ❌ | MIT |
+| [Dia](#dia) | En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [FireRedTTS2](#fireredtts2) | 7 langs | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Fish Audio S2 Pro](#fish-audio-s2-pro) | 80+ | ✅ | ✅ | ❌ | Research License |
+| [Fish Speech](#fish-speech) | 8 langs | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Fun-CosyVoice 3.0](#fun-cosyvoice-30) | 9 + 18 dialects | ✅ | ✅ | ❌ | Apache-2.0 |
+| [GLM-TTS](#glm-tts) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [IndexTTS2](#indextts2) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Irodori-TTS-500M-v2](#irodori-tts-500m-v2) | Jp | ✅ | ❌ | ❌ | MIT |
+| [Kimi-Audio](#kimi-audio) | Multi | ✅ | ✅ | ✅ | MIT/Apache-2.0 |
+| [KittenTTS](#kittenTTS) | En+ | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Kokoro-82M](#kokoro-82m) | 8 (54 voices) | ✅ | ✅ | ❌ | Apache-2.0 |
+| [KokoClone](#kokoclone) | 7 | ✅ | ✅ | ❌ | Apache-2.0 |
+| [KugelAudio](#kugelaudio) | 23 EU | ✅ | ✅ | ❌ | MIT |
+| [LEMAS-TTS](#lemas-tts) | 10 | ✅ | ❌ | ❌ | Apache-2.0 |
+| [LFM2-Audio-1.5B](#lfm2-audio-15b) | En | ✅ | ✅ | ✅ | LFM |
+| [LongCat-AudioDiT](#longcat-audiodit) | Zh/En | ✅ | ❌ | ❌ | MIT |
+| [LongCat-Next](#longcat-next) | Zh/En | ✅ | ✅ | ✅ | MIT |
+| [LuxTTS](#luxtts) | - | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Maya1](#maya1) | En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [MegaTTS3](#megatts3) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [MiMo-Audio](#mimo-audio) | Multi | ✅ | ✅ | ✅ | Apache-2.0 |
+| [MioTTS-2.6B](#miotts-26b) | En/Jp | ✅ | ✅ | ❌ | LFM |
+| [MOSS-TTS](#moss-tts) | 20 | ✅ | ✅ | ❌ | Apache-2.0 |
+| [MOSS-TTS-Nano](#moss-tts-nano) | 20 | ✅ | ✅ | ❌ | Apache-2.0 |
+| [NeuTTS](#neutts) | En/Es/De/Fr | ✅ | ✅ | ❌ | Apache-2.0 |
+| [OmniVoice](#omnivoice) | 600+ | ✅ | ❌ | ❌ | Apache-2.0 |
+| [Orpheus-TTS](#orpheus-tts) | Multi | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Qwen3-TTS](#qwen3-tts) | 10 | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Spark-TTS](#spark-tts) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [SoproTTS](#soprotts) | En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [SoulX-Podcast](#soulx-podcast) | Zh/En/Canto | ✅ | ✅ | ❌ | Apache-2.0 |
+| [SoulX-Singer](#soulx-singer) | Zh/En/Canto | ✅ (Singing) | ✅ | ❌ | Apache-2.0 |
+| [Step-Audio](#step-audio) | Zh/En/Jp | ✅ | ✅ | ✅ | Apache-2.0 |
+| [Step-Audio-EditX](#step-audio-editx) | Zh/En/Jp/Ko | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Supertonic 2](#supertonic-2) | 5 | ❌ | ✅ | ❌ | OpenRAIL-M |
+| [T5Gemma-TTS](#t5gemma-tts) | En/Zh/Jp | ✅ | ❌ | ❌ | MIT |
+| [TinyTTS](#tinytts) | En | ❌ | ✅ | ❌ | Apache-2.0 |
+| [VibeVoice-Realtime](#vibevoice-realtime) | Multi | ✅ | ✅ | ❌ | MIT |
+| [VieNeu-TTS](#vieneu-tts) | Vi | ✅ | ✅ | ❌ | Apache-2.0 |
+| [VoxCPM](#voxcpm) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+| [VoxCPM2](#voxcpm2) | 30 | ✅ | ✅ | ❌ | Apache-2.0 |
+| [Voxtral-4B-TTS](#voxtral-4b-tts) | 9 | ✅ | ✅ | ❌ | CC BY-NC 4.0 |
+| [ZipVoice](#zipvoice) | Zh/En | ✅ | ✅ | ❌ | Apache-2.0 |
+
+<!-- ## 4. Kokoro 82M
 
 **Phù hợp cho**: Các nhóm có ngân sách hạn chế nhưng thoải mái với việc tự lưu trữ, muốn có chất lượng tốt với chi phí tối thiểu, hoặc các nhà phát triển cần toàn quyền kiểm soát mô hình để tinh chỉnh tùy chỉnh và triển khai tại biên.
 
@@ -65,7 +114,7 @@ Inworld AI TTS-1.5 Max xếp hạng #1 với điểm ELO là 1.208 dựa trên h
 Khoảng 0,70 USD/1 triệu ký tự dựa trên chi phí tính toán tự lưu trữ. Không có phí đăng ký hoặc phí API.
 
 
-<!--more-->
+more-->
 
 {{< cards >}}
   {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}

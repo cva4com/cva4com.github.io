@@ -43,7 +43,58 @@ Sub-200ms latency is now achievable through modern neural architectures, and zer
 {{< youtube D8_wft9Bd84 >}}
 
 
-## 4. Kokoro 82M
+## Top 45 TTS & Voice Generation Models from GitHub
+
+| Model | Languages | Voice Cloning | Streaming | ASR | License |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| [Chatterbox](#chatterbox) | 23+ | ✅ | ✅ | ❌ | MIT |
+| [Dia](#dia) | En | ✅ | ✅ | ❌ | Apache |
+| [FireRedTTS2](#fireredtts2) | 7 langs | ✅ | ✅ | ❌ | Apache |
+| [Fish Audio S2 Pro](#fish-audio-s2-pro) | 80+ | ✅ | ✅ | ❌ | Research License |
+| [Fish Speech](#fish-speech) | 8 langs | ✅ | ✅ | ❌ | Apache |
+| [Fun-CosyVoice 3.0](#fun-cosyvoice-30) | 9 + 18 dialects | ✅ | ✅ | ❌ | Apache |
+| [GLM-TTS](#glm-tts) | Zh/En | ✅ | ✅ | ❌ | Apache |
+| [IndexTTS2](#indextts2) | Zh/En | ✅ | ✅ | ❌ | Apache |
+| [Irodori-TTS-500M-v2](#irodori-tts-500m-v2) | Jp | ✅ | ❌ | ❌ | MIT |
+| [Kimi-Audio](#kimi-audio) | Multi | ✅ | ✅ | ✅ | MIT/Apache |
+| [KittenTTS](#kittenTTS) | En+ | ✅ | ✅ | ❌ | Apache |
+| [Kokoro-82M](#kokoro-82m) | 8 (54 voices) | ✅ | ✅ | ❌ | Apache |
+| [KokoClone](#kokoclone) | 7 | ✅ | ✅ | ❌ | Apache |
+| [KugelAudio](#kugelaudio) | 23 EU | ✅ | ✅ | ❌ | MIT |
+| [LEMAS-TTS](#lemas-tts) | 10 | ✅ | ❌ | ❌ | Apache |
+| [LFM2-Audio-1.5B](#lfm2-audio-15b) | En | ✅ | ✅ | ✅ | LFM |
+| [LongCat-AudioDiT](#longcat-audiodit) | Zh/En | ✅ | ❌ | ❌ | MIT |
+| [LongCat-Next](#longcat-next) | Zh/En | ✅ | ✅ | ✅ | MIT |
+| [LuxTTS](#luxtts) | - | ✅ | ✅ | ❌ | Apache |
+| [Maya1](#maya1) | En | ✅ | ✅ | ❌ | Apache |
+| [MegaTTS3](#megatts3) | Zh/En | ✅ | ✅ | ❌ | Apache |
+| [MiMo-Audio](#mimo-audio) | Multi | ✅ | ✅ | ✅ | Apache |
+| [MioTTS-2.6B](#miotts-26b) | En/Jp | ✅ | ✅ | ❌ | LFM |
+| [MOSS-TTS](#moss-tts) | 20 | ✅ | ✅ | ❌ | Apache |
+| [MOSS-TTS-Nano](#moss-tts-nano) | 20 | ✅ | ✅ | ❌ | Apache |
+| [NeuTTS](#neutts) | En/Es/De/Fr | ✅ | ✅ | ❌ | Apache |
+| [OmniVoice](#omnivoice) | 600+ | ✅ | ❌ | ❌ | Apache |
+| [Orpheus-TTS](#orpheus-tts) | Multi | ✅ | ✅ | ❌ | Apache |
+| [Qwen3-TTS](#qwen3-tts) | 10 | ✅ | ✅ | ❌ | Apache |
+| [Spark-TTS](#spark-tts) | Zh/En | ✅ | ✅ | ❌ | Apache |
+| [SoproTTS](#soprotts) | En | ✅ | ✅ | ❌ | Apache |
+| [SoulX-Podcast](#soulx-podcast) | Zh/En/Canto | ✅ | ✅ | ❌ | Apache |
+| [SoulX-Singer](#soulx-singer) | Zh/En/Canto | ✅ (Singing) | ✅ | ❌ | Apache |
+| [Step-Audio](#step-audio) | Zh/En/Jp | ✅ | ✅ | ✅ | Apache |
+| [Step-Audio-EditX](#step-audio-editx) | Zh/En/Jp/Ko | ✅ | ✅ | ❌ | Apache |
+| [Supertonic 2](#supertonic-2) | 5 | ❌ | ✅ | ❌ | OpenRAIL-M |
+| [T5Gemma-TTS](#t5gemma-tts) | En/Zh/Jp | ✅ | ❌ | ❌ | MIT |
+| [TinyTTS](#tinytts) | En | ❌ | ✅ | ❌ | Apache |
+| [VibeVoice-Realtime](#vibevoice-realtime) | Multi | ✅ | ✅ | ❌ | MIT |
+| [VieNeu-TTS](#vieneu-tts) | Vi | ✅ | ✅ | ❌ | Apache |
+| [VoxCPM](#voxcpm) | Zh/En | ✅ | ✅ | ❌ | Apache |
+| [VoxCPM2](#voxcpm2) | 30 | ✅ | ✅ | ❌ | Apache |
+| [Voxtral-4B-TTS](#voxtral-4b-tts) | 9 | ✅ | ✅ | ❌ | CC BY-NC 4.0 |
+| [ZipVoice](#zipvoice) | Zh/En | ✅ | ✅ | ❌ | Apache |
+
+
+
+<!-- ## 4. Kokoro 82M
 
 ### Quick Overview
 
@@ -70,7 +121,7 @@ Budget-constrained teams comfortable with self-hosting who want decent quality a
 
 ~$0.70/1M characters based on self-hosted compute costs. No subscription or API fees.
 
-<!--more-->
+more-->
 
 {{< cards >}}
   {{< card link="kokoro" title="Kokoro 82M v1.0" icon="book-open" >}}
