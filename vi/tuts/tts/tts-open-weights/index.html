@@ -12,8 +12,7 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 
   <title>Chuyển Văn bản thành Giọng nói Open – CVA4</title>
-  <meta name="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp." />
+  <meta name="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói Bảng xếp hạng các API chuyển văn bản" />
 
   
     <link rel="canonical" href="https://cva4.com/vi/tuts/tts/tts-open-weights/" itemprop="url" />
@@ -22,8 +21,7 @@ Bảng xếp hạng các API chuyển văn bản thành giọng nói được so
   
 
 <meta property="og:title" content="Chuyển Văn bản thành Giọng nói Open" />
-<meta property="og:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp." />
+<meta property="og:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói Bảng xếp hạng các API chuyển văn bản" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cva4.com/vi/tuts/tts/tts-open-weights/" /><meta property="article:section" content="tuts" />
 
@@ -31,14 +29,12 @@ Bảng xếp hạng các API chuyển văn bản thành giọng nói được so
 
   
   <meta itemprop="name" content="Chuyển Văn bản thành Giọng nói Open">
-  <meta itemprop="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.">
-  <meta itemprop="wordCount" content="602">
+  <meta itemprop="description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói Bảng xếp hạng các API chuyển văn bản">
+  <meta itemprop="wordCount" content="1518">
   <meta itemprop="keywords" content="TTS,Text-to-Speech,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Chuyển Văn bản thành Giọng nói Open">
-  <meta name="twitter:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói
-Bảng xếp hạng các API chuyển văn bản thành giọng nói được so sánh bên dưới bằng cách sử dụng dữ liệu của bên thứ ba từ bảng xếp hạng Artificial Analysis leaderboard (tính đến tháng 4 năm 2026), các chỉ số độ tin cậy trong sản xuất và tính linh hoạt trong triển khai, bao gồm các tiêu chuẩn về độ trễ, phạm vi ngôn ngữ và các tùy chọn tích hợp.">
+  <meta name="twitter:description" content="Bảng xếp hạng Mô hình AI chuyển Văn bản thành Giọng nói Bảng xếp hạng các API chuyển văn bản">
 
     <link rel="preload" href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" as="style" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
     <link href="/css/compiled/main.min.c1fe2c80102c9dc9ddc66184191e646769052d36a21b38ac5ab5077713cf7a81.css" rel="stylesheet" integrity="sha256-wf4sgBAsncndxmGEGR5kZ2kFLTaiGzisWrUHdxPPeoE=" />
@@ -723,365 +719,545 @@ Bảng xếp hạng các API chuyển văn bản thành giọng nói được so
 <thead>
 <tr>
 <th style="text-align:left">Model</th>
-<th style="text-align:left">Languages</th>
+<th style="text-align:left">Parameters</th>
+<th style="text-align:center">Languages</th>
 <th style="text-align:center">Voice Cloning</th>
 <th style="text-align:center">Streaming</th>
-<th style="text-align:center">ASR</th>
+<th style="text-align:left"><a href="##" title="Pronunciation Control">Pronounce</a></th>
+<th style="text-align:left"><a href="##" title="Emotion Control">Emotion</a></th>
+<th style="text-align:left">ASR</th>
+<th style="text-align:left">Other</th>
 <th style="text-align:left">License</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="#chatterbox" >Chatterbox</a></td>
-<td style="text-align:left">23+</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
+<td style="text-align:left"><a href="https://github.com/NVIDIA/audio-flamingo" target="_blank" rel="noopener">Audio Flamingo</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/nvidia/audio-flamingo-3" target="_blank" rel="noopener">7B</a> - <a href="https://afnext-umd-nvidia.github.io" target="_blank" rel="noopener">Website</a></td>
+<td style="text-align:center">Multi-lingual</td>
 <td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">Context Up to 30 minutes</td>
+<td style="text-align:left"><a href="https://github.com/NVIDIA/audio-flamingo" title="Apache License Version 2.0"target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#dia" >Dia</a></td>
-<td style="text-align:left">En</td>
+<td style="text-align:left"><a href="https://github.com/resemble-ai/chatterbox" target="_blank" rel="noopener">Chatterbox</a></td>
+<td style="text-align:left"><a href="https://www.resemble.ai" target="_blank" rel="noopener">350M-500M</a></td>
+<td style="text-align:center">23+</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ (Tags)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/resemble-ai/chatterbox" title="MIT License"target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#fireredtts2" >FireRedTTS2</a></td>
-<td style="text-align:left">7 langs</td>
+<td style="text-align:left"><a href="https://github.com/nari-labs/dia" target="_blank" rel="noopener">Dia</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/nari-labs/Dia-1.6B-0626" target="_blank" rel="noopener">1.6B</a></td>
+<td style="text-align:center">English</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/nari-labs/dia" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#fish-audio-s2-pro" >Fish Audio S2 Pro</a></td>
-<td style="text-align:left">80+</td>
+<td style="text-align:left"><a href="https://github.com/FireRedTeam/FireRedTTS2" target="_blank" rel="noopener">FireRedTTS-2</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/FireRedTeam/FireRedTTS2" target="_blank" rel="noopener">Hugging Face</a> - <a href="https://arxiv.org/abs/2509.02020" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:center">7 (En, Zh, Jp, Ko, Fr, De, Ru)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Research License</td>
+<td style="text-align:center">✅ (140ms)</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">4 speakers; 3 minutes</td>
+<td style="text-align:left"><a href="https://github.com/FireRedTeam/FireRedTTS2" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#fish-speech" >Fish Speech</a></td>
-<td style="text-align:left">8 langs</td>
+<td style="text-align:left"><a href="https://github.com/fishaudio/fish-speech" target="_blank" rel="noopener">Fish Audio S2 Pro</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/fishaudio/s2-pro" title="5B (4B Slow AR &#43; 400M Fast AR)"target="_blank" rel="noopener">5B</a></td>
+<td style="text-align:center">80+ (Tier 1: En, Zh, Jp)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (RTF 0.195, 100ms TTFA)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (15,000&#43; tags)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (fine-grained inline control)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">~10 GB (BF16)</td>
+<td style="text-align:left"><a href="https://github.com/fishaudio/fish-speech/blob/main/LICENSE" title="Fish Audio Research License"target="_blank" rel="noopener">License</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#fun-cosyvoice-30" >Fun-CosyVoice 3.0</a></td>
-<td style="text-align:left">9 + 18 dialects</td>
+<td style="text-align:left"><a href="https://github.com/fishaudio/fish-speech" target="_blank" rel="noopener">Fish Speech</a></td>
+<td style="text-align:left"><a href="https://fish.audio" target="_blank" rel="noopener">4B</a></td>
+<td style="text-align:center">8 (En, Jp, Ko, Zh, Fr, De, Ar, Es)</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">RTF ~1:7</td>
+<td style="text-align:left"><a href="https://github.com/fishaudio/fish-speech" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#glm-tts" >GLM-TTS</a></td>
-<td style="text-align:left">Zh/En</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="https://github.com/FunAudioLLM/CosyVoice" target="_blank" rel="noopener">Fun-CosyVoice 3.0</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512" target="_blank" rel="noopener">0.5B</a> - <a href="https://arxiv.org/abs/2505.17589" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:center">9 + 18+ Chinese dialects</td>
+<td style="text-align:center"><a href="##" title="✅ (Multi-lingual/Cross-lingual)">✅</a></td>
+<td style="text-align:center"><a href="##" title="✅ (150ms)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (Pinyin/CMU)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/FunAudioLLM/CosyVoice" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#indextts2" >IndexTTS2</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/zai-org/GLM-TTS" target="_blank" rel="noopener">GLM-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/zai-org/GLM-TTS" target="_blank" rel="noopener">Hugging Face</a> - <a href="https://arxiv.org/abs/2512.14291" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:center">Chinese, English</td>
+<td style="text-align:center"><a href="##" title="✅ (3-10s)">✅</a></td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="##" title="✅ (Phoneme-level)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (RL-enhanced)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/zai-org/GLM-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#irodori-tts-500m-v2" >Irodori-TTS-500M-v2</a></td>
-<td style="text-align:left">Jp</td>
+<td style="text-align:left"><a href="https://github.com/xuchenxu168/Comfyui-Index-TTS2" target="_blank" rel="noopener">IndexTTS2</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/IndexTeam/IndexTTS-2" target="_blank" rel="noopener">_</a></td>
+<td style="text-align:center">Chinese, English</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ 5 emotions">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">1–4 speakers</td>
+<td style="text-align:left"><a href="https://github.com/xuchenxu168/Comfyui-Index-TTS2" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#kimi-audio" >Kimi-Audio</a></td>
-<td style="text-align:left">Multi</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/Irodori-TTS" target="_blank" rel="noopener">Irodori-TTS-500M-v2</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/Aratako/Irodori-TTS-500M-v2" target="_blank" rel="noopener">500M</a></td>
+<td style="text-align:center">Japanese</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:left">MIT/Apache-2.0</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="##" title="✅ emoji-based">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">48kHz waveform</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/Irodori-TTS" target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#kittenTTS" >KittenTTS</a></td>
-<td style="text-align:left">En+</td>
+<td style="text-align:left"><a href="https://github.com/MoonshotAI/Kimi-Audio" target="_blank" rel="noopener">Kimi-Audio</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/moonshotai/Kimi-Audio-7B" target="_blank" rel="noopener">7B</a></td>
+<td style="text-align:center">Multiple</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/MoonshotAI/Kimi-Audio" target="_blank" rel="noopener">MIT &amp; Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#kokoro-82m" >Kokoro-82M</a></td>
-<td style="text-align:left">8 (54 voices)</td>
+<td style="text-align:left"><a href="https://github.com/KittenML/KittenTTS" target="_blank" rel="noopener">KittenTTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/KittenML/kitten-tts-nano-0.8-int8" target="_blank" rel="noopener">15M int8</a> <a href="https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32" target="_blank" rel="noopener">15M</a> <a href="https://huggingface.co/KittenML/kitten-tts-micro-0.8" target="_blank" rel="noopener">40M</a> <a href="https://huggingface.co/KittenML/kitten-tts-mini-0.8" target="_blank" rel="noopener">80M</a></td>
+<td style="text-align:center">English, Multiple</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">&lt;25MB, no GPU</td>
+<td style="text-align:left"><a href="https://github.com/KittenML/KittenTTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#kokoclone" >KokoClone</a></td>
-<td style="text-align:left">7</td>
+<td style="text-align:left"><a href="https://github.com/hexgrad/kokoro" target="_blank" rel="noopener">Kokoro-82M</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener">82M</a></td>
+<td style="text-align:center">8 langs, <a href="https://huggingface.co/spaces/hexgrad/Kokoro-TTS" target="_blank" rel="noopener">54 voices</a></td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (generator pattern))">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (via misaki G2P)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (voice styles)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">&lt;$0.06/hr audio</td>
+<td style="text-align:left"><a href="https://github.com/hexgrad/kokoro" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#kugelaudio" >KugelAudio</a></td>
-<td style="text-align:left">23 EU</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:left"><a href="https://github.com/Ashish-Patnaik/kokoclone" target="_blank" rel="noopener">KokoClone</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/PatnaikAshish/kokoclone" target="_blank" rel="noopener">Base: Kokoro-ONNX</a></td>
+<td style="text-align:center">7 (En, Hi, Fr, Ja, Zh, It, Pt, Es)</td>
+<td style="text-align:center"><a href="##" title="✅ (3-10s reference)">✅</a></td>
+<td style="text-align:center"><a href="##" title="✅ (CPU real-time)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/Ashish-Patnaik/kokoclone" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#lemas-tts" >LEMAS-TTS</a></td>
-<td style="text-align:left">10</td>
+<td style="text-align:left"><a href="https://github.com/Kugelaudio/kugelaudio-open" target="_blank" rel="noopener">KugelAudio</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/kugelaudio/kugelaudio-0-open" target="_blank" rel="noopener">7B</a></td>
+<td style="text-align:center">23 EU langs</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ (Speaking styles)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://kugelaudio.com" target="_blank" rel="noopener">Website</a></td>
+<td style="text-align:left"><a href="https://github.com/Kugelaudio/kugelaudio-open" target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#lfm2-audio-15b" >LFM2-Audio-1.5B</a></td>
-<td style="text-align:left">En</td>
+<td style="text-align:left"><a href="https://github.com/LEMAS-Project/LEMAS-TTS" target="_blank" rel="noopener">LEMAS-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/LEMAS-Project/LEMAS-TTS" target="_blank" rel="noopener">0.3B</a> <a href="https://lemas-project.github.io/LEMAS-Project/" target="_blank" rel="noopener">Website</a></td>
+<td style="text-align:center">10 (Zh, En, Es, Ru, Fr, De, It, Pt, Id, Vi)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:left">LFM</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Word-level editing (LEMAS-Edit)</td>
+<td style="text-align:left"><a href="https://github.com/LEMAS-Project/LEMAS-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#longcat-audiodit" >LongCat-AudioDiT</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/Liquid4All/liquid-audio" target="_blank" rel="noopener">LFM2-Audio-1.5B</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/LiquidAI/LFM2-Audio-1.5B" target="_blank" rel="noopener">1.5B</a></td>
+<td style="text-align:center">English</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ (Integrated)">✅</a></td>
+<td style="text-align:left"><a href="https://docs.liquid.ai/lfm" target="_blank" rel="noopener">Website</a></td>
+<td style="text-align:left"><a href="https://github.com/Liquid4All/liquid-audio" title="LFM Open License v1.0"target="_blank" rel="noopener">LFM Open</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#longcat-next" >LongCat-Next</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/meituan-longcat/LongCat-AudioDiT" target="_blank" rel="noopener">LongCat-AudioDiT</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-1B" target="_blank" rel="noopener">1B</a> / <a href="https://huggingface.co/meituan-longcat/LongCat-AudioDiT-3.5B" target="_blank" rel="noopener">3.5B</a></td>
+<td style="text-align:center">Chinese, English</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:center">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Rate 24000 Hz</td>
+<td style="text-align:left"><a href="https://github.com/meituan-longcat/LongCat-AudioDiT" target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#luxtts" >LuxTTS</a></td>
-<td style="text-align:left">-</td>
+<td style="text-align:left"><a href="https://github.com/ysharma3501/LuxTTS" target="_blank" rel="noopener">LuxTTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/YatharthS/LuxTTS" target="_blank" rel="noopener">_</a></td>
+<td style="text-align:center">—</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">RTF 150×, 1GB VRAM</td>
+<td style="text-align:left"><a href="https://github.com/ysharma3501/LuxTTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#maya1" >Maya1</a></td>
-<td style="text-align:left">En</td>
+<td style="text-align:left"><a href="https://www.mayaresearch.ai" target="_blank" rel="noopener">Maya1</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/maya-research/maya1" target="_blank" rel="noopener">3B</a></td>
+<td style="text-align:center">En (multi-accent)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (&lt;100ms)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ (Tags)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://www.mayaresearch.ai" target="_blank" rel="noopener">Website</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/maya-research/maya1" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#megatts3" >MegaTTS3</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/bytedance/MegaTTS3" target="_blank" rel="noopener">MegaTTS3</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/ByteDance/MegaTTS3" target="_blank" rel="noopener">0.45B</a></td>
+<td style="text-align:center">Chinese, English</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2502.18924" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:left"><a href="https://github.com/bytedance/MegaTTS3" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#mimo-audio" >MiMo-Audio</a></td>
-<td style="text-align:left">Multi</td>
+<td style="text-align:left"><a href="https://github.com/XiaomiMiMo/MiMo-Audio" target="_blank" rel="noopener">MiMo-Audio</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/collections/XiaomiMiMo/mimo-audio" target="_blank" rel="noopener">7B</a></td>
+<td style="text-align:center">Multi-lingual</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">N/A</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">Few-shot learner</td>
+<td style="text-align:left"><a href="https://github.com/XiaomiMiMo/MiMo-Audio" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#miotts-26b" >MioTTS-2.6B</a></td>
-<td style="text-align:left">En/Jp</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/MioTTS-Inference" target="_blank" rel="noopener">MioTTS-2.6B</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/Aratako/MioTTS-2.6B" target="_blank" rel="noopener">2.6B</a></td>
+<td style="text-align:center">English, Japanese</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">LFM</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">RTF 0.135–0.145</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/MioTTS-Inference" target="_blank" rel="noopener">LFM Open</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#moss-tts" >MOSS-TTS</a></td>
-<td style="text-align:left">20</td>
+<td style="text-align:left"><a href="https://github.com/OpenMOSS/MOSS-TTS" target="_blank" rel="noopener">MOSS-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS" target="_blank" rel="noopener">8B Delay, 1.7B Local</a></td>
+<td style="text-align:center">20 langs</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="##" title="✅ (Pinyin/Phoneme-level)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Max 1 hour</td>
+<td style="text-align:left"><a href="https://github.com/OpenMOSS/MOSS-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#moss-tts-nano" >MOSS-TTS-Nano</a></td>
-<td style="text-align:left">20</td>
+<td style="text-align:left"><a href="https://github.com/OpenMOSS/MOSS-TTS-Nano" target="_blank" rel="noopener">MOSS-TTS-Nano</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M" target="_blank" rel="noopener">0.1B</a></td>
+<td style="text-align:center">20 langs</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (CPU-friendly)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">48 kHz Stereo</td>
+<td style="text-align:left"><a href="https://github.com/OpenMOSS/MOSS-TTS-Nano" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#neutts" >NeuTTS</a></td>
-<td style="text-align:left">En/Es/De/Fr</td>
+<td style="text-align:left"><a href="https://github.com/neuphonic/neutts" target="_blank" rel="noopener">NeuTTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/neuphonic/neutts-air" target="_blank" rel="noopener">360M Air</a> / <a href="https://huggingface.co/neuphonic/neutts-nano" target="_blank" rel="noopener">120M Nano</a></td>
+<td style="text-align:center">En/Es/De/Fr</td>
+<td style="text-align:center"><a href="##" title="✅ (3-second)">✅</a></td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">GGUF on-device</td>
+<td style="text-align:left"><a href="https://github.com/neuphonic/neutts" title="for NeuTTS Air"target="_blank" rel="noopener">Apache</a> / <a href="https://github.com/neuphonic/neutts" title="NeuTTS Open License for NeuTTS Nano"target="_blank" rel="noopener">NeuTTS</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#omnivoice" >OmniVoice</a></td>
-<td style="text-align:left">600+</td>
+<td style="text-align:left"><a href="https://github.com/k2-fsa/OmniVoice" target="_blank" rel="noopener">OmniVoice</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/k2-fsa/OmniVoice" target="_blank" rel="noopener">_</a></td>
+<td style="text-align:center">600+ langs</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">❌</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="##" title="✅ (Pinyin/CMU)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (Voice Design)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">581k hours</td>
+<td style="text-align:left"><a href="https://github.com/k2-fsa/OmniVoice" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#orpheus-tts" >Orpheus-TTS</a></td>
-<td style="text-align:left">Multi</td>
+<td style="text-align:left"><a href="https://github.com/canopyai/Orpheus-TTS" target="_blank" rel="noopener">Orpheus-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/canopylabs/orpheus-3b-0.1-ft" target="_blank" rel="noopener">3B</a></td>
+<td style="text-align:center">Multilingual</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (200ms)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Llama-3b backbone</td>
+<td style="text-align:left"><a href="https://github.com/canopyai/Orpheus-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#qwen3-tts" >Qwen3-TTS</a></td>
-<td style="text-align:left">10</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="https://github.com/QwenLM/Qwen3-TTS" target="_blank" rel="noopener">Qwen3-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/collections/Qwen/qwen3-tts" target="_blank" rel="noopener">0.6B–1.7B</a></td>
+<td style="text-align:center">10 (Zh, En, Ja, Ko, De, Fr, Ru, Pt, Es, It)</td>
+<td style="text-align:center"><a href="##" title="✅ (3-second)">✅</a></td>
+<td style="text-align:center"><a href="##" title="✅ (97ms latency)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2601.15621" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:left"><a href="https://github.com/QwenLM/Qwen3-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#spark-tts" >Spark-TTS</a></td>
-<td style="text-align:left">Zh/En</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="https://github.com/samuel-vitorino/sopro" target="_blank" rel="noopener">SoproTTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/samuel-vitorino/sopro" target="_blank" rel="noopener">135M</a></td>
+<td style="text-align:center">English</td>
+<td style="text-align:center"><a href="##" title="✅ (3-12s)">✅</a></td>
+<td style="text-align:center"><a href="##" title="✅ (250ms TTFA)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="##" title="✅ (style_strength)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">RTF 0.05 CPU M3</td>
+<td style="text-align:left"><a href="https://github.com/samuel-vitorino/sopro" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#soprotts" >SoproTTS</a></td>
-<td style="text-align:left">En</td>
+<td style="text-align:left"><a href="https://github.com/Soul-AILab" target="_blank" rel="noopener">SoulX</a>-<a href="https://github.com/Soul-AILab/SoulX-Podcast" target="_blank" rel="noopener">Podcast</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/collections/Soul-AILab/soulx-podcast" target="_blank" rel="noopener">Hugging Face</a>, <a href="https://arxiv.org/abs/2510.23541" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:center">Mandarin, English, Cantonese, Sichuanese, Henanese</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Max 90+ min</td>
+<td style="text-align:left"><a href="https://github.com/Soul-AILab/SoulX-Podcast" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#soulx-podcast" >SoulX-Podcast</a></td>
-<td style="text-align:left">Zh/En/Canto</td>
+<td style="text-align:left"><a href="https://github.com/Soul-AILab/SoulX-Singer" target="_blank" rel="noopener">SoulX-Singer</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/spaces/Soul-AILab/SoulX-Singer" target="_blank" rel="noopener">Hugging Face</a>, <a href="https://arxiv.org/abs/2602.07803" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:center">Mandarin, English, Cantonese</td>
+<td style="text-align:center"><a href="##" title="✅ (Singing)">✅</a></td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="##" title="✅ (MIDI/F0)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Singing synthesis</td>
+<td style="text-align:left"><a href="https://github.com/Soul-AILab/SoulX-Singer" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#soulx-singer" >SoulX-Singer</a></td>
-<td style="text-align:left">Zh/En/Canto</td>
-<td style="text-align:center">✅ (Singing)</td>
+<td style="text-align:left"><a href="https://github.com/SparkAudio/Spark-TTS" target="_blank" rel="noopener">Spark-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/SparkAudio/Spark-TTS-0.5B" target="_blank" rel="noopener">0.5B</a></td>
+<td style="text-align:center">Chinese, English</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2503.01710" target="_blank" rel="noopener">Qwen2.5 backbone</a></td>
+<td style="text-align:left"><a href="https://github.com/SparkAudio/Spark-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#step-audio" >Step-Audio</a></td>
-<td style="text-align:left">Zh/En/Jp</td>
+<td style="text-align:left"><a href="https://github.com/stepfun-ai/Step-Audio2" target="_blank" rel="noopener">Step-Audio</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/stepfun-ai/Step-Audio-Chat" target="_blank" rel="noopener">130B Chat</a> / <a href="https://huggingface.co/stepfun-ai/Step-Audio-TTS-3B" target="_blank" rel="noopener">3B TTS</a></td>
+<td style="text-align:center">Zh, En, Jp</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2502.11946" target="_blank" rel="noopener">arXiv</a></td>
+<td style="text-align:left"><a href="https://github.com/stepfun-ai/Step-Audio2" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#step-audio-editx" >Step-Audio-EditX</a></td>
-<td style="text-align:left">Zh/En/Jp/Ko</td>
+<td style="text-align:left"><a href="https://github.com/stepfun-ai/Step-Audio-EditX" target="_blank" rel="noopener">Step-Audio-EditX</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/stepfun-ai/Step-Audio-EditX" target="_blank" rel="noopener">3B (4B BF16)</a></td>
+<td style="text-align:center">Mandarin, English, Sichuanese, Cantonese, Japanese, Korean</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="##" title="✅ (Polyphone)">✅</a></td>
+<td style="text-align:left"><a href="##" title="✅ (14 emotions)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2511.03601" target="_blank" rel="noopener">Audio editing</a></td>
+<td style="text-align:left"><a href="https://github.com/stepfun-ai/Step-Audio-EditX" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#supertonic-2" >Supertonic 2</a></td>
-<td style="text-align:left">5</td>
+<td style="text-align:left"><a href="https://github.com/supertone-inc/supertonic" target="_blank" rel="noopener">Supertonic 2</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/Supertone/supertonic-2" target="_blank" rel="noopener">66M</a></td>
+<td style="text-align:center">31 (Ar, Bg, Hr, Cs, Da, Nl, En, Et, Fi, Fr, De, El, Hi, Hu, Id, It, Ja, Ko, Lv, Lt, Pl, Pt, Ro, Ru, Sk, Sl, Es, Sv, Tr, Uk, Vi)</td>
 <td style="text-align:center">❌</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">OpenRAIL-M</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">RTF 0.001, ONNX</td>
+<td style="text-align:left"><a href="https://github.com/supertone-inc/supertonic" target="_blank" rel="noopener">OpenRAIL-M</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#t5gemma-tts" >T5Gemma-TTS</a></td>
-<td style="text-align:left">En/Zh/Jp</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/T5Gemma-TTS" target="_blank" rel="noopener">T5Gemma-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/Aratako/T5Gemma-TTS-2b-2b" target="_blank" rel="noopener">2B-2B</a></td>
+<td style="text-align:center">English, Chinese, Japanese</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">❌</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">7.6-10.6 GB VRAM</td>
+<td style="text-align:left"><a href="https://github.com/Aratako/T5Gemma-TTS" target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#tinytts" >TinyTTS</a></td>
-<td style="text-align:left">En</td>
+<td style="text-align:left"><a href="https://github.com/tronghieuit/tiny-tts" target="_blank" rel="noopener">TinyTTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/backtracking/tiny-tts" target="_blank" rel="noopener">1.6M</a></td>
+<td style="text-align:center">English</td>
 <td style="text-align:center">❌</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (~53x RTF)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">~3.4 MB (ONNX FP16)</td>
+<td style="text-align:left"><a href="https://github.com/tronghieuit/tiny-tts" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#vibevoice-realtime" >VibeVoice-Realtime</a></td>
-<td style="text-align:left">Multi</td>
+<td style="text-align:left"><a href="https://github.com/microsoft/VibeVoice" target="_blank" rel="noopener">VibeVoice-Realtime</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B" target="_blank" rel="noopener">0.5B</a></td>
+<td style="text-align:center">50+ langs</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">MIT</td>
+<td style="text-align:center"><a href="##" title="✅ (300ms)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">Max ~10 min</td>
+<td style="text-align:left"><a href="https://github.com/microsoft/VibeVoice" target="_blank" rel="noopener">MIT</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#vieneu-tts" >VieNeu-TTS</a></td>
-<td style="text-align:left">Vi</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left"><a href="https://github.com/pnnbao97/VieNeu-TTS" target="_blank" rel="noopener">VieNeu-TTS</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/pnnbao-ump/VieNeu-TTS" target="_blank" rel="noopener">0.3B–0.6B</a></td>
+<td style="text-align:center">Vietnamese, English</td>
+<td style="text-align:center"><a href="##" title="✅ (3-5s)">✅</a></td>
+<td style="text-align:center"><a href="##" title="✅ (On-device)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://github.com/pnnbao97/VieNeu-TTS" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#voxcpm" >VoxCPM</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener">VoxCPM</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/openbmb/VoxCPM-0.5B" target="_blank" rel="noopener">640M</a>–<a href="https://huggingface.co/openbmb/VoxCPM1.5" target="_blank" rel="noopener">800M</a></td>
+<td style="text-align:center">30 (Ar, My, Zh, Da, Nl, En, Fi, Fr, De, El, He, Hi, Id, It, Ja, Km, Ko, Lo, Ms, No, Pl, Pt, Ru, Es, Sw, Sv, Tl, Th, Tr, Vi, 四川话, 粤语, 吴语, 东北话, 河南话, 陕西话, 山东话, 天津话, 闽南话)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (RTF 0.17)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2509.24650" target="_blank" rel="noopener">Tokenizer-free</a></td>
+<td style="text-align:left"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#voxcpm2" >VoxCPM2</a></td>
-<td style="text-align:left">30</td>
+<td style="text-align:left"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener">VoxCPM2</a></td>
+<td style="text-align:left"><a href="https://huggingface.co/openbmb/VoxCPM2" target="_blank" rel="noopener">2B</a></td>
+<td style="text-align:center">30 (Ar, My, Zh, Da, Nl, En, Fi, Fr, De, El, He, Hi, Id, It, Ja, Km, Ko, Lo, Ms, No, Pl, Pt, Ru, Es, Sw, Sv, Tl, Th, Tr, Vi, 四川话, 粤语, 吴语, 东北话, 河南话, 陕西话, 山东话, 天津话, 闽南话)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:center"><a href="##" title="✅ (RTF ~0.3)">✅</a></td>
+<td style="text-align:left">✅</td>
+<td style="text-align:left"><a href="##" title="✅ (Voice Design)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">48 kHz</td>
+<td style="text-align:left"><a href="https://github.com/OpenBMB/VoxCPM" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#voxtral-4b-tts" >Voxtral-4B-TTS</a></td>
-<td style="text-align:left">9</td>
+<td style="text-align:left">Voxtral-4B-TTS</td>
+<td style="text-align:left"><a href="https://huggingface.co/mistralai/Voxtral-4B-TTS-2603" target="_blank" rel="noopener">4B</a></td>
+<td style="text-align:center">9 (En, Fr, Es, De, It, Pt, Nl, Ar, Hi)</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">CC BY-NC 4.0</td>
+<td style="text-align:center"><a href="##" title="✅ (RTF 0.103 at concurrency 1)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="##" title="✅ (expressive speech)">✅</a></td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">24 kHz</td>
+<td style="text-align:left"><a href="https://huggingface.co/mistralai/Voxtral-4B-TTS-2603" target="_blank" rel="noopener">CC BY-NC 4.0</a></td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="#zipvoice" >ZipVoice</a></td>
-<td style="text-align:left">Zh/En</td>
+<td style="text-align:left"><a href="https://github.com/k2-fsa/ZipVoice" target="_blank" rel="noopener">ZipVoice</a></td>
+<td style="text-align:left"><a href="https://arxiv.org/abs/2506.13053" target="_blank" rel="noopener">123M</a></td>
+<td style="text-align:center">Chinese, English</td>
 <td style="text-align:center">✅</td>
 <td style="text-align:center">✅</td>
-<td style="text-align:center">❌</td>
-<td style="text-align:left">Apache-2.0</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left">❌</td>
+<td style="text-align:left"><a href="https://zipvoice.github.io" target="_blank" rel="noopener">Dialogue support</a></td>
+<td style="text-align:left"><a href="https://github.com/k2-fsa/ZipVoice" target="_blank" rel="noopener">Apache</a></td>
 </tr>
 </tbody>
 </table>
