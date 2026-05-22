@@ -110,6 +110,18 @@
                 href="https://cva4.com/vi/tuts/tts/miniconda/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/supertonic-3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/supertonic-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/supertonic-3/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/</loc>
     <lastmod>2026-04-11T17:52:13+07:00</lastmod>
     <xhtml:link
@@ -588,6 +600,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/shipyard/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/supertonic/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/supertonic/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/supertonic/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/swallow/</loc>
