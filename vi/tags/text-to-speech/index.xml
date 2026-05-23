@@ -61,7 +61,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;#4&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Kokoro&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/-VLmk9PqOYo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro 82M v1.0&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;1,055&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;$0.7 /1M chars&lt;/td&gt;
@@ -117,7 +117,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;#12&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Alibaba&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/a00--jPR9Ns&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alibaba&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/QwenLM/Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3 TTS&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;932&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
@@ -317,7 +317,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/KittenML/KittenTTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/hexgrad/kokoro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro-82M&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/-VLmk9PqOYo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro-82M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;82M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;8 langs, &lt;a href=&#34;https://huggingface.co/spaces/hexgrad/Kokoro-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;54 voices&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
@@ -509,7 +509,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/canopyai/Orpheus-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/QwenLM/Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3-TTS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/a00--jPR9Ns&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3-TTS&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/collections/Qwen/qwen3-tts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;0.6B–1.7B&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;10 (Zh, En, Ja, Ko, De, Fr, Ru, Pt, Es, It)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;##&#34; title=&#34;✅ (3-second)&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
@@ -593,7 +593,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/stepfun-ai/Step-Audio-EditX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/supertone-inc/supertonic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Supertonic 2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/hA6G0L_ebYs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Supertonic 3&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/Supertone/supertonic-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;66M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;31 (Ar, Bg, Hr, Cs, Da, Nl, En, Et, Fi, Fr, De, El, Hi, Hu, Id, It, Ja, Ko, Lv, Lt, Pl, Pt, Ro, Ru, Sk, Sl, Es, Sv, Tr, Uk, Vi)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;

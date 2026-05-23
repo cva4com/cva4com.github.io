@@ -60,7 +60,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;#4&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Kokoro&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/-VLmk9PqOYo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro 82M v1.0&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;1,055&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;$0.7 /1M chars&lt;/td&gt;
@@ -116,7 +116,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;#12&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Alibaba&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/a00--jPR9Ns&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alibaba&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/QwenLM/Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3 TTS&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;932&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;N/A&lt;/td&gt;
@@ -316,7 +316,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/KittenML/KittenTTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/hexgrad/kokoro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro-82M&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/-VLmk9PqOYo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kokoro-82M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/hexgrad/Kokoro-82M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;82M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;8 langs, &lt;a href=&#34;https://huggingface.co/spaces/hexgrad/Kokoro-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;54 voices&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
@@ -508,7 +508,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/canopyai/Orpheus-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/QwenLM/Qwen3-TTS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3-TTS&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/a00--jPR9Ns&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qwen3-TTS&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/collections/Qwen/qwen3-tts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;0.6B–1.7B&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;10 (Zh, En, Ja, Ko, De, Fr, Ru, Pt, Es, It)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;##&#34; title=&#34;✅ (3-second)&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
@@ -592,7 +592,7 @@
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/stepfun-ai/Step-Audio-EditX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/supertone-inc/supertonic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Supertonic 2&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://youtu.be/hA6G0L_ebYs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Supertonic 3&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/Supertone/supertonic-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;66M&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;31 (Ar, Bg, Hr, Cs, Da, Nl, En, Et, Fi, Fr, De, El, Hi, Hu, Id, It, Ja, Ko, Lv, Lt, Pl, Pt, Ro, Ru, Sk, Sl, Es, Sv, Tr, Uk, Vi)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;❌&lt;/td&gt;
@@ -1358,109 +1358,6 @@ Demo: &lt;a href=&#34;https://hf.co/spaces/mrfakename/E2-F5-TTS&#34; target=&#34
     </item>
     
     <item>
-      <title>Installing Miniconda</title>
-      <link>https://cva4.com/tuts/tts/miniconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cva4.com/tuts/tts/miniconda/</guid>
-      <description>
-        
-        
-        &lt;h2&gt;Installing Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installing-miniconda&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#installing-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/AgnAs0nPEVg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;h2&gt;What Is Miniconda?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-miniconda&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#what-is-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Miniconda is a free minimal installer for Conda. It is a smaller alternative to Anaconda. It includes Python, Conda, and essential dependencies.&lt;/p&gt;
-&lt;p&gt;With Miniconda, you can create isolated environments. This helps avoid conflicts between different projects. It is ideal for developers who need flexibility.&lt;/p&gt;
-&lt;h3&gt;Download Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;download-miniconda&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#download-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Follow these steps to download Miniconda:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Visit the &lt;a href=&#34;https://www.anaconda.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official Miniconda&lt;/a&gt; &lt;a href=&#34;https://www.anaconda.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;download page&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Choose the &lt;a href=&#34;https://www.anaconda.com/download/success&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;installer&lt;/a&gt; for your OS.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;!-- 3. Select the Python version (3.x recommended). --&gt;
-&lt;p&gt;For Windows, download the .exe file. For macOS and Linux, choose the appropriate shell script.&lt;/p&gt;
-&lt;p&gt;Direct link: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Install on Windows&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-on-windows&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#install-on-windows&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Follow these steps for Windows installation:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Double-click the downloaded .exe file.&lt;/li&gt;
-&lt;li&gt;Follow the setup wizard instructions.&lt;/li&gt;
-&lt;li&gt;Check &amp;ldquo;Add Miniconda to PATH&amp;rdquo; if prompted.&lt;/li&gt;
-&lt;li&gt;Complete the installation.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To verify, open Command Prompt and run:&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
-  
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda --version&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
-    title=&#34;Copy code&#34;
-  &gt;
-    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-
-  
-&lt;/div&gt;
-&lt;h3&gt;Install on macOS/Linux&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-on-macoslinux&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#install-on-macoslinux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/WdXdl0C0jfE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;p&gt;For macOS and Linux, use the terminal:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open a terminal window.&lt;/li&gt;
-&lt;li&gt;Navigate to the download directory.&lt;/li&gt;
-&lt;li&gt;Run the shell script:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
-  
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash Miniconda3-latest-MacOSX-x86_64.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
-    title=&#34;Copy code&#34;
-  &gt;
-    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-
-  
-&lt;/div&gt;
-
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D_KyOmeusrE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-&lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
-  &lt;a
-    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;tts&#34;
-      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Text-to-Speech&lt;/span&gt;&lt;/a&gt;
-  &lt;a
-    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;kokoro&#34;
-      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Kokoro 82M v1.0&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-      </description>
-    </item>
-    
-    <item>
       <title>Install Supertonic-3 TTS on Windows with Conda</title>
       <link>https://cva4.com/tuts/tts/supertonic-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1484,15 +1381,14 @@ Available Voices: &lt;a href=&#34;https://supertone-inc.github.io/supertonic-py/
 &lt;p&gt;&lt;strong&gt;Not sure which language your text is in?&lt;/strong&gt; Pass &lt;code&gt;lang=&amp;quot;na&amp;quot;&lt;/code&gt; and Supertonic will handle the input in a language-agnostic way — no explicit language tag required.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;Video tutorial&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-tutorial&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#video-tutorial&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Coming soon!&lt;/p&gt;
-&lt;!-- 
+    &lt;a href=&#34;#video-tutorial&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 
     
     &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/nsYZWjd9I1Q?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/hA6G0L_ebYs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
       &gt;&lt;/iframe&gt;
     &lt;/div&gt;
- --&gt;
+
 &lt;h2&gt;Step 1. Install Miniconda Package&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;step-1-install-miniconda-package&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-1-install-miniconda-package&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Download Miniconda: &lt;a href=&#34;https://www.anaconda.com/download/success?reg=skipped&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.anaconda.com/download/success?reg=skipped&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Direct link: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
@@ -1620,6 +1516,109 @@ Available Voices: &lt;a href=&#34;https://supertone-inc.github.io/supertonic-py/
 &lt;/div&gt;
 &lt;p&gt;Once running, use the native &lt;code&gt;POST /v1/tts&lt;/code&gt; endpoint or the OpenAI-compatible &lt;code&gt;POST /v1/audio/speech&lt;/code&gt; endpoint. The server also exposes interactive OpenAPI docs at &lt;code&gt;http://127.0.0.1:7788/docs&lt;/code&gt;. See the &lt;a href=&#34;https://supertone-inc.github.io/supertonic-py/cli/serve/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;supertonic-py serve guide&lt;/a&gt; for request examples, batch synthesis, and custom Voice Builder JSON import.&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Installing Miniconda</title>
+      <link>https://cva4.com/tuts/tts/miniconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/tuts/tts/miniconda/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Installing Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;installing-miniconda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#installing-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/AgnAs0nPEVg?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;h2&gt;What Is Miniconda?&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;what-is-miniconda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Miniconda is a free minimal installer for Conda. It is a smaller alternative to Anaconda. It includes Python, Conda, and essential dependencies.&lt;/p&gt;
+&lt;p&gt;With Miniconda, you can create isolated environments. This helps avoid conflicts between different projects. It is ideal for developers who need flexibility.&lt;/p&gt;
+&lt;h3&gt;Download Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;download-miniconda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#download-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Follow these steps to download Miniconda:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visit the &lt;a href=&#34;https://www.anaconda.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official Miniconda&lt;/a&gt; &lt;a href=&#34;https://www.anaconda.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;download page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Choose the &lt;a href=&#34;https://www.anaconda.com/download/success&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;installer&lt;/a&gt; for your OS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- 3. Select the Python version (3.x recommended). --&gt;
+&lt;p&gt;For Windows, download the .exe file. For macOS and Linux, choose the appropriate shell script.&lt;/p&gt;
+&lt;p&gt;Direct link: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Install on Windows&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-on-windows&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-on-windows&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Follow these steps for Windows installation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Double-click the downloaded .exe file.&lt;/li&gt;
+&lt;li&gt;Follow the setup wizard instructions.&lt;/li&gt;
+&lt;li&gt;Check &amp;ldquo;Add Miniconda to PATH&amp;rdquo; if prompted.&lt;/li&gt;
+&lt;li&gt;Complete the installation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To verify, open Command Prompt and run:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda --version&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;Install on macOS/Linux&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;install-on-macoslinux&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-on-macoslinux&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/WdXdl0C0jfE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;For macOS and Linux, use the terminal:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a terminal window.&lt;/li&gt;
+&lt;li&gt;Navigate to the download directory.&lt;/li&gt;
+&lt;li&gt;Run the shell script:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bash Miniconda3-latest-MacOSX-x86_64.sh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D_KyOmeusrE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
+  &lt;a
+    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;tts&#34;
+      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Text-to-Speech&lt;/span&gt;&lt;/a&gt;
+  &lt;a
+    class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;kokoro&#34;
+      &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253&#34;/&gt;&lt;/svg&gt;Kokoro 82M v1.0&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
       </description>
     </item>
     
