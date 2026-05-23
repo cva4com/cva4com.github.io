@@ -34,8 +34,7 @@ Arabic (`ar`), Bulgarian (`bg`), Croatian (`hr`), Czech (`cs`), Danish (`da`), D
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube nsYZWjd9I1Q >}} -->
+{{< youtube hA6G0L_ebYs >}}
 
 
 ## Bước 1. Cài đặt Miniconda

@@ -33,8 +33,7 @@ Arabic (`ar`), Bulgarian (`bg`), Croatian (`hr`), Czech (`cs`), Danish (`da`), D
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube nsYZWjd9I1Q >}} -->
+{{< youtube hA6G0L_ebYs >}}
 
 
 ## Step 1. Install Miniconda Package

@@ -1,7 +1,7 @@
 ---
 linkTitle: Miniconda
 title: Installing Miniconda
-weight: 6
+weight: 7
 prev: /tts
 # next: /tts/kokoro
 cascade:
