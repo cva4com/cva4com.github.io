@@ -1,7 +1,7 @@
 ---
 linkTitle: Qwen3-TTS
 title: Install Qwen3-TTS on Windows with Conda
-weight: 4
+weight: 7
 # prev: /tts/tts-open-weights
 # next: /tts/a
 cascade:
@@ -47,6 +47,8 @@ Note: CUDA version check by command
 ```bash
 nvidia-smi
 ```
+
+![PyTorch](/images/2026/nvidia-smi.png)
 
 
 ## Video tutorial

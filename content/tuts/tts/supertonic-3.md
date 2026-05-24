@@ -1,7 +1,7 @@
 ---
 linkTitle: Supertonic-3
 title: Install Supertonic-3 TTS on Windows with Conda
-weight: 6
+weight: 8
 cascade:
   type: docs
 tags:
@@ -63,7 +63,6 @@ dependencies:
 
       # Local HTTP Server
       - supertonic[serve]
-
 ```
 
 Activate conda environment:

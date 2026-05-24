@@ -52,6 +52,8 @@ Note: CUDA version check by command
 nvidia-smi
 ```
 
+![PyTorch](/images/2026/nvidia-smi.png)
+
 
 ## Video tutorial
 

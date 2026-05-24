@@ -1,7 +1,7 @@
 ---
 linkTitle: Supertonic-3
 title: Cài đặt Supertonic-3 trên Windows bằng Conda
-weight: 6
+weight: 8
 cascade:
   type: docs
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ## Giới thiệu
 
-Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns.
+Supertonic là một hệ thống chuyển văn bản thành giọng nói đa ngôn ngữ cực nhanh, hoạt động trên thiết bị, được thiết kế để suy luận cục bộ với chi phí tối thiểu. Được hỗ trợ bởi ONNX Runtime, nó chạy hoàn toàn trên thiết bị của bạn—không cần đám mây, không cần gọi API, không lo ngại về quyền riêng tư.
 
 GitHub: https://github.com/supertone-inc/supertonic  
 Hugging Face: https://hf.co/Supertone/supertonic-3  
@@ -64,7 +64,6 @@ dependencies:
 
       # Local HTTP Server
       - supertonic[serve]
-
 ```
 
 Kích hoạt môi trường conda:

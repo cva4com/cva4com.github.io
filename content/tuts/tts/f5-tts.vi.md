@@ -45,6 +45,8 @@ Lưu ý: Kiểm tra phiên bản CUDA bằng lệnh
 nvidia-smi
 ```
 
+![PyTorch](/images/2026/nvidia-smi.png)
+
 
 ## Video hướng dẫn
 
