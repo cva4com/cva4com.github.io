@@ -654,7 +654,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/OpenBMB/VoxCPM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VoxCPM&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM-0.5B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;640M&lt;/a&gt;–&lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM1.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;800M&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM-0.5B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;640M&lt;/a&gt; - &lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM1.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;800M&lt;/a&gt; - &lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2B&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;30 (Ar, My, Zh, Da, Nl, En, Fi, Fr, De, El, He, Hi, Id, It, Ja, Km, Ko, Lo, Ms, No, Pl, Pt, Ru, Es, Sw, Sv, Tl, Th, Tr, Vi, 四川话, 粤语, 吴语, 东北话, 河南话, 陕西话, 山东话, 天津话, 闽南话)&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;##&#34; title=&#34;✅ (RTF 0.17)&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
@@ -662,18 +662,6 @@
 &lt;td style=&#34;text-align:left&#34;&gt;✅&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;❌&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2509.24650&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tokenizer-free&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/OpenBMB/VoxCPM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/OpenBMB/VoxCPM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VoxCPM2&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://huggingface.co/openbmb/VoxCPM2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2B&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;30 (Ar, My, Zh, Da, Nl, En, Fi, Fr, De, El, He, Hi, Id, It, Ja, Km, Ko, Lo, Ms, No, Pl, Pt, Ru, Es, Sw, Sv, Tl, Th, Tr, Vi, 四川话, 粤语, 吴语, 东北话, 河南话, 陕西话, 山东话, 天津话, 闽南话)&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;a href=&#34;##&#34; title=&#34;✅ (RTF ~0.3)&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;✅&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;##&#34; title=&#34;✅ (Voice Design)&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;❌&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;48 kHz&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://github.com/OpenBMB/VoxCPM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Apache&lt;/a&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;

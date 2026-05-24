@@ -74,18 +74,6 @@
                 href="https://cva4.com/tuts/tts/kokoro/"
                 />
   </url><url>
-    <loc>https://cva4.com/tuts/tts/qwen-tts/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/qwen-tts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://cva4.com/tuts/tts/qwen-tts/"
-                />
-  </url><url>
     <loc>https://cva4.com/tuts/tts/f5-tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -96,6 +84,30 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tuts/tts/f5-tts/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tuts/tts/omnivoice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/omnivoice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/omnivoice/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tuts/tts/qwen-tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/qwen-tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/qwen-tts/"
                 />
   </url><url>
     <loc>https://cva4.com/tuts/tts/supertonic-3/</loc>
@@ -576,6 +588,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/omnivoice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/omnivoice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/omnivoice/"
                 />
   </url><url>
     <loc>https://cva4.com/tags/open-weights/</loc>
