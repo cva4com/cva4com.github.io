@@ -36,7 +36,7 @@ Hugging Face: https://hf." />
   <meta itemprop="description" content="Giới thiệu OmniVoice là một mô hình chuyển văn bản thành giọng nói (TTS) đa ngôn ngữ tiên tiến, hỗ trợ hơn 600 ngôn ngữ. Được xây dựng trên kiến ​​trúc kiểu mô hình ngôn ngữ khuếch tán mới lạ, nó tạo ra giọng nói chất lượng cao với tốc độ suy luận vượt trội, hỗ trợ sao chép giọng nói và thiết kế giọng nói.
 GitHub: https://github.com/k2-fsa/OmniVoice
 Hugging Face: https://hf.">
-  <meta itemprop="wordCount" content="507">
+  <meta itemprop="wordCount" content="513">
   <meta itemprop="keywords" content="TTS,OmniVoice,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cài đặt OmniVoice trên Windows bằng Conda">
@@ -724,15 +724,14 @@ Audio Samples: Đang cập nhật</p>
 </div>
 <p><img src="/images/2026/nvidia-smi.png" alt="PyTorch" loading="lazy" /></p>
 <h2>Video hướng dẫn<span class="hx-absolute -hx-mt-20" id="video-hướng-dẫn"></span>
-    <a href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Đang cập nhật</p>
-<!-- 
+    <a href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
 
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hA6G0L_ebYs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8h2ypng72nA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
       ></iframe>
     </div>
- -->
+
 <h2>Bước 1. Cài đặt Miniconda<span class="hx-absolute -hx-mt-20" id="bước-1-cài-đặt-miniconda"></span>
     <a href="#b%c6%b0%e1%bb%9bc-1-c%c3%a0i-%c4%91%e1%ba%b7t-miniconda" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Tải xuống Miniconda: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped</a></p>
 <p>Liên kết trực tiếp: <a href="https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe" target="_blank" rel="noopener">https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe</a></p>
@@ -749,6 +748,8 @@ Audio Samples: Đang cập nhật</p>
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dependencies</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Python version &gt;= 3.10 required</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">python=3.10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Install FFmpeg for pydub audio library</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">ffmpeg</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">pip</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">pip</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># PyTorch CUDA 12.6 wheels</span><span class="w">
