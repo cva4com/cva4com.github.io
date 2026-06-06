@@ -52,8 +52,7 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Đang cập nhật
-<!-- {{< youtube hA6G0L_ebYs >}} -->
+{{< youtube 8h2ypng72nA >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -76,6 +75,8 @@ channels:
 dependencies:
   # Python version >= 3.10 required
   - python=3.10
+  # Install FFmpeg for pydub audio library
+  - ffmpeg
   - pip
   - pip:
       # PyTorch CUDA 12.6 wheels
