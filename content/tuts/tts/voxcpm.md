@@ -1,24 +1,24 @@
 ---
-linkTitle: OmniVoice
-title: Install OmniVoice TTS on Windows with Conda
-weight: 6
+linkTitle: VoxCPM2
+title: Install VoxCPM2 TTS on Windows with Conda
+weight: 9
 cascade:
   type: docs
 tags:
   - TTS
-  - OmniVoice
+  - VoxCPM2
   - Open Weights
 ---
 
 ## Introduction
 
-OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design.
+VoxCPM2 is a Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning.
 
-GitHub: https://github.com/k2-fsa/OmniVoice  
-Hugging Face: https://hf.co/k2-fsa/OmniVoice  
-Paper: https://arxiv.org/abs/2604.00688  
-Demo: https://hf.co/spaces/k2-fsa/OmniVoice  
-Audio Samples: Coming soon!  
+GitHub: https://github.com/OpenBMB/VoxCPM  
+Hugging Face: https://hf.co/openbmb/VoxCPM2  
+Demo: https://hf.co/spaces/openbmb/VoxCPM-Demo  
+Docs: https://voxcpm.readthedocs.io/en/latest/  
+Audio Samples: https://openbmb.github.io/voxcpm2-demopage/  
 
 
 ## Prerequisites
@@ -53,7 +53,8 @@ nvidia-smi
 
 ## Video tutorial
 
-{{< youtube 8h2ypng72nA >}}
+Coming soon!
+<!-- {{< youtube 8h2ypng72nA >}} -->
 
 
 ## Step 1. Install Miniconda Package
@@ -68,80 +69,76 @@ Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_6
 Create a conda environment:
 
 ```yml
-name: omnivoice
+name: voxcpm
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
   # Python version >= 3.10 required
   - python=3.10
-  # Install FFmpeg for pydub audio library
+
+  # Install FFmpeg for torchaudio library
   - ffmpeg
+
   - pip
   - pip:
       # PyTorch CUDA 12.6 wheels
-      - --extra-index-url https://download.pytorch.org/whl/cu126
-      - torch
-      - torchaudio
+      # - --extra-index-url https://download.pytorch.org/whl/cu126
+      # - torch
+      # - torchaudio
+      # - torchcodec
 
-      # OmniVoice-TTS
-      - omnivoice
+      # VoxCPM2: Tokenizer-Free TTS
+      - voxcpm
 ```
 
 Activate conda environment:
 
 ```bash
 conda env create -f environment.yml
-conda activate omnivoice
+conda activate voxcpm
 ```
 
 
 ## Step 3. Create a Python Script
 
-Create a file named omnivoice_tts_test.py:
+Create a file named voxcpm_test.py:
 
 ```python
-from omnivoice import OmniVoice
+from voxcpm import VoxCPM
 import soundfile as sf
-import torch
 
-model = OmniVoice.from_pretrained(
-    "k2-fsa/OmniVoice",
-    device_map="cuda:0",
-    dtype=torch.float16
+model = VoxCPM.from_pretrained(
+  "openbmb/VoxCPM2",
+  load_denoiser=False,
 )
-# Apple Silicon users: use device_map="mps" instead
-# Intel Arc GPU users: use device_map="xpu" instead
 
-audio = model.generate(
-    text="Hello, this is a test of zero-shot voice cloning.",
-    # ref_audio="ref.wav",
-    # ref_text="Transcription of the reference audio.",
-    instruct="female, young adult, high pitch, british accent",
-) # audio is a list of `np.ndarray` with shape (T,) at 24 kHz.
-
-# If you don't want to input `ref_text` manually, you can directly omit the `ref_text`.
-# The model will use Whisper ASR to auto-transcribe it.
-
-sf.write("out.wav", audio[0], 24000)
+wav = model.generate(
+    text="VoxCPM2 is the current recommended release for realistic multilingual speech synthesis.",
+    cfg_value=2.0,
+    inference_timesteps=10,
+)
+sf.write("demo.wav", wav, model.tts_model.sample_rate)
+print("saved: demo.wav")
 ```
 
 Run it:
 
 ```bash
-python omnivoice_tts_test.py
+python voxcpm_test.py
 ```
 
-The result will be the audio file `out.wav`
+The result will be the audio file `demo.wav`
 
 
 ### Launch the local web UI
 
-Try OmniVoice without coding:
+Try VoxCPM without coding:
 
 ```bash
-omnivoice-demo --ip 0.0.0.0 --port 8001
+python app.py --port 8808
 ```
 
-Open your browser and navigate to [http://127.0.0.1:8001](http://127.0.0.1:8001). The system will automatically download the required model weights from HuggingFace during this first run.
+Open your browser and navigate to [http://localhost:8808](http://localhost:8808). The system will automatically download the required model weights from HuggingFace during this first run.
+
+Note: You can download the app.py file [here](https://github.com/OpenBMB/VoxCPM/blob/main/app.py).

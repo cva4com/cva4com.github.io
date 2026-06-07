@@ -55,7 +55,7 @@ nvidia-smi
 
 ## Bước 1. Cài đặt Miniconda
 
-Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
+Tải xuống [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
 

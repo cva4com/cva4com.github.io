@@ -26,7 +26,7 @@ Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS
 
 ## Step 1. Install Miniconda Package
 
-Download Miniconda: https://www.anaconda.com/download/success?reg=skipped
+Download [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
 
