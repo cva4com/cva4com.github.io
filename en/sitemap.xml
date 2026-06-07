@@ -122,6 +122,18 @@
                 href="https://cva4.com/tuts/tts/supertonic-3/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/tts/voxcpm/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/voxcpm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/voxcpm/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -684,6 +696,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/tts/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/voxcpm2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/voxcpm2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/voxcpm2/"
                 />
   </url>
 </urlset>
