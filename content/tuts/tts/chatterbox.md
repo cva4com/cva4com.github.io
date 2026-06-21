@@ -53,8 +53,7 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube 8h2ypng72nA >}} -->
+{{< youtube VPU_xMISujY >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -142,7 +141,7 @@ The result will be the audio file `test.wav`
 Try Chatterbox without coding:
 
 ```bash
-python gradio_tts_app
+python gradio_tts_app.py
 ```
 
 Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860). The system will automatically download the required model weights from HuggingFace during this first run.
