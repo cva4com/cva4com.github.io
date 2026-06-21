@@ -145,4 +145,4 @@ python gradio_tts_app.py
 
 Mở trình duyệt và truy cập vào địa chỉ [http://127.0.0.1:7860](http://127.0.0.1:7860) để bắt đầu sử dụng. Hệ thống sẽ tự động tải các file Model (Trọng số cấu hình mã nguồn) từ HuggingFace trong lần đầu chạy.
 
-Lưu ý: Bạn có thể tải xuống tệp app.py [tại đây](https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py).
+Lưu ý: Bạn có thể tải xuống tệp gradio_tts_app.py [tại đây](https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py).

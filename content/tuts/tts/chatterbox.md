@@ -146,4 +146,4 @@ python gradio_tts_app.py
 
 Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860). The system will automatically download the required model weights from HuggingFace during this first run.
 
-Note: You can download the app.py file [here](https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py).
+Note: You can download the gradio_tts_app.py file [here](https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py).
