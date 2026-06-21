@@ -939,7 +939,7 @@ Audio Samples: &lt;a href=&#34;https://resemble-ai.github.io/chatterbox_demopage
   
 &lt;/div&gt;
 &lt;p&gt;Mở trình duyệt và truy cập vào địa chỉ &lt;a href=&#34;http://127.0.0.1:7860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://127.0.0.1:7860&lt;/a&gt; để bắt đầu sử dụng. Hệ thống sẽ tự động tải các file Model (Trọng số cấu hình mã nguồn) từ HuggingFace trong lần đầu chạy.&lt;/p&gt;
-&lt;p&gt;Lưu ý: Bạn có thể tải xuống tệp app.py &lt;a href=&#34;https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tại đây&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lưu ý: Bạn có thể tải xuống tệp gradio_tts_app.py &lt;a href=&#34;https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tại đây&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
