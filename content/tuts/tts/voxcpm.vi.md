@@ -52,8 +52,7 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Đang cập nhật
-<!-- {{< youtube 8h2ypng72nA >}} -->
+{{< youtube 5e3TqfzvT0o >}}
 
 
 ## Bước 1. Cài đặt Miniconda

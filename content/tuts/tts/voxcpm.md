@@ -53,8 +53,7 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube 8h2ypng72nA >}} -->
+{{< youtube 5e3TqfzvT0o >}}
 
 
 ## Step 1. Install Miniconda Package
