@@ -62,16 +62,16 @@
                 href="https://cva4.com/vi/tuts/tts/tts-open-weights/"
                 />
   </url><url>
-    <loc>https://cva4.com/vi/tuts/tts/kokoro/</loc>
+    <loc>https://cva4.com/vi/tuts/tts/chatterbox/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://cva4.com/tuts/tts/kokoro/"
+                href="https://cva4.com/tuts/tts/chatterbox/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/kokoro/"
+                href="https://cva4.com/vi/tuts/tts/chatterbox/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/tts/f5-tts/</loc>
@@ -84,6 +84,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tuts/tts/f5-tts/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/kokoro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/kokoro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/kokoro/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/tts/omnivoice/</loc>
@@ -516,6 +528,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/categories/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/chatterbox/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/chatterbox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/chatterbox/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/conda/</loc>
