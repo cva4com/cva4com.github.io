@@ -146,6 +146,18 @@
                 href="https://cva4.com/tuts/tts/voxcpm/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/tts/zipvoice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/zipvoice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/zipvoice/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -732,6 +744,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/voxcpm2/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/zipvoice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/zipvoice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/zipvoice/"
                 />
   </url>
 </urlset>
