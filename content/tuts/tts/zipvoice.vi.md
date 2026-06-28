@@ -53,8 +53,7 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube 5e3TqfzvT0o >}} -->
+{{< youtube 0w1seD5rypo >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -151,3 +150,23 @@ python -m zipvoice.bin.infer_zipvoice --model-name zipvoice --prompt-wav prompt_
 ```
 
 Kết quả sẽ là tệp âm thanh `result.wav`
+
+
+## Cài đặt k2 để huấn luyện hoặc suy luận hiệu quả
+
+**k2 cần thiết cho việc huấn luyện** và có thể tăng tốc quá trình suy luận. Tuy nhiên, bạn vẫn có thể sử dụng chế độ suy luận của ZipVoice mà không cần cài đặt k2.
+
+> **Lưu ý:**  Hãy chắc chắn cài đặt phiên bản k2 phù hợp với phiên bản PyTorch và CUDA của bạn. Ví dụ, nếu bạn đang sử dụng pytorch 2.5.1 và CUDA 12.1, bạn có thể cài đặt k2 như sau:
+
+```bash
+pip install k2==1.24.4.dev20250208+cuda12.1.torch2.5.1 -f https://k2-fsa.github.io/k2/cuda.html
+```
+
+Vui lòng tham khảo https://k2-fsa.org/get-started/k2/ để biết thêm chi tiết.  
+Người dùng tại Trung Quốc đại lục có thể tham khảo https://k2-fsa.org/zh-CN/get-started/k2/.
+
+- Để kiểm tra cài đặt k2:
+
+```bash
+python3 -c "import k2; print(k2.__file__)"
+```
