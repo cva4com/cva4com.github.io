@@ -7,7 +7,6 @@ cascade:
 tags:
   - TTS
   - Dia
-  - "Nari Labs"
   - Open Weights
 ---
 
