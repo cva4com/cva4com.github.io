@@ -1,7 +1,7 @@
 ---
 linkTitle: Kokoro 82M
 title: Cài đặt Kokoro 82M TTS trên Windows bằng Conda
-weight: 5
+weight: 6
 prev: /tts/tts-open-weights
 # next: /tts/a
 cascade:

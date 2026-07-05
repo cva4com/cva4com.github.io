@@ -1,7 +1,7 @@
 ---
 linkTitle: OmniVoice
 title: Install OmniVoice TTS on Windows with Conda
-weight: 6
+weight: 7
 cascade:
   type: docs
 tags:

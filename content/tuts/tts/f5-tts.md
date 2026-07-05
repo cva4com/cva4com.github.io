@@ -1,7 +1,7 @@
 ---
 linkTitle: F5-TTS
 title: Install SWivid/F5-TTS on Windows with Conda
-weight: 4
+weight: 5
 cascade:
   type: docs
 tags:
