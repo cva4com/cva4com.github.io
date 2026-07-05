@@ -74,6 +74,18 @@
                 href="https://cva4.com/vi/tuts/tts/chatterbox/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/dia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/dia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/dia/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/f5-tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -566,6 +578,18 @@
                 href="https://cva4.com/vi/tags/conda/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tags/dia/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/dia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/dia/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tags/f5-tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -624,6 +648,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/nari-labs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/nari-labs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/nari-labs/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/omnivoice/</loc>
