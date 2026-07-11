@@ -108,6 +108,20 @@ Bây giờ, hãy chạy thử một vài ví dụ.
 python example/simple.py
 ```
 
+```bash
+generate: starting generation loop
+generate step 86: speed=1.168 tokens/s, realtime factor=0.014x
+generate step 172: speed=1.192 tokens/s, realtime factor=0.014x
+generate step 258: speed=1.221 tokens/s, realtime factor=0.014x
+generate step 344: speed=1.141 tokens/s, realtime factor=0.013x
+generate step 430: speed=1.156 tokens/s, realtime factor=0.013x
+generate step 516: speed=1.067 tokens/s, realtime factor=0.012x
+generate step 602: speed=1.092 tokens/s, realtime factor=0.013x
+generate step 688: speed=1.112 tokens/s, realtime factor=0.013x
+generate step 774: speed=1.113 tokens/s, realtime factor=0.013x
+generate: avg steps=831.0, total duration=751.395s
+```
+
 Kết quả sẽ là tệp âm thanh `simple.wav`
 
 
