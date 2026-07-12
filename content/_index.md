@@ -1,6 +1,8 @@
 ---
 title: Home
 layout: hextra-home
+page:
+  width: normal
 ---
 
 {{< hextra/hero-container
@@ -52,21 +54,21 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
+    title="Text to Speech"
+    subtitle="AI Voice Generator — Convert Text to Speech for Free"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/Text-to-Speech.webp"
+    imageClass="hx-top-[20%] hx-left-[24px] hx-w-[100%] sm:hx-w-[110%] dark:hx-opacity-80"
+    link="https://cva4.com/tuts/tts/"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
     title="The 90 Minute Sleep Cycle"
     subtitle="How to Get the Perfect Night’s Sleep"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/sleep-calculator.png"
     imageClass="hx-top-[20%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
     link="https://cva4.com/sleep/"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="LinkedIn™ Profile to CV"
-    subtitle="Export LinkedIn™ Profile to CV."
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-    image="/images/1697808959935.gif"
-    imageClass="hx-top-[20%] hx-left-[24px] hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
-    link="https://github.com/cva4com/linkedin-cv-extention"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
