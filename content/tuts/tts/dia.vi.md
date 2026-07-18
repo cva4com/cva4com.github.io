@@ -17,6 +17,7 @@ Dia là một mô hình chuyển văn bản thành giọng nói với 1,6 tỷ t
 GitHub: https://github.com/nari-labs/dia  
 Hugging Face: https://hf.co/nari-labs/Dia-1.6B-0626  
 Demo: https://hf.co/spaces/nari-labs/Dia-1.6B  
+Example: https://yummy-fir-7a4.notion.site/dia  
 
 
 ## Yêu cầu hệ thống
@@ -50,8 +51,7 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube 0w1seD5rypo >}} -->
+{{< youtube FWFvAXpiaAM >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -122,7 +122,7 @@ generate step 774: speed=1.113 tokens/s, realtime factor=0.013x
 generate: avg steps=831.0, total duration=751.395s
 ```
 
-Kết quả sẽ là tệp âm thanh `simple.wav`
+Kết quả sẽ là tệp âm thanh `simple.mp3`
 
 
 ### Khởi chạy Giao diện Web (Gradio Web UI)

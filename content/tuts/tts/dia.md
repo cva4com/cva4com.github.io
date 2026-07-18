@@ -17,6 +17,7 @@ Dia is a 1.6B parameter text to speech model created by Nari Labs. Dia capable o
 GitHub: https://github.com/nari-labs/dia  
 Hugging Face: https://hf.co/nari-labs/Dia-1.6B-0626  
 Demo: https://hf.co/spaces/nari-labs/Dia-1.6B  
+Example: https://yummy-fir-7a4.notion.site/dia  
 
 
 ## Prerequisites
@@ -51,8 +52,7 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube 0w1seD5rypo >}} -->
+{{< youtube FWFvAXpiaAM >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -123,7 +123,7 @@ generate step 774: speed=1.113 tokens/s, realtime factor=0.013x
 generate: avg steps=831.0, total duration=751.395s
 ```
 
-The result will be the audio file `simple.wav`
+The result will be the audio file `simple.mp3`
 
 
 ### Gradio app (web interface)
