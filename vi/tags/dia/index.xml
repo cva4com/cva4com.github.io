@@ -27,7 +27,8 @@
     &lt;a href=&#34;#gi%e1%bb%9bi-thi%e1%bb%87u&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dia là một mô hình chuyển văn bản thành giọng nói với 1,6 tỷ tham số được tạo ra bởi Nari Labs. Dia có khả năng tạo ra các đoạn hội thoại cực kỳ chân thực chỉ trong một lần xử lý.&lt;/p&gt;
 &lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/nari-labs/dia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/nari-labs/dia&lt;/a&gt;&lt;br&gt;
 Hugging Face: &lt;a href=&#34;https://hf.co/nari-labs/Dia-1.6B-0626&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/nari-labs/Dia-1.6B-0626&lt;/a&gt;&lt;br&gt;
-Demo: &lt;a href=&#34;https://hf.co/spaces/nari-labs/Dia-1.6B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/spaces/nari-labs/Dia-1.6B&lt;/a&gt;&lt;/p&gt;
+Demo: &lt;a href=&#34;https://hf.co/spaces/nari-labs/Dia-1.6B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/spaces/nari-labs/Dia-1.6B&lt;/a&gt;&lt;br&gt;
+Example: &lt;a href=&#34;https://yummy-fir-7a4.notion.site/dia&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yummy-fir-7a4.notion.site/dia&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Yêu cầu hệ thống&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yêu-cầu-hệ-thống&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#y%c3%aau-c%e1%ba%a7u-h%e1%bb%87-th%e1%bb%91ng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hệ điều hành:&lt;/strong&gt; Windows 10/11 (64-bit), macOS hoặc Linux (Debian/Ubuntu).&lt;/li&gt;
@@ -89,15 +90,14 @@ Demo: &lt;a href=&#34;https://hf.co/spaces/nari-labs/Dia-1.6B&#34; target=&#34;_
 &lt;/div&gt;
 &lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/nvidia-smi.png&#34; alt=&#34;PyTorch&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;Video hướng dẫn&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-hướng-dẫn&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sắp ra mắt!&lt;/p&gt;
-&lt;!-- 
+    &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
 
     
     &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/0w1seD5rypo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/FWFvAXpiaAM?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
       &gt;&lt;/iframe&gt;
     &lt;/div&gt;
- --&gt;
+
 &lt;h2&gt;Bước 1. Cài đặt Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-1-cài-đặt-miniconda&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-1-c%c3%a0i-%c4%91%e1%ba%b7t-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tải xuống &lt;a href=&#34;https://cva4.com/tuts/tts/miniconda/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;: &lt;a href=&#34;https://www.anaconda.com/download/success?reg=skipped&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.anaconda.com/download/success?reg=skipped&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Liên kết trực tiếp: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
@@ -210,7 +210,7 @@ Demo: &lt;a href=&#34;https://hf.co/spaces/nari-labs/Dia-1.6B&#34; target=&#34;_
 
   
 &lt;/div&gt;
-&lt;p&gt;Kết quả sẽ là tệp âm thanh &lt;code&gt;simple.wav&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Kết quả sẽ là tệp âm thanh &lt;code&gt;simple.mp3&lt;/code&gt;&lt;/p&gt;
 &lt;h3&gt;Khởi chạy Giao diện Web (Gradio Web UI)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;khởi-chạy-giao-diện-web-gradio-web-ui&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#kh%e1%bb%9fi-ch%e1%ba%a1y-giao-di%e1%bb%87n-web-gradio-web-ui&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Sau khi cài đặt xong, bạn không cần viết code mà có thể bật ngay một giao diện Web UI cục bộ bằng lệnh:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
