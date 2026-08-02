@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://cva4.com/tuts/coding/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/coding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/coding/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -72,6 +84,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tuts/tts/chatterbox/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tuts/coding/cline/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/coding/cline/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/coding/cline/"
                 />
   </url><url>
     <loc>https://cva4.com/tuts/tts/dia/</loc>
