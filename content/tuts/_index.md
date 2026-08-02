@@ -13,4 +13,5 @@ Learn how to leverage AI to enhance your product management workflow, from ideat
 
 {{< cards >}}
   {{< card link="tts" title="Text-to-Speech" icon="microphone" >}}
+  {{< card link="coding" title="Coding Agent" icon="code" >}}
 {{< /cards >}}

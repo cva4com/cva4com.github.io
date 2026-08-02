@@ -13,4 +13,5 @@ Hãy tìm hiểu cách tận dụng trí tuệ nhân tạo (AI) để nâng cao 
 
 {{< cards >}}
   {{< card link="tts" title="Text-to-Speech" icon="microphone" >}}
+  {{< card link="coding" title="Coding Agent" icon="code" >}}
 {{< /cards >}}
