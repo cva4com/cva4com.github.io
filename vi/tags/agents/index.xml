@@ -1,0 +1,350 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CVA4 – Agents</title>
+    <link>https://cva4.com/vi/tags/agents/</link>
+    <description>Recent content in Agents on CVA4</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    
+	  <atom:link href="https://cva4.com/vi/tags/agents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>OpenCode: Giải pháp thay thế mã nguồn mở tốt nhất cho Claude Code</title>
+      <link>https://cva4.com/vi/tuts/coding/opencode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/vi/tuts/coding/opencode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Phù hợp nhất cho: các nhà phát triển muốn có một công cụ lập trình AI gốc terminal hoạt động trên mọi trình soạn thảo và mọi nhà cung cấp mô hình.&lt;/p&gt;
+&lt;p&gt;OpenCode là công cụ lập trình AI mã nguồn mở được đánh giá cao nhất mà tôi tìm thấy: hơn 162.000 lượt đánh dấu sao trên GitHub và con số này vẫn đang tăng lên. Nhóm SST đã xây dựng nó như một giải pháp mã nguồn mở cho Claude Code: một công cụ gốc terminal với giao diện người dùng dựa trên văn bản (TUI) đầy đủ, ứng dụng máy tính để bàn và các tiện ích mở rộng IDE. Trong khi Claude Code chỉ cho phép bạn sử dụng Anthropic, OpenCode hoạt động với hơn 75 nhà cung cấp thông qua Models.dev, bao gồm Claude, OpenAI, Gemini và các mô hình cục bộ. Quy trình làm việc tương tự, nhưng lựa chọn mô hình đầy đủ.&lt;/p&gt;
+&lt;p&gt;Kho lưu trữ vẫn hoạt động trong suốt thời gian đánh giá này, và kiến ​​trúc máy khách/máy chủ có nghĩa là bạn có thể chạy máy chủ trên một máy tính từ xa và điều khiển nó từ terminal, máy tính để bàn hoặc ứng dụng di động của mình.&lt;/p&gt;
+&lt;h2&gt;Các tính năng chính&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;các-tính-năng-chính&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-ch%c3%adnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Hơn 75 nhà cung cấp LLM: Claude, OpenAI, Gemini, Ollama và các nhà cung cấp khác thông qua Models.dev (không bị giới hạn bởi bất kỳ nhà cung cấp nào)&lt;/li&gt;
+&lt;li&gt;Hai tác nhân tích hợp sẵn: &amp;ldquo;build&amp;rdquo; (truy cập đầy đủ để đọc, ghi và thực thi) và &amp;ldquo;plan&amp;rdquo; (phân tích và khám phá chỉ đọc), có thể chuyển đổi bằng phím Tab&lt;/li&gt;
+&lt;li&gt;Hỗ trợ LSP: Tự động tải máy chủ ngôn ngữ chính xác cho ngôn ngữ trong thư mục làm việc của bạn&lt;/li&gt;
+&lt;li&gt;Đa phiên: Chạy nhiều tác nhân trên cùng một dự án song song&lt;/li&gt;
+&lt;li&gt;Chia sẻ liên kết: Chia sẻ liên kết đến bất kỳ phiên nào để gỡ lỗi hoặc xem lại&lt;/li&gt;
+&lt;li&gt;Đa nền tảng: Giao diện người dùng TUI trên thiết bị đầu cuối, ứng dụng máy tính để bàn (macOS, Windows, Linux beta) và tiện ích mở rộng IDE&lt;/li&gt;
+&lt;li&gt;Ưu tiên quyền riêng tư: Không có mã hoặc dữ liệu ngữ cảnh nào được lưu trữ ở phía máy chủ&lt;/li&gt;
+&lt;li&gt;Đăng nhập GitHub Copilot và ChatGPT: Đăng nhập bằng tài khoản GitHub Copilot hoặc ChatGPT Plus hiện có để sử dụng các tín dụng mô hình đó&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ưu điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hơn 162.000 lượt đánh dấu sao trên GitHub, cộng đồng lập trình AI mã nguồn mở lớn nhất mà tôi tìm thấy&lt;/li&gt;
+&lt;li&gt;Không phụ thuộc vào nhà cung cấp: thay đổi mô hình mà không cần thay đổi quy trình làm việc&lt;/li&gt;
+&lt;li&gt;Thiết kế thân thiện với dòng lệnh, phù hợp với các nhà phát triển thường xuyên sử dụng dòng lệnh&lt;/li&gt;
+&lt;li&gt;Đảm bảo quyền riêng tư: không lưu trữ dữ liệu, chạy hoàn toàn cục bộ với Ollama&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nhược điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Giao diện người dùng dòng lệnh (Terminal UI) có độ khó học cao hơn so với các công cụ GUI gốc&lt;/li&gt;
+&lt;li&gt;Không tích hợp sâu với trình soạn thảo cụ thể nào (không phụ thuộc vào trình soạn thảo có nghĩa là không có các tính năng gốc của trình soạn thảo)&lt;/li&gt;
+&lt;li&gt;Gói mô hình quản lý &amp;ldquo;Zen&amp;rdquo; tùy chọn là trả phí; gói miễn phí yêu cầu bạn có khóa API riêng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Giấy phép và Lưu trữ&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Được cấp phép theo giấy phép MIT. Chạy hoàn toàn trên máy tính của bạn. Không có dữ liệu nào rời khỏi hệ thống của bạn trừ khi bạn gửi nó đến nhà cung cấp AI. Cài đặt thông qua &lt;code&gt;curl -fsSL https://opencode.ai/install | bash&lt;/code&gt;, npm, Homebrew hoặc Scoop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Phù hợp nhất cho&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dành cho các nhà phát triển muốn có một trình quản lý terminal kiểu Claude Code mà không bị ràng buộc bởi Anthropic. Mạnh mẽ cho bất kỳ ai thường xuyên chuyển đổi trình soạn thảo, làm việc với nhiều cơ sở mã hoặc chạy trình quản lý trên máy từ xa.&lt;/p&gt;
+&lt;p&gt;Hãy bỏ qua OpenCode nếu bạn muốn tích hợp sâu với VS Code (Cline cung cấp cho bạn khả năng giám sát Lập kế hoạch/Thực hiện ngay trong VS Code) hoặc một trình quản lý hoàn toàn tự động trả về một yêu cầu kéo hoàn chỉnh (OpenHands xử lý việc này tốt hơn).&lt;/p&gt;
+&lt;h2&gt;Danh sách Model AI miễn phí được hỗ trợ&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;danh-sách-model-ai-miễn-phí-được-hỗ-trợ&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#danh-s%c3%a1ch-model-ai-mi%e1%bb%85n-ph%c3%ad-%c4%91%c6%b0%e1%bb%a3c-h%e1%bb%97-tr%e1%bb%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model ID&lt;/th&gt;
+&lt;th&gt;Tên hiển thị&lt;/th&gt;
+&lt;th&gt;Ngữ cảnh&lt;/th&gt;
+&lt;th&gt;Đầu ra&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;big-pickle&lt;/td&gt;
+&lt;td&gt;Big Pickle&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2.5-free&lt;/td&gt;
+&lt;td&gt;MiMo-V2.5 Free&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;laguna-s-2.1-free&lt;/td&gt;
+&lt;td&gt;Laguna S 2.1 Free&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ling-3.0-flash-free&lt;/td&gt;
+&lt;td&gt;Ling-3.0-flash Free&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;north-mini-code-free&lt;/td&gt;
+&lt;td&gt;North Mini Code Free&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;td&gt;64K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nemotron-3-ultra-free&lt;/td&gt;
+&lt;td&gt;Nemotron 3 Ultra Free&lt;/td&gt;
+&lt;td&gt;1M&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deepseek-v4-flash-free&lt;/td&gt;
+&lt;td&gt;DeepSeek V4 Flash Free&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Benchmark&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;benchmark&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#benchmark&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/laguna-xs2-1-chart.svg&#34; alt=&#34;Benchmark&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Size (total params.)&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-bench Verified&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-bench Multilingual&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-Bench Pro (Public Dataset)&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Terminal-Bench 2.0&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Laguna XS 2.1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;33B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;70.9%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;63.1%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;47.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;37.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Laguna XS.2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;33B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;69.9%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;57.7%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;46.3%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;35.7%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Qwen3.6-35B-A3B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;35B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;73.4%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;67.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;49.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;51.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;North Mini Code&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;30B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;67.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;40.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;36.0%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MAI-Code-1-Flash&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;137B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;71.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;65.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;51.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;54.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gpt-oss-120B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;120B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;16.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18.7%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Claude Haiku 4.5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;73.3%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;39.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;29.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GPT-5.4 Nano&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;52.4%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;46.3%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Cline: Công cụ mã hóa Agentic tốt nhất cho VS Code</title>
+      <link>https://cva4.com/vi/tuts/coding/cline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/vi/tuts/coding/cline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cline là trợ lý ảo tự động nhất mà tôi từng sử dụng. Cài đặt tiện ích mở rộng VS Code, cấu hình nhà cung cấp BYOK, giao cho nó một tác vụ và xem nó hoạt động. Nó đọc tệp, viết mã, chạy các lệnh terminal, xử lý lỗi và lặp lại – thường không cần nhắc bạn giữa các bước.&lt;/p&gt;
+&lt;p&gt;Nhược điểm là chi phí khá cao. Vì nó sử dụng công cụ rất nhiều, một phiên Cline trên Claude Sonnet có thể dễ dàng tốn từ 5-10 đô la. Hãy kết hợp nó với một mô hình rẻ hơn cho các công việc thường ngày. Gemini 2.5 Flash và GPT-5 Mini đều hoạt động tốt đáng ngạc nhiên với giá chỉ bằng một phần nhỏ.&lt;/p&gt;
+&lt;p&gt;Phù hợp nhất cho: Các nhà phát triển muốn có thao tác &amp;ldquo;nhấn nút chạy và để đó&amp;rdquo; mà không cần rời khỏi VS Code.&lt;/p&gt;
+&lt;h2&gt;Các tính năng chính&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;các-tính-năng-chính&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-ch%c3%adnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Tách biệt Lập kế hoạch/Thực hiện: Cline hiển thị cho bạn kế hoạch trước khi thực hiện. Bạn có thể phê duyệt, sửa đổi hoặc từ chối kế hoạch trước khi bất kỳ thay đổi nào được thực hiện trên tập tin.&lt;/li&gt;
+&lt;li&gt;Truy cập terminal: Chạy lệnh &lt;code&gt;npm run test&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, các script xây dựng và các lệnh shell tùy ý như một phần của quá trình thực thi tác vụ&lt;/li&gt;
+&lt;li&gt;Tạo và chỉnh sửa tập tin: Tạo tập tin mới, sửa đổi các tập tin hiện có và xóa những gì không còn cần thiết&lt;/li&gt;
+&lt;li&gt;Tự động hóa trình duyệt: Điều khiển trình duyệt không giao diện người dùng để kiểm tra giao diện web như một phần của tác vụ tự động&lt;/li&gt;
+&lt;li&gt;Hỗ trợ nhiều mô hình: Claude Sonnet 4.6, GPT-40, Gemini 2.5 Pro hoặc bất kỳ mô hình cục bộ nào thông qua Ollama&lt;/li&gt;
+&lt;li&gt;Tích hợp MCP: Các trình kết nối được hỗ trợ bởi Marketplace đến cơ sở dữ liệu, API, công cụ thiết kế và dịch vụ phát triển&lt;/li&gt;
+&lt;li&gt;Giám sát chi phí theo thời gian thực: Theo dõi việc sử dụng token để các lần chạy tự động không tạo ra hóa đơn bất ngờ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ưu điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mô hình Lập kế hoạch/Thực thi là sự trừu tượng hóa phù hợp: AI thực hiện công việc, bạn vẫn kiểm soát ở mỗi điểm quyết định&lt;/li&gt;
+&lt;li&gt;Hệ sinh thái MCP cho phép xây dựng các tác nhân hiểu được hệ thống thực tế của bạn, không chỉ tập tin hiện tại&lt;/li&gt;
+&lt;li&gt;Cộng đồng đủ lớn để hầu hết các câu hỏi về tích hợp đã được trả lời trên Discord hoặc GitHub&lt;/li&gt;
+&lt;li&gt;Hoạt động với các mô hình cục bộ thông qua Ollama để hoàn toàn riêng tư, ngoại tuyến Sử dụng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nhược điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phù hợp nhất vẫn là quy trình làm việc ưu tiên trình soạn thảo. Những người thích sử dụng terminal thuần túy có thể thích Aider hoặc OpenCode hơn.&lt;/li&gt;
+&lt;li&gt;Các tác vụ tự động tiêu tốn mã thông báo API nhanh hơn các công cụ chỉ hoàn thành. Cần dự trù ngân sách phù hợp.&lt;/li&gt;
+&lt;li&gt;Mô tả nhiệm vụ mơ hồ sẽ cho kết quả kém hơn. Độ chính xác trong lời nhắc quan trọng hơn ở đây so với các công cụ hoàn thành.&lt;/li&gt;
+&lt;li&gt;Không được tối ưu hóa cho việc hoàn thành nội tuyến nhẹ. Kết hợp với Continue để làm điều đó.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Giấy phép và Lưu trữ&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Giấy phép: Apache-2.0. Không có hạn chế thương mại.&lt;/li&gt;
+&lt;li&gt;Tự lưu trữ: Các mô hình cục bộ thông qua Ollama chạy hoàn toàn trên máy của bạn. API đám mây (Anthropic, OpenAI) gửi mã đến máy chủ của nhà cung cấp.&lt;/li&gt;
+&lt;li&gt;Cài đặt: VS Code Extension Marketplace. Tìm kiếm &amp;ldquo;Cline&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Phù hợp nhất cho&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Các nhà phát triển đang thực hiện công việc ở cấp độ tính năng trong VS Code, những người muốn AI xử lý toàn bộ nhiệm vụ, chứ không chỉ dòng tiếp theo. Nếu hiện tại bạn viết một tính năng từ mô tả phiếu yêu cầu, Cline sẽ thay đổi điều đó thành: mô tả nhiệm vụ, xem xét kế hoạch, phê duyệt, lặp lại khi xem xét.&lt;/p&gt;
+&lt;p&gt;Nếu bạn không sử dụng VS Code, muốn dùng tính năng tự động hoàn thành thuần túy hoặc muốn ủy quyền hoàn toàn các tác vụ mà không cần phê duyệt ở mỗi bước, hãy bỏ qua Cline.&lt;/p&gt;
+&lt;h2&gt;Danh sách Model AI miễn phí được Cline hỗ trợ&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;danh-sách-model-ai-miễn-phí-được-cline-hỗ-trợ&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#danh-s%c3%a1ch-model-ai-mi%e1%bb%85n-ph%c3%ad-%c4%91%c6%b0%e1%bb%a3c-cline-h%e1%bb%97-tr%e1%bb%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dựa trên file cấu hình OpenRouter được lưu trong Cline (&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\cache\openrouter_models.json&lt;/code&gt;), các model hoàn toàn miễn phí (giá input = 0 và output = 0) được hỗ trợ như sau:&lt;/p&gt;
+&lt;h2&gt;🤖 Các model miễn phí (input &amp;amp; output = 0)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-các-model-miễn-phí-input--output--0&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-c%c3%a1c-model-mi%e1%bb%85n-ph%c3%ad-input--output--0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model ID&lt;/th&gt;
+&lt;th&gt;Tên hiển thị&lt;/th&gt;
+&lt;th&gt;Ngữ cảnh&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inclusionai/ling-3.0-flash:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ling-3.0-flash (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;poolside/laguna-s-2.1:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Poolside: Laguna S 2.1 (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;poolside/laguna-xs-2.1:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Poolside: Laguna XS 2.1 (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cohere/north-mini-code:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Cohere: North Mini Code (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;google/gemma-4-31b-it:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Google: Gemma 4 31B (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;google/gemma-4-26b-a4b-it:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Google: Gemma 4 26B A4B (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-ultra-550b-a55b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Ultra (free)&lt;/td&gt;
+&lt;td&gt;1M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-super-120b-a12b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Super (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-30b-a3b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Nano 30B A3B (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Nano Omni (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-12b-v2-vl:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron Nano 12B 2 VL (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-9b-v2:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron Nano 9B V2 (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3.5-content-safety:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3.5 Content Safety (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;openai/gpt-oss-20b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;OpenAI: gpt-oss-20b (free)&lt;/td&gt;
+&lt;td&gt;131K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;💡 Khuyến nghị cho việc lập trình&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-khuyến-nghị-cho-việc-lập-trình&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-khuy%e1%ba%bfn-ngh%e1%bb%8b-cho-vi%e1%bb%87c-l%e1%ba%adp-tr%c3%acnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Các model miễn phí tốt nhất cho tác vụ coding trong số trên là:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Ultra&lt;/strong&gt; (miễn phí) — 550B, ngữ cảnh lớn, mạnh về reasoning&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Super&lt;/strong&gt; (miễn phí) — 120B, tối ưu multi-agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cohere North Mini Code&lt;/strong&gt; (miễn phí) — chuyên biệt cho coding agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Poolside Laguna S 2.1&lt;/strong&gt; (miễn phí) — model coding agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenAI gpt-oss-20b&lt;/strong&gt; (miễn phí) — open-weight của OpenAI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bạn có thể sử dụng &lt;code&gt;openrouter/free&lt;/code&gt; để tự động chọn model miễn phí tốt nhất cho từng tác vụ.&lt;/p&gt;
+&lt;h2&gt;🌐 Router miễn phí&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-router-miễn-phí&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-router-mi%e1%bb%85n-ph%c3%ad&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;openrouter/free&lt;/code&gt;&lt;/strong&gt; — &lt;em&gt;Free Models Router&lt;/em&gt;: tự động chọn ngẫu nhiên một model miễn phí từ danh sách model miễn phí của OpenRouter (ngữ cảnh 200K).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;⚠️ Lưu ý quan trọng&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-lưu-ý-quan-trọng&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-l%c6%b0u-%c3%bd-quan-tr%e1%bb%8dng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;google/lyria-3-pro-preview&lt;/code&gt;&lt;/strong&gt; và &lt;strong&gt;&lt;code&gt;google/lyria-3-clip-preview&lt;/code&gt;&lt;/strong&gt;: giá input/output = 0 nhưng là model &lt;strong&gt;tạo nhạc&lt;/strong&gt; (Lyria 3), được tính phí theo bài hát/đoạn clip ($0.08/bài, $0.04/clip), không dùng chung cho code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;deepseek/deepseek-chat&lt;/code&gt;&lt;/strong&gt;: có giá input = 0 nhưng output = $1.0287 — &lt;strong&gt;không hoàn toàn miễn phí&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

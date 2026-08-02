@@ -50,6 +50,18 @@
                 href="https://cva4.com/story/aesop/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/coding/opencode/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/coding/opencode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/coding/opencode/"
+                />
+  </url><url>
     <loc>https://cva4.com/story/aesop/the-swallow-and-other-birds/</loc>
     <xhtml:link
                 rel="alternate"
@@ -566,6 +578,18 @@
                 href="https://cva4.com/tags/aesop/"
                 />
   </url><url>
+    <loc>https://cva4.com/tags/agents/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/agents/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/agents/"
+                />
+  </url><url>
     <loc>https://cva4.com/tags/anaconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -612,6 +636,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/chatterbox/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/coding/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/coding/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/coding/"
                 />
   </url><url>
     <loc>https://cva4.com/tags/conda/</loc>

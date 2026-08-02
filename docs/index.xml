@@ -16,6 +16,186 @@
     
     
     <item>
+      <title>OpenCode: Best Open Source Claude Code Alternative</title>
+      <link>https://cva4.com/tuts/coding/opencode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/tuts/coding/opencode/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Best for: developers who want a terminal-native AI coding agent that works across any editor and any model provider.&lt;/p&gt;
+&lt;p&gt;OpenCode is the most-starred open source AI coding tool I found: 162k+ GitHub stars and counting. The SST team built it as the open source answer to Claude Code: a terminal-native agent with a full TUI, a desktop app, and IDE extensions. Where Claude Code locks you to Anthropic, OpenCode works with 75+ providers through Models.dev, including Claude, OpenAI, Gemini, and local models. Same workflow, full model choice.&lt;/p&gt;
+&lt;p&gt;The repository was active during this review window, and the client/server architecture means you can run the server on a remote machine and drive it from your terminal, desktop, or mobile app.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;75+ LLM providers: Claude, OpenAI, Gemini, Ollama, and other providers through Models.dev (not locked to any single vendor)&lt;/li&gt;
+&lt;li&gt;Two built-in agents: &amp;ldquo;build&amp;rdquo; (full access to read, write, and execute) and &amp;ldquo;plan&amp;rdquo; (read-only analysis and exploration), switchable with Tab&lt;/li&gt;
+&lt;li&gt;LSP support: Automatically loads the correct language server for the language in your working directory&lt;/li&gt;
+&lt;li&gt;Multi-session: Run multiple agents on the same project in parallel&lt;/li&gt;
+&lt;li&gt;Share links: Share a link to any session for debugging or review&lt;/li&gt;
+&lt;li&gt;Cross-platform: Terminal TUI, desktop app (macOS, Windows, Linux beta), and IDE extensions&lt;/li&gt;
+&lt;li&gt;Privacy-first: No code or context data stored server-side&lt;/li&gt;
+&lt;li&gt;GitHub Copilot and ChatGPT login: Sign in with existing GitHub Copilot or ChatGPT Plus subscriptions to use those model credits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;162k+ GitHub stars, the largest open source AI coding community I found&lt;/li&gt;
+&lt;li&gt;Provider-agnostic: swap models without changing your workflow&lt;/li&gt;
+&lt;li&gt;Terminal-native design serves developers who live in the command line&lt;/li&gt;
+&lt;li&gt;Privacy guarantee: zero data stored, runs fully local with Ollama&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Terminal UI has a steeper learning curve than GUI-native tools&lt;/li&gt;
+&lt;li&gt;No deep integration with a specific editor (editor-agnostic means no editor-native features)&lt;/li&gt;
+&lt;li&gt;Optional &amp;ldquo;Zen&amp;rdquo; managed model tier is paid; the free path requires your own API keys&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;License and Hosting&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MIT licensed. Runs entirely on your machine. No data leaves your system unless you send it to an AI provider. Install via &lt;code&gt;curl -fsSL https://opencode.ai/install | bash&lt;/code&gt;, npm, Homebrew, or Scoop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best For&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Developers who want a Claude Code-style terminal agent without the Anthropic lock-in. Strong for anyone switching editors frequently, working in multiple codebases, or running agents on remote machines.&lt;/p&gt;
+&lt;p&gt;Skip OpenCode if you want deep VS Code integration (Cline gives you Plan/Act oversight inside VS Code) or a fully autonomous agent that returns a complete PR (OpenHands handles that better).&lt;/p&gt;
+&lt;h2&gt;List of free AI models supported&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;list-of-free-ai-models-supported&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#list-of-free-ai-models-supported&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model ID&lt;/th&gt;
+&lt;th&gt;Model Name&lt;/th&gt;
+&lt;th&gt;Context&lt;/th&gt;
+&lt;th&gt;Output&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;big-pickle&lt;/td&gt;
+&lt;td&gt;Big Pickle&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mimo-v2.5-free&lt;/td&gt;
+&lt;td&gt;MiMo-V2.5 Free&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;laguna-s-2.1-free&lt;/td&gt;
+&lt;td&gt;Laguna S 2.1 Free&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ling-3.0-flash-free&lt;/td&gt;
+&lt;td&gt;Ling-3.0-flash Free&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;td&gt;32K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;north-mini-code-free&lt;/td&gt;
+&lt;td&gt;North Mini Code Free&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;td&gt;64K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;nemotron-3-ultra-free&lt;/td&gt;
+&lt;td&gt;Nemotron 3 Ultra Free&lt;/td&gt;
+&lt;td&gt;1M&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deepseek-v4-flash-free&lt;/td&gt;
+&lt;td&gt;DeepSeek V4 Flash Free&lt;/td&gt;
+&lt;td&gt;200K&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Benchmark&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;benchmark&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#benchmark&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/laguna-xs2-1-chart.svg&#34; alt=&#34;Benchmark&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Size (total params.)&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-bench Verified&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-bench Multilingual&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;SWE-Bench Pro (Public Dataset)&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;Terminal-Bench 2.0&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Laguna XS 2.1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;33B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;70.9%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;63.1%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;47.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;37.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Laguna XS.2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;33B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;69.9%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;57.7%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;46.3%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;35.7%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Qwen3.6-35B-A3B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;35B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;73.4%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;67.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;49.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;51.5%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;North Mini Code&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;30B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;67.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;40.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;36.0%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MAI-Code-1-Flash&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;137B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;71.6%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;65.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;51.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;54.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gpt-oss-120B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;120B&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;16.2%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;18.7%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Claude Haiku 4.5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;73.3%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;39.5%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;29.8%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GPT-5.4 Nano&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;52.4%&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;46.3%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Text-to-Speech Open Weights</title>
       <link>https://cva4.com/tuts/tts/tts-open-weights/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -952,7 +1132,7 @@ Audio Samples: &lt;a href=&#34;https://resemble-ai.github.io/chatterbox_demopage
     </item>
     
     <item>
-      <title>Cline</title>
+      <title>Cline: Best Agentic Coding Agent for VS Code</title>
       <link>https://cva4.com/tuts/coding/cline/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -963,6 +1143,39 @@ Audio Samples: &lt;a href=&#34;https://resemble-ai.github.io/chatterbox_demopage
         &lt;p&gt;Cline is the most autonomous free agent I&amp;rsquo;ve used. Install the VS Code extension, configure a BYOK provider, give it a task, and watch it work. It reads files, writes code, runs terminal commands, handles errors, and iterates — often without prompting you between steps.&lt;/p&gt;
 &lt;p&gt;The tradeoff is cost visibility. Because it&amp;rsquo;s aggressive about tool use, a single Cline session on Claude Sonnet can easily cost $5-10. Pair it with a cheaper model for routine work. Gemini 2.5 Flash and GPT-5 Mini both do surprisingly well at a fraction of the price.&lt;/p&gt;
 &lt;p&gt;Best for: Developers who want &amp;ldquo;press go and walk away&amp;rdquo; behavior without leaving VS Code.&lt;/p&gt;
+&lt;h2&gt;Key Features&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;key-features&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-features&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Plan/Act separation: Cline shows you the plan before executing. You approve, modify, or reject it before any file changes happen.&lt;/li&gt;
+&lt;li&gt;Terminal access: Runs npm run test, git commit, build scripts, and arbitrary shell commands as part of task execution&lt;/li&gt;
+&lt;li&gt;File creation and editing: Creates new files, modifies existing ones, and removes what&amp;rsquo;s no longer needed&lt;/li&gt;
+&lt;li&gt;Browser automation: Controls a headless browser to test web UIs as part of an agentic task&lt;/li&gt;
+&lt;li&gt;Multi-model support: Claude Sonnet 4.6, GPT-4o, Gemini 2.5 Pro, or any local model via Ollama&lt;/li&gt;
+&lt;li&gt;MCP integration: Marketplace-backed connectors to databases, APIs, design tools, and dev services&lt;/li&gt;
+&lt;li&gt;Real-time cost monitoring: Tracks token usage so agentic runs don&amp;rsquo;t generate unexpected bills&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plan/Act oversight is the right abstraction: AI does the work, you stay in control at each decision point&lt;/li&gt;
+&lt;li&gt;MCP ecosystem makes it possible to build agents that understand your actual stack, not just your current file&lt;/li&gt;
+&lt;li&gt;The community is large enough that most integration questions are already answered on Discord or GitHub&lt;/li&gt;
+&lt;li&gt;Works with local models via Ollama for fully private, offline use&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Best fit is still editor-first workflows. Terminal purists may prefer Aider or OpenCode.&lt;/li&gt;
+&lt;li&gt;Agentic runs consume API tokens faster than completion-only tools. Budget accordingly.&lt;/li&gt;
+&lt;li&gt;Vague task descriptions produce worse results. Precision in prompts matters more here than with completion tools.&lt;/li&gt;
+&lt;li&gt;Not optimized for lightweight inline completions. Pair it with Continue for that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;License and Hosting&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;License: Apache-2.0. No commercial restrictions.&lt;/li&gt;
+&lt;li&gt;Self-hosting: Local models via Ollama run entirely on your machine. Cloud APIs (Anthropic, OpenAI) send code to the provider&amp;rsquo;s servers.&lt;/li&gt;
+&lt;li&gt;Install: VS Code Extension Marketplace. Search &amp;ldquo;Cline&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Best For&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Developers doing feature-level work in VS Code who want AI that handles the full task, not just the next line. If you currently write a feature from a ticket description, Cline changes that into: describe task, review plan, approve, iterate on review.&lt;/p&gt;
+&lt;p&gt;Skip Cline if you&amp;rsquo;re outside VS Code, prefer pure autocomplete, or want to delegate tasks entirely without approval at each step.&lt;/p&gt;
 &lt;h2&gt;List of free AI models supported by Cline&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;list-of-free-ai-models-supported-by-cline&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#list-of-free-ai-models-supported-by-cline&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Based on the OpenRouter configuration file stored in Cline
 &lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\cache\openrouter_models.json&lt;/code&gt;
