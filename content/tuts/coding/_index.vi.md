@@ -1,4 +1,5 @@
 ---
+linkTitle: Trợ lý lập trình
 title: Trợ lý lập trình thông minh
 weight: 1
 prev: /tts
@@ -10,7 +11,7 @@ sidebar:
 Các phần mềm hỗ trợ lập trình AI miễn phí tốt nhất năm 2026 (Mã nguồn mở, BYOK, không cần đăng ký)
 
 
-# Mở đầu
+## Mở đầu
 
 Phần mềm hỗ trợ lập trình AI miễn phí tốt nhất phụ thuộc vào môi trường làm việc của bạn: OpenCode nếu bạn thường xuyên sử dụng terminal, Cline nếu bạn dùng VS Code, Aider nếu bạn muốn có nhật ký kiểm toán tích hợp Git, và Pi nếu bạn muốn một phần mềm nhỏ gọn và dễ kết hợp. Cả bốn đều là mã nguồn mở, đều cho phép sử dụng phần mềm của riêng bạn (BYOK), và đều có thể chạy Claude, GPT-5, Gemini, DeepSeek, hoặc bất kỳ phần mềm nào khác mà bạn có khóa API.
 
@@ -42,6 +43,19 @@ Bài viết này tập trung vào loại 1 — các agent miễn phí, nơi chi 
 | [Continue](https://continue.dev) | VS Code + JetBrains ext | Trò chuyện và chỉnh sửa trong trình soạn thảo | Trung bình |
 | [Goose](https://goose-docs.ai) | CLI + desktop | Phần mềm mã nguồn mở của Block | Cao |
 
+| Công cụ | Giao diện | Tự lưu trữ | Điểm mạnh | GitHub sao |
+|----------|-------------|----------|----------|----------|
+| [OpenCode](https://opencode.ai) | Terminal + Desktop + IDE | Yes | Đầy đủ tính năng, không phụ thuộc vào mô hình | [192k+](https://github.com/anomalyco/opencode) |
+| [Cline](https://cline.bot) | VS Code, Cursor, JetBrains, CLI | Yes (local models) | Làm việc đa tệp tự động | [65k+](https://github.com/cline/cline) |
+| [OpenHands](https://www.openhands.dev) | Web UI + CLI | Yes (Docker) | Phát triển đầy đủ tính năng | [82k+](https://github.com/OpenHands/OpenHands) |
+| [Aider](https://aider.chat) | CLI | Yes | Hỗ trợ Git, nhật ký kiểm toán rõ ràng | [47k+](https://github.com/Aider-AI/aider) |
+| [Pi Coding Agent](https://pi.dev) | CLI | Yes | Tối giản, có thể lập trình | [82k+](https://github.com/earendil-works/pi) |
+| [T3 Code](https://t3.codes) | Desktop GUI | Yes | Giao diện người dùng dựa trên Claude Code + Codex | [16k+](https://github.com/pingdotgg/t3code) |
+| [Continue](https://continue.dev) | VS Code + JetBrains ext | Yes | Trò chuyện và chỉnh sửa trong trình soạn thảo | [35k+](https://github.com/continuedev/continue) |
+| [Goose](https://goose-docs.ai) | Desktop + CLI + API | Yes | Block's open source agent | [52k+](https://github.com/aaif-goose/goose) |
+| [Cody](https://sourcegraph.com/cody) | VS Code, JetBrains, VS, Web | Enterprise | Doanh nghiệp, cơ sở mã nguồn lớn | 3.8k+ |
+| [Zed](https://zed.dev) | Standalone | Yes (local models) | Trình chỉnh sửa gốc AI trên macOS/Linux | [87k+](https://github.com/zed-industries/zed) |
+| [Tabby](https://www.tabbyml.com) | VS Code, JetBrains, Vim | Yes | Triển khai nhóm không kết nối mạng | [33k+](https://github.com/TabbyML/tabby) |
 
 ## Vấn đề chi phí: công cụ miễn phí, mô hình đắt đỏ?
 
@@ -80,3 +94,7 @@ Cline và Opencode đều xử lý tốt các công việc nhiều bước dài.
 Tham khảo:
 
 - [Best Free AI Coding Agents in 2026](https://admix.software/blog/best-free-ai-coding-agents)
+- [Best AI Coding Agents in 2026: Claude Code vs Codex vs Cursor vs T3 Code vs Pi (Ranked)](https://admix.software/blog/best-ai-coding-agents)
+- [Claude Code Alternatives Worth Trying in 2026 (Especially After the February Regression)](https://admix.software/blog/claude-code-alternatives)
+- [9 Best Open Source AI Coding Assistants in 2026](https://www.opensourcealternatives.to/blog/best-open-source-ai-coding-assistants)
+- [5 Free AI Coding Agents You Can Run Today (No API Key Needed)](https://coderfile.io/blog/free-ai-coding-agents-no-api-key-2026)

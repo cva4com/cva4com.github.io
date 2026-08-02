@@ -1,5 +1,6 @@
 ---
-title: AI Coding Agent
+linkTitle: AI Coding Agent
+title: Best Free AI Coding Agents in 2026
 weight: 1
 prev: /tts
 next: /tts/tts-open-weights
@@ -29,15 +30,19 @@ This article focuses on category 1 — free agents where your only cost is the m
 
 ## The free tools worth using
 
-| Tool | Form factor | Strength | Autonomy |
-|----------|-------------|----------|----------|
-| [OpenCode](https://opencode.ai) | Terminal TUI + desktop | Full-featured, model-agnostic | High |
-| [Cline](https://cline.bot) | VS Code extension | Autonomous multi-file work | Very high |
-| [Aider](https://aider.chat) | CLI | Git-native, clean audit trail | Moderate |
-| [Pi Coding Agent](https://pi.dev) | CLI | Minimalist, scriptable | Moderate |
-| [T3 Code](https://t3.codes) | Desktop GUI | UI over Claude Code + Codex | Inherits underlying |
-| [Continue](https://continue.dev) | VS Code + JetBrains ext | In-editor chat and edit | Moderate |
-| [Goose](https://goose-docs.ai) | CLI + desktop | Block's open source agent | High |
+| Tool | Interface | Self-Hosted | Strength | GitHub Stars |
+|----------|-------------|----------|----------|----------|
+| [OpenCode](https://opencode.ai) | Terminal + Desktop + IDE | Yes | Full-featured, model-agnostic | [192k+](https://github.com/anomalyco/opencode) |
+| [Cline](https://cline.bot) | VS Code, Cursor, JetBrains, CLI | Yes (local models) | Autonomous multi-file work | [65k+](https://github.com/cline/cline) |
+| [OpenHands](https://www.openhands.dev) | Web UI + CLI | Yes (Docker) | Full feature development | [82k+](https://github.com/OpenHands/OpenHands) |
+| [Aider](https://aider.chat) | CLI | Yes | Git-native, clean audit trail | [47k+](https://github.com/Aider-AI/aider) |
+| [Pi Coding Agent](https://pi.dev) | CLI | Yes | Minimalist, scriptable | [82k+](https://github.com/earendil-works/pi) |
+| [T3 Code](https://t3.codes) | Desktop GUI | Yes | UI over Claude Code + Codex | [16k+](https://github.com/pingdotgg/t3code) |
+| [Continue](https://continue.dev) | VS Code + JetBrains ext | Yes | In-editor chat and edit | [35k+](https://github.com/continuedev/continue) |
+| [Goose](https://goose-docs.ai) | Desktop + CLI + API | Yes | Block's open source agent | [52k+](https://github.com/aaif-goose/goose) |
+| [Cody](https://sourcegraph.com/cody) | VS Code, JetBrains, VS, Web | Enterprise | Enterprise, large codebases | 3.8k+ |
+| [Zed](https://zed.dev) | Standalone | Yes (local models) | AI-native editor on macOS/Linux | [87k+](https://github.com/zed-industries/zed) |
+| [Tabby](https://www.tabbyml.com) | VS Code, JetBrains, Vim | Yes | Team air-gap deployment | [33k+](https://github.com/TabbyML/tabby) |
 
 
 
@@ -76,6 +81,10 @@ Cline and opencode both handle long multi-step work well. Cline tends to be more
 Reference:
 
 - [Best Free AI Coding Agents in 2026](https://admix.software/blog/best-free-ai-coding-agents)
+- [Best AI Coding Agents in 2026: Claude Code vs Codex vs Cursor vs T3 Code vs Pi (Ranked)](https://admix.software/blog/best-ai-coding-agents)
+- [Claude Code Alternatives Worth Trying in 2026 (Especially After the February Regression)](https://admix.software/blog/claude-code-alternatives)
+- [9 Best Open Source AI Coding Assistants in 2026](https://www.opensourcealternatives.to/blog/best-open-source-ai-coding-assistants)
+- [5 Free AI Coding Agents You Can Run Today (No API Key Needed)](https://coderfile.io/blog/free-ai-coding-agents-no-api-key-2026)
 
 <!--more-->
 
