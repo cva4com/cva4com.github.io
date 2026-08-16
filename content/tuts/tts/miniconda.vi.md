@@ -12,16 +12,16 @@ tags:
   - Anaconda
 ---
 
-## Cài đặt Miniconda
-
-{{< youtube AgnAs0nPEVg >}}
-
-
 ## Miniconda là gì?
 
 Miniconda là trình cài đặt tối giản miễn phí cho Conda. Nó là một lựa chọn thay thế nhỏ gọn hơn cho Anaconda. Nó bao gồm Python, Conda và các thư viện phụ thuộc cần thiết.
 
 Với Miniconda, bạn có thể tạo môi trường biệt lập. Điều này giúp tránh xung đột giữa các dự án khác nhau. Nó lý tưởng cho các nhà phát triển cần sự linh hoạt.
+
+
+## Cài đặt Miniconda
+
+{{< youtube AgnAs0nPEVg >}}
 
 
 ### Tải xuống Miniconda
@@ -53,7 +53,7 @@ conda --version
 ```
 
 
-### Cài đặt trên macOS/Linux
+### Cài đặt trên MacOS/Linux
 
 {{< youtube QWta2QPUJ2E >}}
 
