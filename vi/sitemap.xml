@@ -170,6 +170,18 @@
                 href="https://cva4.com/vi/tuts/tts/qwen-tts/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/sopro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/sopro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/sopro/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/supertonic-3/</loc>
     <xhtml:link
                 rel="alternate"
@@ -756,6 +768,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/shipyard/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/sopro/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/sopro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/sopro/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/supertonic/</loc>
