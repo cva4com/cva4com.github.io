@@ -1,7 +1,7 @@
 ---
 linkTitle: ZipVoice
 title: Cài đặt ZipVoice trên Windows bằng Conda
-weight: 11
+weight: 13
 cascade:
   type: docs
 tags:
@@ -61,6 +61,8 @@ nvidia-smi
 Tải xuống [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
+
+> Cài đặt [Miniconda trên Windows](https://cva4.com/tuts/tts/miniconda/)
 
 
 ## Bước 2. Tạo môi trường Conda
@@ -141,7 +143,7 @@ Mẫu âm thanh tham khảo:  `prompt_english_female1.wav`
 </audio>
 
 
-## Bước 3. Chạy chương trình
+## Bước 3. Chạy suy luận
 
 Chạy ZipVoice Single-speaker
 

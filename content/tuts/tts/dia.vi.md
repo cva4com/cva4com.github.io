@@ -60,6 +60,8 @@ Tải xuống [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.ana
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
 
+> Cài đặt [Miniconda trên Windows](https://cva4.com/tuts/tts/miniconda/)
+
 
 ## Bước 2. Tạo môi trường Conda
 
@@ -100,7 +102,7 @@ cd dia
 ```
 
 
-## Bước 3. Chạy chương trình
+## Bước 3. Chạy suy luận
 
 Bây giờ, hãy chạy thử một vài ví dụ.
 

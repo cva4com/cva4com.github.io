@@ -1,7 +1,7 @@
 ---
 linkTitle: Supertonic-3
 title: Cài đặt Supertonic-3 trên Windows bằng Conda
-weight: 9
+weight: 11
 cascade:
   type: docs
 tags:
@@ -42,6 +42,8 @@ Arabic (`ar`), Bulgarian (`bg`), Croatian (`hr`), Czech (`cs`), Danish (`da`), D
 Tải xuống [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
+
+> Cài đặt [Miniconda trên Windows](https://cva4.com/tuts/tts/miniconda/)
 
 
 ## Bước 2. Tạo môi trường Conda

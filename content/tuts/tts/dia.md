@@ -61,6 +61,8 @@ Download [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda
 
 Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
 
+> How to [Install Miniconda on Windows](https://cva4.com/tuts/tts/miniconda/)
+
 
 ## Step 2. Create Conda Environment
 
