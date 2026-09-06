@@ -146,6 +146,18 @@
                 href="https://cva4.com/vi/tuts/tts/kokoro/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/neutts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/neutts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/neutts/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/omnivoice/</loc>
     <xhtml:link
                 rel="alternate"
