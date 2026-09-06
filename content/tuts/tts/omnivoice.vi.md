@@ -1,7 +1,7 @@
 ---
 linkTitle: OmniVoice
 title: Cài đặt OmniVoice trên Windows bằng Conda
-weight: 7
+weight: 8
 cascade:
   type: docs
 tags:
@@ -60,6 +60,8 @@ nvidia-smi
 Tải xuống [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
+
+> Cài đặt [Miniconda trên Windows](https://cva4.com/tuts/tts/miniconda/)
 
 
 ## Bước 2. Tạo môi trường Conda

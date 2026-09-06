@@ -1,7 +1,7 @@
 ---
 linkTitle: OmniVoice
 title: Install OmniVoice TTS on Windows with Conda
-weight: 7
+weight: 8
 cascade:
   type: docs
 tags:
@@ -61,6 +61,8 @@ nvidia-smi
 Download [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
 
 Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
+
+> How to [Install Miniconda on Windows](https://cva4.com/tuts/tts/miniconda/)
 
 
 ## Step 2. Create Conda Environment

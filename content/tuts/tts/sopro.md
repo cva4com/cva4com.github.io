@@ -1,6 +1,6 @@
 ---
 linkTitle: SoproTTS
-title: Install Nari Sopro TTS on Windows with Conda
+title: Install Sopro TTS on Windows with Conda
 weight: 10
 cascade:
   type: docs
@@ -60,8 +60,8 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube FWFvAXpiaAM >}} -->
+<!-- Coming soon! -->
+{{< youtube JB4Q6c7nThI >}}
 
 
 ## Step 1. Install Miniconda Package

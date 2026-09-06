@@ -1,6 +1,6 @@
 ---
 linkTitle: SoproTTS
-title: Cài đặt Nari SoproTTS trên Windows bằng Conda
+title: Cài đặt SoproTTS trên Windows bằng Conda
 weight: 10
 cascade:
   type: docs
@@ -60,8 +60,8 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube FWFvAXpiaAM >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube JB4Q6c7nThI >}}
 
 
 ## Bước 1. Cài đặt Miniconda
