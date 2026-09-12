@@ -57,8 +57,8 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube FWFvAXpiaAM >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube dreLvnl678M >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -108,7 +108,7 @@ conda env create -f environment.yml
 conda activate neutts
 ```
 
-Clone và cài NeuTTS từ source (chạy sau khi kích hoạt môi trường)
+Clone NeuTTS từ source (chạy sau khi kích hoạt môi trường)
 
 ```bash
 git clone https://github.com/neuphonic/neutts.git
@@ -127,10 +127,14 @@ Vì mô hình này được cài đặt chế độ hạn chế, bạn phải đ
 2. Truy cập trực tiếp vào trang mô hình của NeuTTS Nano và NeuCodec:
    - https://huggingface.co/neuphonic/neutts-nano
    - https://huggingface.co/neuphonic/neucodec
-3. Điền các thông tin bắt buộc và nhấp vào nút `Accept Conditions` (Chấp nhận điều kiện) hoặc `Request Access` (Yêu cầu quyền truy cập).
+3. Điền các thông tin bắt buộc và nhấp vào nút `Agree and access repository`.
 4. Tạo một token với quyền `Read` (Đọc) bằng cách vào mục **Settings > Access Tokens** trong tài khoản Hugging Face của bạn.
-5. Mở terminal và chạy lệnh: `huggingface-cli login`
-6. Dán token của bạn vào khi được yêu cầu và nhấn phím Enter.
+5. Mở terminal và chạy lệnh: `hf auth login`
+   CLI sẽ yêu cầu bạn thực hiện theo một trong hai cách sau:
+   - Login with your browser
+   - Paste an Access Token
+6. Chọn tùy chọn đầu tiên. Giao diện dòng lệnh (CLI) sẽ hiển thị một mã ngắn và yêu cầu bạn truy cập một đường dẫn URL (https://huggingface.co/oauth/device). Hãy dán mã này vào trình duyệt để xác nhận đăng nhập ngay lập tức.
+7. Chọn tùy chọn thứ hai. Dán mã token của bạn khi được yêu cầu và nhấn Enter.
 
 
 ## Bước 4. Chạy suy luận

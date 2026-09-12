@@ -57,8 +57,8 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube FWFvAXpiaAM >}} -->
+<!-- Coming soon! -->
+{{< youtube dreLvnl678M >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -108,7 +108,7 @@ conda env create -f environment.yml
 conda activate neutts
 ```
 
-Clone and install NeuTTS from source (run after activating the environment)
+Clone NeuTTS from source (run after activating the environment)
 
 ```bash
 git clone https://github.com/neuphonic/neutts.git
@@ -127,10 +127,14 @@ Request Access on the Hugging Face Website. Because this model has restricted ac
 2. Go directly to the model page of NeuTTS Nano and NeuCodec:
    - https://huggingface.co/neuphonic/neutts-nano
    - https://huggingface.co/neuphonic/neucodec
-3. Fill out any required information and click the `Accept Conditions` or `Request Access button`.
+3. Fill out any required information and click the `Agree and access repository` button.
 4. Generate a token with `Read` permissions by going to your Hugging Face **Settings > Access Tokens**.
-5. Open your terminal and run: `huggingface-cli login`
-6. Paste your token when prompted and hit Enter.
+5. Open your terminal and run: `hf auth login`
+   The CLI will prompt you in one of two ways:
+   - Login with your browser
+   - Paste an Access Token
+6. Select the first option. The CLI will display a short code and ask you to open a URL (https://huggingface.co/oauth/device). Paste the code into your browser window to instantly approve the login.
+7. Select the second option. Paste your token when prompted and hit Enter.
 
 
 ## Step 4. Run the Inference
