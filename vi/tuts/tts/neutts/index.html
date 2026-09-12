@@ -30,7 +30,7 @@
   
   <meta itemprop="name" content="Cài đặt NeuTTS trên Windows bằng Conda">
   <meta itemprop="description" content="Giới thiệu Công nghệ AI giọng nói tiên tiến nhất từ ​​lâu đã bị giới hạn trong các API web. NeuTTS là tập hợp các mô hình ngôn ngữ chuyển văn bản thành giọng nói (TTS) mã nguồn mở, hoạt động trực tiếp trên thiết bị và hỗ trợ sao chép giọng nói tức thì. Được phát triển dựa trên nền tảng các mô hình ngôn ngữ lớn (LLM), NeuTTS mang đến khả năng tạo giọng nói tự nhiên, hiệu suất thời gian thực, tính năng bảo mật tích hợp và khả năng sao chép giọng nói ngay trên thiết bị của bạn – mở ra một phân khúc mới cho các tác nhân giọng nói nhúng, trợ lý ảo, đồ chơi thông minh và các ứng dụng đáp ứng tiêu chuẩn tuân thủ.">
-  <meta itemprop="wordCount" content="804">
+  <meta itemprop="wordCount" content="857">
   <meta itemprop="keywords" content="TTS,Sopro,Open Weights">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Cài đặt NeuTTS trên Windows bằng Conda">
@@ -880,15 +880,15 @@ Demo: <a href="https://hf.co/neuphonic/spaces" target="_blank" rel="noopener">ht
 </div>
 <p><img src="/images/2026/nvidia-smi.png" alt="PyTorch" loading="lazy" /></p>
 <h2>Video hướng dẫn<span class="hx-absolute -hx-mt-20" id="video-hướng-dẫn"></span>
-    <a href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Sắp ra mắt!</p>
-<!-- 
+    <a href="#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><!-- Sắp ra mắt! -->
+
 
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FWFvAXpiaAM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/dreLvnl678M?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
       ></iframe>
     </div>
- -->
+
 <h2>Bước 1. Cài đặt Miniconda<span class="hx-absolute -hx-mt-20" id="bước-1-cài-đặt-miniconda"></span>
     <a href="#b%c6%b0%e1%bb%9bc-1-c%c3%a0i-%c4%91%e1%ba%b7t-miniconda" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Tải xuống <a href="https://cva4.com/tuts/tts/miniconda/" target="_blank" rel="noopener">Miniconda</a>: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped</a></p>
 <p>Liên kết trực tiếp: <a href="https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe" target="_blank" rel="noopener">https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe</a></p>
@@ -952,7 +952,7 @@ Demo: <a href="https://hf.co/neuphonic/spaces" target="_blank" rel="noopener">ht
 
   
 </div>
-<p>Clone và cài NeuTTS từ source (chạy sau khi kích hoạt môi trường)</p>
+<p>Clone NeuTTS từ source (chạy sau khi kích hoạt môi trường)</p>
 <div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
   
 
@@ -981,10 +981,17 @@ Demo: <a href="https://hf.co/neuphonic/spaces" target="_blank" rel="noopener">ht
 <li><a href="https://huggingface.co/neuphonic/neucodec" target="_blank" rel="noopener">https://huggingface.co/neuphonic/neucodec</a></li>
 </ul>
 </li>
-<li>Điền các thông tin bắt buộc và nhấp vào nút <code>Accept Conditions</code> (Chấp nhận điều kiện) hoặc <code>Request Access</code> (Yêu cầu quyền truy cập).</li>
+<li>Điền các thông tin bắt buộc và nhấp vào nút <code>Agree and access repository</code>.</li>
 <li>Tạo một token với quyền <code>Read</code> (Đọc) bằng cách vào mục <strong>Settings &gt; Access Tokens</strong> trong tài khoản Hugging Face của bạn.</li>
-<li>Mở terminal và chạy lệnh: <code>huggingface-cli login</code></li>
-<li>Dán token của bạn vào khi được yêu cầu và nhấn phím Enter.</li>
+<li>Mở terminal và chạy lệnh: <code>hf auth login</code>
+CLI sẽ yêu cầu bạn thực hiện theo một trong hai cách sau:
+<ul>
+<li>Login with your browser</li>
+<li>Paste an Access Token</li>
+</ul>
+</li>
+<li>Chọn tùy chọn đầu tiên. Giao diện dòng lệnh (CLI) sẽ hiển thị một mã ngắn và yêu cầu bạn truy cập một đường dẫn URL (<a href="https://huggingface.co/oauth/device%29" target="_blank" rel="noopener">https://huggingface.co/oauth/device)</a>. Hãy dán mã này vào trình duyệt để xác nhận đăng nhập ngay lập tức.</li>
+<li>Chọn tùy chọn thứ hai. Dán mã token của bạn khi được yêu cầu và nhấn Enter.</li>
 </ol>
 <h2>Bước 4. Chạy suy luận<span class="hx-absolute -hx-mt-20" id="bước-4-chạy-suy-luận"></span>
     <a href="#b%c6%b0%e1%bb%9bc-4-ch%e1%ba%a1y-suy-lu%e1%ba%adn" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Bây giờ, hãy chạy tập lệnh ví dụ cơ bản để tổng hợp giọng nói:</p>
