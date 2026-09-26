@@ -1,7 +1,7 @@
 ---
 linkTitle: VoxCPM2
 title: Cài đặt VoxCPM2 trên Windows bằng Conda
-weight: 12
+weight: 14
 cascade:
   type: docs
 tags:

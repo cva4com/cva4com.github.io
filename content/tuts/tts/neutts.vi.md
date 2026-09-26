@@ -1,12 +1,12 @@
 ---
 linkTitle: NeuTTS
 title: Cài đặt NeuTTS trên Windows bằng Conda
-weight: 7
+weight: 9
 cascade:
   type: docs
 tags:
   - TTS
-  - Sopro
+  - Neu
   - Open Weights
 ---
 
@@ -135,6 +135,8 @@ Vì mô hình này được cài đặt chế độ hạn chế, bạn phải đ
    - Paste an Access Token
 6. Chọn tùy chọn đầu tiên. Giao diện dòng lệnh (CLI) sẽ hiển thị một mã ngắn và yêu cầu bạn truy cập một đường dẫn URL (https://huggingface.co/oauth/device). Hãy dán mã này vào trình duyệt để xác nhận đăng nhập ngay lập tức.
 7. Chọn tùy chọn thứ hai. Dán mã token của bạn khi được yêu cầu và nhấn Enter.
+
+Yêu cầu truy cập kho lưu trữ này của bạn đã được gửi và đang chờ các tác giả của kho lưu trữ xem xét. Bạn có thể kiểm tra trạng thái của tất cả các yêu cầu truy cập trong phần [cài đặt](https://huggingface.co/settings/gated-repos).
 
 
 ## Bước 4. Chạy suy luận

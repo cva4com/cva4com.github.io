@@ -1,12 +1,12 @@
 ---
 linkTitle: NeuTTS
 title: Install Neu TTS on Windows with Conda
-weight: 7
+weight: 9
 cascade:
   type: docs
 tags:
   - TTS
-  - Sopro
+  - Neu
   - Open Weights
 ---
 
@@ -136,6 +136,7 @@ Request Access on the Hugging Face Website. Because this model has restricted ac
 6. Select the first option. The CLI will display a short code and ask you to open a URL (https://huggingface.co/oauth/device). Paste the code into your browser window to instantly approve the login.
 7. Select the second option. Paste your token when prompted and hit Enter.
 
+Note: Your request to access this repository has been submitted and is awaiting a review from the repository authors. You can check the status of all your access requests in [your settings](https://huggingface.co/settings/gated-repos).
 
 ## Step 4. Run the Inference
 

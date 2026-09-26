@@ -1,7 +1,7 @@
 ---
 linkTitle: Chatterbox
 title: Cài đặt Chatterbox trên Windows bằng Conda
-weight: 3
+weight: 4
 cascade:
   type: docs
 tags:

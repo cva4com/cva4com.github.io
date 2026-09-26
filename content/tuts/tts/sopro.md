@@ -1,7 +1,7 @@
 ---
 linkTitle: SoproTTS
 title: Install Sopro TTS on Windows with Conda
-weight: 10
+weight: 12
 cascade:
   type: docs
 tags:

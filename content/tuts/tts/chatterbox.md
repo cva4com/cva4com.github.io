@@ -1,7 +1,7 @@
 ---
 linkTitle: Chatterbox
 title: Install Chatterbox TTS on Windows with Conda
-weight: 3
+weight: 4
 cascade:
   type: docs
 tags:
