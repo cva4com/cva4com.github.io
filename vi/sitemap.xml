@@ -86,16 +86,16 @@
                 href="https://cva4.com/vi/tuts/tts/tts-open-weights/"
                 />
   </url><url>
-    <loc>https://cva4.com/vi/tuts/tts/chatterbox/</loc>
+    <loc>https://cva4.com/vi/tuts/tts/auk/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://cva4.com/tuts/tts/chatterbox/"
+                href="https://cva4.com/tuts/tts/auk/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/chatterbox/"
+                href="https://cva4.com/vi/tuts/tts/auk/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/coding/cline/</loc>
@@ -108,6 +108,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tuts/coding/cline/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/chatterbox/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/chatterbox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/chatterbox/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/tts/dia/</loc>
@@ -602,6 +614,18 @@
                 href="https://cva4.com/vi/tags/anaconda/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tags/auk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/auk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/auk/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tags/bird/</loc>
     <xhtml:link
                 rel="alternate"
@@ -732,6 +756,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/neu/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/neu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/neu/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/omnivoice/</loc>

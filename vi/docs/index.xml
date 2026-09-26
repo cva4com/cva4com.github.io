@@ -906,6 +906,520 @@ more--&gt;
     </item>
     
     <item>
+      <title>Cài đặt AuK TTS trên Windows bằng Conda</title>
+      <link>https://cva4.com/vi/tuts/tts/auk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/vi/tuts/tts/auk/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Giới thiệu&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;giới-thiệu&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#gi%e1%bb%9bi-thi%e1%bb%87u&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;AuK là một mô hình nền tảng với 1,5 tỷ tham số, được thiết kế để tạo và chỉnh sửa giọng nói. Được huấn luyện trên hàng triệu giờ dữ liệu âm thanh đa dạng, AuK hỗ trợ các tính năng như chuyển văn bản thành giọng nói (TTS) theo cơ chế zero-shot và dựa trên chỉ dẫn, chỉnh sửa nội dung và đặc tính âm thanh, điều chỉnh các yếu tố phi ngôn ngữ (paralinguistic), cũng như tăng cường chất lượng giọng nói và tách nguồn âm thanh, tất cả thông qua một giao diện chỉ dẫn bằng ngôn ngữ tự nhiên thống nhất.&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/Tencent-Hunyuan/AuK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/Tencent-Hunyuan/AuK&lt;/a&gt;&lt;br&gt;
+Hugging Face: &lt;a href=&#34;https://hf.co/tencent/AuK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/tencent/AuK&lt;/a&gt;&lt;br&gt;
+Demo: &lt;a href=&#34;https://hf.co/spaces/tencent/AuK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hf.co/spaces/tencent/AuK&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Weight&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;AuK&lt;/td&gt;
+&lt;td&gt;Base model for high-quality generation&lt;/td&gt;
+&lt;td&gt;🤗 &lt;a href=&#34;https://huggingface.co/tencent/AuK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; · 🤖 &lt;a href=&#34;https://modelscope.cn/models/Tencent-Hunyuan/AuK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ModelScope&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AuK-Flash&lt;/td&gt;
+&lt;td&gt;Distilled model for fast 4-step inference&lt;/td&gt;
+&lt;td&gt;🤗 &lt;a href=&#34;https://huggingface.co/tencent/AuK-Flash&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugging Face&lt;/a&gt; · 🤖 &lt;a href=&#34;https://modelscope.cn/models/Tencent-Hunyuan/AuK-Flash&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ModelScope&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Yêu cầu hệ thống&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;yêu-cầu-hệ-thống&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#y%c3%aau-c%e1%ba%a7u-h%e1%bb%87-th%e1%bb%91ng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hệ điều hành:&lt;/strong&gt; Windows 10/11 (64-bit), macOS hoặc Linux (Debian/Ubuntu).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python:&lt;/strong&gt; Yêu cầu phiên bản &amp;gt;= 3.10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dung lượng ổ cứng:&lt;/strong&gt; Khuyến nghị 40GB trở lên (cho các thư viện phụ thuộc và bộ nhớ cache mô hình). Ít nhất 400 MB cho Miniconda; 3 GB trở lên cho Anaconda đầy đủ.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPU:&lt;/strong&gt; là tùy chọn nhưng RẤT KHUYÊN DÙNG để tăng hiệu suất. Khuyên dùng card 12 GB (ví dụ: RTX 3060 12GB, 4070)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internet:&lt;/strong&gt; Để tải xuống các thư viện phụ thuộc và mô hình từ Hugging Face Hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Environment&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Run this Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CPU only&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 11.8&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu118&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu118&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.1&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu121&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu121&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.6&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu126&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu126&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 12.8&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu128&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu128&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CUDA 13.0&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;pip3 install torch torchvision torchaudio &amp;ndash;index-url &lt;a href=&#34;https://download.pytorch.org/whl/cu130&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://download.pytorch.org/whl/cu130&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/pytorch.png&#34; alt=&#34;PyTorch&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Lưu ý: Kiểm tra phiên bản CUDA bằng lệnh&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nvidia-smi&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://cva4.com/images/2026/nvidia-smi.png&#34; alt=&#34;PyTorch&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Video hướng dẫn&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;video-hướng-dẫn&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#video-h%c6%b0%e1%bb%9bng-d%e1%ba%abn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Sắp ra mắt!&lt;/p&gt;
+&lt;!-- 
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/dreLvnl678M?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+ --&gt;
+&lt;h2&gt;Bước 1. Cài đặt Miniconda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-1-cài-đặt-miniconda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-1-c%c3%a0i-%c4%91%e1%ba%b7t-miniconda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tải xuống &lt;a href=&#34;https://cva4.com/tuts/tts/miniconda/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda&lt;/a&gt;: &lt;a href=&#34;https://www.anaconda.com/download/success?reg=skipped&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.anaconda.com/download/success?reg=skipped&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Liên kết trực tiếp: &lt;a href=&#34;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Cài đặt &lt;a href=&#34;https://cva4.com/tuts/tts/miniconda/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Miniconda trên Windows&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Bước 2. Tạo môi trường Conda&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-2-tạo-môi-trường-conda&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-2-t%e1%ba%a1o-m%c3%b4i-tr%c6%b0%e1%bb%9dng-conda&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tạo tệp environment.yml:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;auktts&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;channels&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;conda-forge&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;defaults&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;dependencies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Python version (requires &amp;gt;= 3.10)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;python=3.10&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Handled via Conda to fix error: Microsoft Visual C++ 14.0 or greater is required&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;pynini&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;pip&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;pip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# This is the PyTorch CUDA 12.6 wheels. Recommendations for using the 12GB+ card&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# - --extra-index-url https://download.pytorch.org/whl/cu126&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;torch&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;torchaudio&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;torchvision&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Install AuK directly from GitHub. Core inference and CLI only&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;git+https://github.com/Tencent-Hunyuan/AuK.git&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Optional: Allow run Gradio/ComfyUI nodes + Prompt Enhancer + ASR (web interface)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;gradio&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;PyYAML&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;silero-vad&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;WeTextProcessing&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;pyloudnorm&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;openai&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;tencentcloud-sdk-python-asr&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;funasr&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;modelscope&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Optional: Fine-tuning. Recommendations for using the 24GB+ card&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;ema-pytorch&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;tensorboard&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;matplotlib&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;tqdm&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Kích hoạt môi trường conda:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda env create -f environment.yml
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda activate auktts&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Clone AuK từ source (chạy sau khi kích hoạt môi trường)&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/Tencent-Hunyuan/AuK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; AuK&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;h3&gt;Tải xuống các trọng số&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tải-xuống-các-trọng-số&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#t%e1%ba%a3i-xu%e1%bb%91ng-c%c3%a1c-tr%e1%bb%8dng-s%e1%bb%91&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;🤗 HuggingFace&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# AuK-Base&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hf download tencent/AuK --local-dir ./ckpts/AuK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# AuK-Flash (4-step distilled) &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hf download tencent/AuK-Flash --local-dir ./ckpts/AuK-Flash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# MLLM Encoder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hf download Qwen/Qwen2.5-Omni-3B  --local-dir ./ckpts/Qwen2.5-Omni-3B&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;🤖 ModelScope&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# AuK-Base&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;modelscope download --model Tencent-Hunyuan/AuK --local_dir ./ckpts/AuK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# AuK-Flash (4-step distilled)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;modelscope download --model Tencent-Hunyuan/AuK-Flash  --local_dir ./ckpts/AuK-Flash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# MLLM Encoder&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;modelscope download --model Qwen/Qwen2.5-Omni-3B --local_dir ./ckpts/Qwen2.5-Omni-3B&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Cấu trúc thư mục được mong đợi là:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ckpts/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── AuK/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── AuK-Flash/          # optional
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── Qwen2.5-Omni-3B/&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Điểm lưu mô hình (checkpoint) bao gồm các trọng số của diffusion transformer và layer-fusion. Bộ mã hóa MLLM và VAE được tải từ các tệp riêng biệt trong quá trình thực thi, do đó việc thiếu các khóa &lt;code&gt;text_encoder.*&lt;/code&gt; khi tải checkpoint là điều bình thường.&lt;/p&gt;
+&lt;h2&gt;Bước 3. Chạy suy luận&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-3-chạy-suy-luận&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-ch%e1%ba%a1y-suy-lu%e1%ba%adn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Bây giờ, hãy chạy tập lệnh ví dụ cơ bản để tổng hợp giọng nói:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;auk-infer --audio assets/demo-input-audio/zero-shot-tts/ref.wav --instruction &lt;span class=&#34;s2&#34;&gt;&amp;#34;Say the following with the same voice: &amp;#39;Ladies and gentlemen, it&amp;#39;s an honor to have the opportunity to address such a distinguished audience&amp;#39;&amp;#34;&lt;/span&gt; --output out_tts.wav --gen_seconds 6.0&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Kết quả sẽ là tệp âm thanh &lt;code&gt;out_tts.wav&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Chạy app demo bằng Gradio&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;chạy-app-demo-bằng-gradio&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ch%e1%ba%a1y-app-demo-b%e1%ba%b1ng-gradio&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Prompt Enhancer yêu cầu một LLM tương thích với OpenAI:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LLM: &lt;a href=&#34;https://console.cloud.tencent.com/tokenhub/models&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tencent Cloud TokenHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Optional cloud ASR: &lt;a href=&#34;https://cloud.tencent.com/document/product/1093/37823&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tencent Cloud Recording File Recognition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hãy xuất (export) thông tin xác thực trước khi khởi động Gradio:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Required when Prompt Enhancer is enabled&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LLM_API_KEY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;your-llm-api-key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LLM_BASE_URL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;https://tokenhub.tencentmaas.com/v1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LLM_MODEL_NAME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;hy3&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Optional cloud ASR; omit these to use local SenseVoiceSmall&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;TENCENTCLOUD_SECRET_ID&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;your-tencentcloud-secret-id&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;TENCENTCLOUD_SECRET_KEY&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;your-tencentcloud-secret-key&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ASR_ENGINE_MODEL_TYPE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;16k_zh_en&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Với cấu trúc thư mục tiêu chuẩn, lệnh ngắn nhất sẽ phát hiện mọi biến thể đã cài đặt nằm trong &lt;code&gt;ckpts/AuK&lt;/code&gt; và &lt;code&gt;ckpts/AuK-Flash&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;auk-gradio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Lệnh đầy đủ được đề xuất để tải cả hai mô hình lên hai GPU:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+  
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;auk-gradio &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --base_ckpt ckpts/AuK/auk_base.safetensors &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --flash_ckpt ckpts/AuK-Flash/auk_flash.safetensors &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --base_config ckpts/AuK/config.yaml &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --flash_config ckpts/AuK-Flash/config.yaml &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --qwen_path ckpts/Qwen2.5-Omni-3B &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --base_device cuda:0 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --flash_device cuda:1 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --dtype bf16 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --host 0.0.0.0 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --port &lt;span class=&#34;m&#34;&gt;8080&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --preload&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+  
+&lt;/div&gt;
+&lt;p&gt;Mở trình duyệt và truy cập vào địa chỉ &lt;a href=&#34;http://127.0.0.1:7860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://127.0.0.1:7860&lt;/a&gt; để bắt đầu sử dụng&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Cline: Công cụ mã hóa Agentic tốt nhất cho VS Code</title>
+      <link>https://cva4.com/vi/tuts/coding/cline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cva4.com/vi/tuts/coding/cline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cline là trợ lý ảo tự động nhất mà tôi từng sử dụng. Cài đặt tiện ích mở rộng VS Code, cấu hình nhà cung cấp BYOK, giao cho nó một tác vụ và xem nó hoạt động. Nó đọc tệp, viết mã, chạy các lệnh terminal, xử lý lỗi và lặp lại – thường không cần nhắc bạn giữa các bước.&lt;/p&gt;
+&lt;p&gt;Nhược điểm là chi phí khá cao. Vì nó sử dụng công cụ rất nhiều, một phiên Cline trên Claude Sonnet có thể dễ dàng tốn từ 5-10 đô la. Hãy kết hợp nó với một mô hình rẻ hơn cho các công việc thường ngày. Gemini 2.5 Flash và GPT-5 Mini đều hoạt động tốt đáng ngạc nhiên với giá chỉ bằng một phần nhỏ.&lt;/p&gt;
+&lt;p&gt;Phù hợp nhất cho: Các nhà phát triển muốn có thao tác &amp;ldquo;nhấn nút chạy và để đó&amp;rdquo; mà không cần rời khỏi VS Code.&lt;/p&gt;
+&lt;h2&gt;Các tính năng chính&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;các-tính-năng-chính&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-ch%c3%adnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Tách biệt Lập kế hoạch/Thực hiện: Cline hiển thị cho bạn kế hoạch trước khi thực hiện. Bạn có thể phê duyệt, sửa đổi hoặc từ chối kế hoạch trước khi bất kỳ thay đổi nào được thực hiện trên tập tin.&lt;/li&gt;
+&lt;li&gt;Truy cập terminal: Chạy lệnh &lt;code&gt;npm run test&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, các script xây dựng và các lệnh shell tùy ý như một phần của quá trình thực thi tác vụ&lt;/li&gt;
+&lt;li&gt;Tạo và chỉnh sửa tập tin: Tạo tập tin mới, sửa đổi các tập tin hiện có và xóa những gì không còn cần thiết&lt;/li&gt;
+&lt;li&gt;Tự động hóa trình duyệt: Điều khiển trình duyệt không giao diện người dùng để kiểm tra giao diện web như một phần của tác vụ tự động&lt;/li&gt;
+&lt;li&gt;Hỗ trợ nhiều mô hình: Claude Sonnet 4.6, GPT-40, Gemini 2.5 Pro hoặc bất kỳ mô hình cục bộ nào thông qua Ollama&lt;/li&gt;
+&lt;li&gt;Tích hợp MCP: Các trình kết nối được hỗ trợ bởi Marketplace đến cơ sở dữ liệu, API, công cụ thiết kế và dịch vụ phát triển&lt;/li&gt;
+&lt;li&gt;Giám sát chi phí theo thời gian thực: Theo dõi việc sử dụng token để các lần chạy tự động không tạo ra hóa đơn bất ngờ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ưu điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mô hình Lập kế hoạch/Thực thi là sự trừu tượng hóa phù hợp: AI thực hiện công việc, bạn vẫn kiểm soát ở mỗi điểm quyết định&lt;/li&gt;
+&lt;li&gt;Hệ sinh thái MCP cho phép xây dựng các tác nhân hiểu được hệ thống thực tế của bạn, không chỉ tập tin hiện tại&lt;/li&gt;
+&lt;li&gt;Cộng đồng đủ lớn để hầu hết các câu hỏi về tích hợp đã được trả lời trên Discord hoặc GitHub&lt;/li&gt;
+&lt;li&gt;Hoạt động với các mô hình cục bộ thông qua Ollama để hoàn toàn riêng tư, ngoại tuyến Sử dụng&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Nhược điểm&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Phù hợp nhất vẫn là quy trình làm việc ưu tiên trình soạn thảo. Những người thích sử dụng terminal thuần túy có thể thích Aider hoặc OpenCode hơn.&lt;/li&gt;
+&lt;li&gt;Các tác vụ tự động tiêu tốn mã thông báo API nhanh hơn các công cụ chỉ hoàn thành. Cần dự trù ngân sách phù hợp.&lt;/li&gt;
+&lt;li&gt;Mô tả nhiệm vụ mơ hồ sẽ cho kết quả kém hơn. Độ chính xác trong lời nhắc quan trọng hơn ở đây so với các công cụ hoàn thành.&lt;/li&gt;
+&lt;li&gt;Không được tối ưu hóa cho việc hoàn thành nội tuyến nhẹ. Kết hợp với Continue để làm điều đó.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Giấy phép và Lưu trữ&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Giấy phép: Apache-2.0. Không có hạn chế thương mại.&lt;/li&gt;
+&lt;li&gt;Tự lưu trữ: Các mô hình cục bộ thông qua Ollama chạy hoàn toàn trên máy của bạn. API đám mây (Anthropic, OpenAI) gửi mã đến máy chủ của nhà cung cấp.&lt;/li&gt;
+&lt;li&gt;Cài đặt: VS Code Extension Marketplace. Tìm kiếm &amp;ldquo;Cline&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Phù hợp nhất cho&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Các nhà phát triển đang thực hiện công việc ở cấp độ tính năng trong VS Code, những người muốn AI xử lý toàn bộ nhiệm vụ, chứ không chỉ dòng tiếp theo. Nếu hiện tại bạn viết một tính năng từ mô tả phiếu yêu cầu, Cline sẽ thay đổi điều đó thành: mô tả nhiệm vụ, xem xét kế hoạch, phê duyệt, lặp lại khi xem xét.&lt;/p&gt;
+&lt;p&gt;Nếu bạn không sử dụng VS Code, muốn dùng tính năng tự động hoàn thành thuần túy hoặc muốn ủy quyền hoàn toàn các tác vụ mà không cần phê duyệt ở mỗi bước, hãy bỏ qua Cline.&lt;/p&gt;
+&lt;h2&gt;Danh sách Model AI miễn phí được Cline hỗ trợ&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;danh-sách-model-ai-miễn-phí-được-cline-hỗ-trợ&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#danh-s%c3%a1ch-model-ai-mi%e1%bb%85n-ph%c3%ad-%c4%91%c6%b0%e1%bb%a3c-cline-h%e1%bb%97-tr%e1%bb%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dựa trên file cấu hình OpenRouter được lưu trong Cline (&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\cache\openrouter_models.json&lt;/code&gt;), các model hoàn toàn miễn phí (giá input = 0 và output = 0) được hỗ trợ như sau:&lt;/p&gt;
+&lt;h2&gt;🤖 Các model miễn phí (input &amp;amp; output = 0)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-các-model-miễn-phí-input--output--0&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-c%c3%a1c-model-mi%e1%bb%85n-ph%c3%ad-input--output--0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model ID&lt;/th&gt;
+&lt;th&gt;Tên hiển thị&lt;/th&gt;
+&lt;th&gt;Ngữ cảnh&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;inclusionai/ling-3.0-flash:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Ling-3.0-flash (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;poolside/laguna-s-2.1:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Poolside: Laguna S 2.1 (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;poolside/laguna-xs-2.1:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Poolside: Laguna XS 2.1 (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;cohere/north-mini-code:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Cohere: North Mini Code (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;google/gemma-4-31b-it:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Google: Gemma 4 31B (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;google/gemma-4-26b-a4b-it:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Google: Gemma 4 26B A4B (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-ultra-550b-a55b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Ultra (free)&lt;/td&gt;
+&lt;td&gt;1M&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-super-120b-a12b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Super (free)&lt;/td&gt;
+&lt;td&gt;262K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-30b-a3b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Nano 30B A3B (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3 Nano Omni (free)&lt;/td&gt;
+&lt;td&gt;256K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-12b-v2-vl:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron Nano 12B 2 VL (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-9b-v2:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron Nano 9B V2 (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;nvidia/nemotron-3.5-content-safety:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA: Nemotron 3.5 Content Safety (free)&lt;/td&gt;
+&lt;td&gt;128K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;openai/gpt-oss-20b:free&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;OpenAI: gpt-oss-20b (free)&lt;/td&gt;
+&lt;td&gt;131K&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;💡 Khuyến nghị cho việc lập trình&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-khuyến-nghị-cho-việc-lập-trình&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-khuy%e1%ba%bfn-ngh%e1%bb%8b-cho-vi%e1%bb%87c-l%e1%ba%adp-tr%c3%acnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Các model miễn phí tốt nhất cho tác vụ coding trong số trên là:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Ultra&lt;/strong&gt; (miễn phí) — 550B, ngữ cảnh lớn, mạnh về reasoning&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Super&lt;/strong&gt; (miễn phí) — 120B, tối ưu multi-agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cohere North Mini Code&lt;/strong&gt; (miễn phí) — chuyên biệt cho coding agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Poolside Laguna S 2.1&lt;/strong&gt; (miễn phí) — model coding agent&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OpenAI gpt-oss-20b&lt;/strong&gt; (miễn phí) — open-weight của OpenAI&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bạn có thể sử dụng &lt;code&gt;openrouter/free&lt;/code&gt; để tự động chọn model miễn phí tốt nhất cho từng tác vụ.&lt;/p&gt;
+&lt;h2&gt;🌐 Router miễn phí&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-router-miễn-phí&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-router-mi%e1%bb%85n-ph%c3%ad&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;openrouter/free&lt;/code&gt;&lt;/strong&gt; — &lt;em&gt;Free Models Router&lt;/em&gt;: tự động chọn ngẫu nhiên một model miễn phí từ danh sách model miễn phí của OpenRouter (ngữ cảnh 200K).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;⚠️ Lưu ý quan trọng&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-lưu-ý-quan-trọng&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-l%c6%b0u-%c3%bd-quan-tr%e1%bb%8dng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;google/lyria-3-pro-preview&lt;/code&gt;&lt;/strong&gt; và &lt;strong&gt;&lt;code&gt;google/lyria-3-clip-preview&lt;/code&gt;&lt;/strong&gt;: giá input/output = 0 nhưng là model &lt;strong&gt;tạo nhạc&lt;/strong&gt; (Lyria 3), được tính phí theo bài hát/đoạn clip ($0.08/bài, $0.04/clip), không dùng chung cho code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;deepseek/deepseek-chat&lt;/code&gt;&lt;/strong&gt;: có giá input = 0 nhưng output = $1.0287 — &lt;strong&gt;không hoàn toàn miễn phí&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Cài đặt Chatterbox trên Windows bằng Conda</title>
       <link>https://cva4.com/vi/tuts/tts/chatterbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1120,158 +1634,6 @@ Audio Samples: &lt;a href=&#34;https://resemble-ai.github.io/chatterbox_demopage
 &lt;/div&gt;
 &lt;p&gt;Mở trình duyệt và truy cập vào địa chỉ &lt;a href=&#34;http://127.0.0.1:7860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://127.0.0.1:7860&lt;/a&gt; để bắt đầu sử dụng. Hệ thống sẽ tự động tải các file Model (Trọng số cấu hình mã nguồn) từ HuggingFace trong lần đầu chạy.&lt;/p&gt;
 &lt;p&gt;Lưu ý: Bạn có thể tải xuống tệp gradio_tts_app.py &lt;a href=&#34;https://github.com/resemble-ai/chatterbox/blob/master/gradio_tts_app.py&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tại đây&lt;/a&gt;.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Cline: Công cụ mã hóa Agentic tốt nhất cho VS Code</title>
-      <link>https://cva4.com/vi/tuts/coding/cline/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cva4.com/vi/tuts/coding/cline/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Cline là trợ lý ảo tự động nhất mà tôi từng sử dụng. Cài đặt tiện ích mở rộng VS Code, cấu hình nhà cung cấp BYOK, giao cho nó một tác vụ và xem nó hoạt động. Nó đọc tệp, viết mã, chạy các lệnh terminal, xử lý lỗi và lặp lại – thường không cần nhắc bạn giữa các bước.&lt;/p&gt;
-&lt;p&gt;Nhược điểm là chi phí khá cao. Vì nó sử dụng công cụ rất nhiều, một phiên Cline trên Claude Sonnet có thể dễ dàng tốn từ 5-10 đô la. Hãy kết hợp nó với một mô hình rẻ hơn cho các công việc thường ngày. Gemini 2.5 Flash và GPT-5 Mini đều hoạt động tốt đáng ngạc nhiên với giá chỉ bằng một phần nhỏ.&lt;/p&gt;
-&lt;p&gt;Phù hợp nhất cho: Các nhà phát triển muốn có thao tác &amp;ldquo;nhấn nút chạy và để đó&amp;rdquo; mà không cần rời khỏi VS Code.&lt;/p&gt;
-&lt;h2&gt;Các tính năng chính&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;các-tính-năng-chính&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#c%c3%a1c-t%c3%adnh-n%c4%83ng-ch%c3%adnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Tách biệt Lập kế hoạch/Thực hiện: Cline hiển thị cho bạn kế hoạch trước khi thực hiện. Bạn có thể phê duyệt, sửa đổi hoặc từ chối kế hoạch trước khi bất kỳ thay đổi nào được thực hiện trên tập tin.&lt;/li&gt;
-&lt;li&gt;Truy cập terminal: Chạy lệnh &lt;code&gt;npm run test&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, các script xây dựng và các lệnh shell tùy ý như một phần của quá trình thực thi tác vụ&lt;/li&gt;
-&lt;li&gt;Tạo và chỉnh sửa tập tin: Tạo tập tin mới, sửa đổi các tập tin hiện có và xóa những gì không còn cần thiết&lt;/li&gt;
-&lt;li&gt;Tự động hóa trình duyệt: Điều khiển trình duyệt không giao diện người dùng để kiểm tra giao diện web như một phần của tác vụ tự động&lt;/li&gt;
-&lt;li&gt;Hỗ trợ nhiều mô hình: Claude Sonnet 4.6, GPT-40, Gemini 2.5 Pro hoặc bất kỳ mô hình cục bộ nào thông qua Ollama&lt;/li&gt;
-&lt;li&gt;Tích hợp MCP: Các trình kết nối được hỗ trợ bởi Marketplace đến cơ sở dữ liệu, API, công cụ thiết kế và dịch vụ phát triển&lt;/li&gt;
-&lt;li&gt;Giám sát chi phí theo thời gian thực: Theo dõi việc sử dụng token để các lần chạy tự động không tạo ra hóa đơn bất ngờ&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Ưu điểm&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mô hình Lập kế hoạch/Thực thi là sự trừu tượng hóa phù hợp: AI thực hiện công việc, bạn vẫn kiểm soát ở mỗi điểm quyết định&lt;/li&gt;
-&lt;li&gt;Hệ sinh thái MCP cho phép xây dựng các tác nhân hiểu được hệ thống thực tế của bạn, không chỉ tập tin hiện tại&lt;/li&gt;
-&lt;li&gt;Cộng đồng đủ lớn để hầu hết các câu hỏi về tích hợp đã được trả lời trên Discord hoặc GitHub&lt;/li&gt;
-&lt;li&gt;Hoạt động với các mô hình cục bộ thông qua Ollama để hoàn toàn riêng tư, ngoại tuyến Sử dụng&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Nhược điểm&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Phù hợp nhất vẫn là quy trình làm việc ưu tiên trình soạn thảo. Những người thích sử dụng terminal thuần túy có thể thích Aider hoặc OpenCode hơn.&lt;/li&gt;
-&lt;li&gt;Các tác vụ tự động tiêu tốn mã thông báo API nhanh hơn các công cụ chỉ hoàn thành. Cần dự trù ngân sách phù hợp.&lt;/li&gt;
-&lt;li&gt;Mô tả nhiệm vụ mơ hồ sẽ cho kết quả kém hơn. Độ chính xác trong lời nhắc quan trọng hơn ở đây so với các công cụ hoàn thành.&lt;/li&gt;
-&lt;li&gt;Không được tối ưu hóa cho việc hoàn thành nội tuyến nhẹ. Kết hợp với Continue để làm điều đó.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Giấy phép và Lưu trữ&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Giấy phép: Apache-2.0. Không có hạn chế thương mại.&lt;/li&gt;
-&lt;li&gt;Tự lưu trữ: Các mô hình cục bộ thông qua Ollama chạy hoàn toàn trên máy của bạn. API đám mây (Anthropic, OpenAI) gửi mã đến máy chủ của nhà cung cấp.&lt;/li&gt;
-&lt;li&gt;Cài đặt: VS Code Extension Marketplace. Tìm kiếm &amp;ldquo;Cline&amp;rdquo;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Phù hợp nhất cho&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Các nhà phát triển đang thực hiện công việc ở cấp độ tính năng trong VS Code, những người muốn AI xử lý toàn bộ nhiệm vụ, chứ không chỉ dòng tiếp theo. Nếu hiện tại bạn viết một tính năng từ mô tả phiếu yêu cầu, Cline sẽ thay đổi điều đó thành: mô tả nhiệm vụ, xem xét kế hoạch, phê duyệt, lặp lại khi xem xét.&lt;/p&gt;
-&lt;p&gt;Nếu bạn không sử dụng VS Code, muốn dùng tính năng tự động hoàn thành thuần túy hoặc muốn ủy quyền hoàn toàn các tác vụ mà không cần phê duyệt ở mỗi bước, hãy bỏ qua Cline.&lt;/p&gt;
-&lt;h2&gt;Danh sách Model AI miễn phí được Cline hỗ trợ&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;danh-sách-model-ai-miễn-phí-được-cline-hỗ-trợ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#danh-s%c3%a1ch-model-ai-mi%e1%bb%85n-ph%c3%ad-%c4%91%c6%b0%e1%bb%a3c-cline-h%e1%bb%97-tr%e1%bb%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dựa trên file cấu hình OpenRouter được lưu trong Cline (&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\Code\User\globalStorage\saoudrizwan.claude-dev\cache\openrouter_models.json&lt;/code&gt;), các model hoàn toàn miễn phí (giá input = 0 và output = 0) được hỗ trợ như sau:&lt;/p&gt;
-&lt;h2&gt;🤖 Các model miễn phí (input &amp;amp; output = 0)&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-các-model-miễn-phí-input--output--0&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#-c%c3%a1c-model-mi%e1%bb%85n-ph%c3%ad-input--output--0&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Model ID&lt;/th&gt;
-&lt;th&gt;Tên hiển thị&lt;/th&gt;
-&lt;th&gt;Ngữ cảnh&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;inclusionai/ling-3.0-flash:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Ling-3.0-flash (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;poolside/laguna-s-2.1:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Poolside: Laguna S 2.1 (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;poolside/laguna-xs-2.1:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Poolside: Laguna XS 2.1 (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;cohere/north-mini-code:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Cohere: North Mini Code (free)&lt;/td&gt;
-&lt;td&gt;256K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;google/gemma-4-31b-it:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Google: Gemma 4 31B (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;google/gemma-4-26b-a4b-it:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;Google: Gemma 4 26B A4B (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-ultra-550b-a55b:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron 3 Ultra (free)&lt;/td&gt;
-&lt;td&gt;1M&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-super-120b-a12b:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron 3 Super (free)&lt;/td&gt;
-&lt;td&gt;262K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-30b-a3b:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron 3 Nano 30B A3B (free)&lt;/td&gt;
-&lt;td&gt;256K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron 3 Nano Omni (free)&lt;/td&gt;
-&lt;td&gt;256K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-12b-v2-vl:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron Nano 12B 2 VL (free)&lt;/td&gt;
-&lt;td&gt;128K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-nano-9b-v2:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron Nano 9B V2 (free)&lt;/td&gt;
-&lt;td&gt;128K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;nvidia/nemotron-3.5-content-safety:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;NVIDIA: Nemotron 3.5 Content Safety (free)&lt;/td&gt;
-&lt;td&gt;128K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;code&gt;openai/gpt-oss-20b:free&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;OpenAI: gpt-oss-20b (free)&lt;/td&gt;
-&lt;td&gt;131K&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;💡 Khuyến nghị cho việc lập trình&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-khuyến-nghị-cho-việc-lập-trình&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#-khuy%e1%ba%bfn-ngh%e1%bb%8b-cho-vi%e1%bb%87c-l%e1%ba%adp-tr%c3%acnh&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Các model miễn phí tốt nhất cho tác vụ coding trong số trên là:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Ultra&lt;/strong&gt; (miễn phí) — 550B, ngữ cảnh lớn, mạnh về reasoning&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;NVIDIA Nemotron 3 Super&lt;/strong&gt; (miễn phí) — 120B, tối ưu multi-agent&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cohere North Mini Code&lt;/strong&gt; (miễn phí) — chuyên biệt cho coding agent&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Poolside Laguna S 2.1&lt;/strong&gt; (miễn phí) — model coding agent&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;OpenAI gpt-oss-20b&lt;/strong&gt; (miễn phí) — open-weight của OpenAI&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Bạn có thể sử dụng &lt;code&gt;openrouter/free&lt;/code&gt; để tự động chọn model miễn phí tốt nhất cho từng tác vụ.&lt;/p&gt;
-&lt;h2&gt;🌐 Router miễn phí&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-router-miễn-phí&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#-router-mi%e1%bb%85n-ph%c3%ad&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;openrouter/free&lt;/code&gt;&lt;/strong&gt; — &lt;em&gt;Free Models Router&lt;/em&gt;: tự động chọn ngẫu nhiên một model miễn phí từ danh sách model miễn phí của OpenRouter (ngữ cảnh 200K).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;⚠️ Lưu ý quan trọng&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;-lưu-ý-quan-trọng&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#-l%c6%b0u-%c3%bd-quan-tr%e1%bb%8dng&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;google/lyria-3-pro-preview&lt;/code&gt;&lt;/strong&gt; và &lt;strong&gt;&lt;code&gt;google/lyria-3-clip-preview&lt;/code&gt;&lt;/strong&gt;: giá input/output = 0 nhưng là model &lt;strong&gt;tạo nhạc&lt;/strong&gt; (Lyria 3), được tính phí theo bài hát/đoạn clip ($0.08/bài, $0.04/clip), không dùng chung cho code.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;deepseek/deepseek-chat&lt;/code&gt;&lt;/strong&gt;: có giá input = 0 nhưng output = $1.0287 — &lt;strong&gt;không hoàn toàn miễn phí&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
 
       </description>
     </item>
@@ -2027,6 +2389,7 @@ CLI sẽ yêu cầu bạn thực hiện theo một trong hai cách sau:
 &lt;li&gt;Chọn tùy chọn đầu tiên. Giao diện dòng lệnh (CLI) sẽ hiển thị một mã ngắn và yêu cầu bạn truy cập một đường dẫn URL (&lt;a href=&#34;https://huggingface.co/oauth/device%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://huggingface.co/oauth/device)&lt;/a&gt;. Hãy dán mã này vào trình duyệt để xác nhận đăng nhập ngay lập tức.&lt;/li&gt;
 &lt;li&gt;Chọn tùy chọn thứ hai. Dán mã token của bạn khi được yêu cầu và nhấn Enter.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Yêu cầu truy cập kho lưu trữ này của bạn đã được gửi và đang chờ các tác giả của kho lưu trữ xem xét. Bạn có thể kiểm tra trạng thái của tất cả các yêu cầu truy cập trong phần &lt;a href=&#34;https://huggingface.co/settings/gated-repos&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cài đặt&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Bước 4. Chạy suy luận&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;bước-4-chạy-suy-luận&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-4-ch%e1%ba%a1y-suy-lu%e1%ba%adn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Bây giờ, hãy chạy tập lệnh ví dụ cơ bản để tổng hợp giọng nói:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
