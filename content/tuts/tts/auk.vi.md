@@ -55,8 +55,8 @@ nvidia-smi
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube dreLvnl678M >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube tMWyfCxGbGA >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -222,3 +222,9 @@ auk-gradio \
 ```
 
 Mở trình duyệt và truy cập vào địa chỉ [http://127.0.0.1:7860](http://127.0.0.1:7860) để bắt đầu sử dụng
+
+----
+
+Tham khảo:
+
+- [AuK: Tencent Hunyuan's 1.5B Speech Generation and Editing Model](https://hysenlabs.com/en/projects/tencent-hunyuan-auk)

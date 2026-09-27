@@ -55,8 +55,8 @@ nvidia-smi
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube dreLvnl678M >}} -->
+<!-- Coming soon! -->
+{{< youtube tMWyfCxGbGA >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -224,3 +224,9 @@ auk-gradio \
 ```
 
 Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860)
+
+----
+
+Reference:
+
+- [AuK: Tencent Hunyuan's 1.5B Speech Generation and Editing Model](https://hysenlabs.com/en/projects/tencent-hunyuan-auk)
