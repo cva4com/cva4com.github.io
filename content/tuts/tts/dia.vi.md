@@ -1,7 +1,7 @@
 ---
 linkTitle: Dia
 title: Cài đặt Nari Dia trên Windows bằng Conda
-weight: 5
+weight: 6
 cascade:
   type: docs
 tags:

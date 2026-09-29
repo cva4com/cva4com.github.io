@@ -1,7 +1,7 @@
 ---
 linkTitle: Qwen3-TTS
 title: Install Qwen3-TTS on Windows with Conda
-weight: 11
+weight: 12
 # prev: /tts/tts-open-weights
 # next: /tts/a
 cascade:

@@ -1,7 +1,7 @@
 ---
 linkTitle: Dia
 title: Install Nari Dia TTS on Windows with Conda
-weight: 5
+weight: 6
 cascade:
   type: docs
 tags:
