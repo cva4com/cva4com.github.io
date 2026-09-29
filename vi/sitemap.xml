@@ -110,6 +110,18 @@
                 href="https://cva4.com/vi/tuts/coding/cline/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/breeze/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/breeze/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/breeze/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/chatterbox/</loc>
     <xhtml:link
                 rel="alternate"
@@ -636,6 +648,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/bird/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/breeze/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/breeze/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/breeze/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/categories/</loc>
