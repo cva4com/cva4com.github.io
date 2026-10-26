@@ -158,6 +158,18 @@
                 href="https://cva4.com/vi/tuts/tts/f5-tts/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/ice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/ice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/ice/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/kokoro/</loc>
     <xhtml:link
                 rel="alternate"
@@ -242,18 +254,6 @@
                 href="https://cva4.com/vi/tuts/tts/voxcpm/"
                 />
   </url><url>
-    <loc>https://cva4.com/vi/tuts/tts/zipvoice/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://cva4.com/tuts/tts/zipvoice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/zipvoice/"
-                />
-  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -264,6 +264,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tuts/tts/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/zipvoice/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/zipvoice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/zipvoice/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/</loc>
@@ -756,6 +768,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/about/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/ice-012/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/ice-012/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/ice-012/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/kokoro/</loc>
