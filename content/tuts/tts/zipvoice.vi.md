@@ -1,7 +1,7 @@
 ---
 linkTitle: ZipVoice
 title: Cài đặt ZipVoice trên Windows bằng Conda
-weight: 16
+weight: 17
 cascade:
   type: docs
 tags:
@@ -135,7 +135,7 @@ Tải xuống bản ghi âm tham khảo
 curl -L -O "https://github.com/thewh1teagle/zipvoice-onnx/releases/download/model-files-v1.0/prompt_english_female1.wav"
 ```
 
-Mẫu âm thanh tham khảo:  `prompt_english_female1.wav`
+Mẫu âm thanh tham khảo: `prompt_english_female1.wav`
 
 <audio controls>
   <source src="/audio/prompt_english_female1.wav" type="audio/mpeg">

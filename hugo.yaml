@@ -195,8 +195,8 @@ params:
   page:
     # full (100%), wide (90rem), normal (80rem)
     width: full
-    # tabs:
-    #   sync: true
+    tabs:
+      sync: true
     contextMenu:
       enable: true
       links:

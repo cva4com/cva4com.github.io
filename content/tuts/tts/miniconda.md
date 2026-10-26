@@ -91,7 +91,7 @@ Anaconda [recommends](https://www.anaconda.com/docs/getting-started/working-with
 <img src="/images/2026/screenshot-miniconda-09-installing.png" style="width: 50%; height: auto;" alt="Start installing">
 
 
-10. Select **Next** twice, then select **Finish** to close the installer. 
+10. Select **Next** twice, then select **Finish** to close the installer.
 
 <img src="/images/2026/screenshot-miniconda-10-completed.png" style="width: 50%; height: auto;" alt="Install completed">
 
