@@ -8,11 +8,11 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>Install Kokoro 82M TTS on Windows with Conda – CVA4</title>
+<title>Install Kokoro 82M TTS with Conda – CVA4</title>
   <meta name="description" content="Introduction Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects.
 GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Kokoro-82M Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS " /><link rel="canonical" href="https://cva4.com/tuts/tts/kokoro/" itemprop="url" />
 
-<meta property="og:title" content="Install Kokoro 82M TTS on Windows with Conda">
+<meta property="og:title" content="Install Kokoro 82M TTS with Conda">
 <meta
   property="og:description"
   content="
@@ -40,13 +40,13 @@ Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS
 
 
 
-  <meta itemprop="name" content="Install Kokoro 82M TTS on Windows with Conda">
+  <meta itemprop="name" content="Install Kokoro 82M TTS with Conda">
   <meta itemprop="description" content="Introduction Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects.
 GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Kokoro-82M Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS">
-  <meta itemprop="wordCount" content="227">
+  <meta itemprop="wordCount" content="465">
   <meta itemprop="keywords" content="TTS,Kokoro,Open Weights">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Install Kokoro 82M TTS on Windows with Conda">
+  <meta name="twitter:title" content="Install Kokoro 82M TTS with Conda">
   <meta name="twitter:description" content="Introduction Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects.
 GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Kokoro-82M Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS">
 
@@ -307,6 +307,12 @@ GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Ko
                 href="#introduction"
                 class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
               >Introduction</a>
+            </li>
+          <li>
+              <a
+                href="#prerequisites"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Prerequisites</a>
             </li>
           <li>
               <a
@@ -920,6 +926,10 @@ GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Ko
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#prerequisites">Prerequisites
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
         <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#video-tutorial">Video tutorial
         </a>
       </li>
@@ -971,7 +981,7 @@ GitHub: https://github.com/hexgrad/kokoro Hugging Face: https://hf.co/hexgrad/Ko
         <div class="content">
           
             <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
-              <h1 class="hx:mb-0">Install Kokoro 82M TTS on Windows with Conda</h1>
+              <h1 class="hx:mb-0">Install Kokoro 82M TTS with Conda</h1>
               
             </div>
           
@@ -987,20 +997,191 @@ Hugging Face: <a href="https://hf.co/hexgrad/Kokoro-82M" target="_blank" rel="no
 Demo: <a href="https://hf.co/spaces/hexgrad/Kokoro-TTS" target="_blank" rel="noopener">https://hf.co/spaces/hexgrad/Kokoro-TTS<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
  <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a></p>
+<h2 data-hextra-search-id="prerequisites">Prerequisites<span class="hx:absolute hx:-mt-20" id="prerequisites"></span>
+    <a href="#prerequisites" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>System requirements:</p>
+<ul>
+<li><strong>Operating System:</strong> Windows 10/11 (64-bit), macOS, or Linux (Debian/Ubuntu).</li>
+<li><strong>Python:</strong> version &gt;= 3.10 required</li>
+<li><strong>Disk Space:</strong> 10GB+ recommended (for dependencies and model cache). At least 400 MB for Miniconda; 3 GB+ for full Anaconda.</li>
+<li><strong>The GPU</strong> is optional but HIGHLY Recommended for Performance.</li>
+<li><strong>Internet:</strong> For downloading dependencies and models from Hugging Face Hub.</li>
+</ul>
+
+
+  
+
+  
+
+  
+
+  
+
+<div class="hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain">
+  <div class="hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800" role="tablist" data-tab-group="CPU only,NVIDIA,AMD,Apple Silicon"><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-0" role="tab" type="button" aria-controls="tabs-panel-tabs-00-0" aria-selected="true" tabindex="0" data-state="selected"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>CPU only</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-1" role="tab" type="button" aria-controls="tabs-panel-tabs-00-1" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>NVIDIA</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-2" role="tab" type="button" aria-controls="tabs-panel-tabs-00-2" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>AMD</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-3" role="tab" type="button" aria-controls="tabs-panel-tabs-00-3" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Apple Silicon</span></span></button></div>
+</div>
+<div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-0" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-0" aria-hidden="false" tabindex="0" data-state="selected"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Requirements</th>
+          <th style="text-align: left">CPU</th>
+          <th style="text-align: left">RAM</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Minimum</td>
+          <td style="text-align: left">Intel Core i3 or AMD Ryzen 3</td>
+          <td style="text-align: left">8 GB</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Recommended</td>
+          <td style="text-align: left">Intel Core i5 or AMD Ryzen 5</td>
+          <td style="text-align: left">16 GB</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">High-performance</td>
+          <td style="text-align: left">Intel Core i7/i9 or AMD Ryzen 7/9</td>
+          <td style="text-align: left">32 GB</td>
+      </tr>
+  </tbody>
+</table>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-1" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-1" aria-hidden="true"><p><a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener">Install PyTorch for NVIDIA<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+<img src="/images/2026/pytorch.png" alt="PyTorch"  data-zoomable loading="lazy" /></p>
+<p>Note: CUDA version check by command</p>
+<div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nvidia-smi</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0">
+  <button
+    class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+    title="Copy code"
+    aria-label="Copy code"
+    data-copied-label="Copied!"
+  >
+    <div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"></div>
+<div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"></div>
+  </button>
+</div>
+</div>
+<p><img src="/images/2026/nvidia-smi.png" alt="PyTorch"  data-zoomable loading="lazy" /></p>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-2" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-2" aria-hidden="true"><a href="https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html" target="_blank" rel="noopener">Install PyTorch for ROCm<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+<img src="/images/2026/ROCm.png" alt="PyTorch"  data-zoomable loading="lazy" /></div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-3" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-3" aria-hidden="true">PyTorch can be installed and used on macOS. Depending on your system and GPU capabilities, your experience with PyTorch on macOS may vary in terms of processing time.</div></div>
+
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Environment</th>
+          <th style="text-align: left">Run this Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">CPU only</td>
+          <td style="text-align: left">pip3 install torch torchvision</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Apple Silicon</td>
+          <td style="text-align: left">pip3 install torch torchvision</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">AMD ROCm</td>
+          <td style="text-align: left"><a href="https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html" target="_blank" rel="noopener">Install PyTorch for ROCm<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CUDA 11.8</td>
+          <td style="text-align: left">pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu118" target="_blank" rel="noopener">https://download.pytorch.org/whl/cu118<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CUDA 12.1</td>
+          <td style="text-align: left">pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu121" target="_blank" rel="noopener">https://download.pytorch.org/whl/cu121<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CUDA 12.6</td>
+          <td style="text-align: left">pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu126" target="_blank" rel="noopener">https://download.pytorch.org/whl/cu126<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CUDA 12.8</td>
+          <td style="text-align: left">pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu128" target="_blank" rel="noopener">https://download.pytorch.org/whl/cu128<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CUDA 13.0</td>
+          <td style="text-align: left">pip3 install torch torchvision torchaudio &ndash;index-url <a href="https://download.pytorch.org/whl/cu130" target="_blank" rel="noopener">https://download.pytorch.org/whl/cu130<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></td>
+      </tr>
+  </tbody>
+</table>
 <h2 data-hextra-search-id="video-tutorial">Video tutorial<span class="hx:absolute hx:-mt-20" id="video-tutorial"></span>
     <a href="#video-tutorial" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-VLmk9PqOYo?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
 <h2 data-hextra-search-id="step-1-install-miniconda-package">Step 1. Install Miniconda Package<span class="hx:absolute hx:-mt-20" id="step-1-install-miniconda-package"></span>
-    <a href="#step-1-install-miniconda-package" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Download <a href="https://cva4.com/tuts/tts/miniconda/" target="_blank" rel="noopener">Miniconda<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
- <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></a>: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <a href="#step-1-install-miniconda-package" class="subheading-anchor" aria-label="Permalink for this section"></a></h2>
+
+  
+
+  
+
+  
+
+<div class="hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain">
+  <div class="hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800" role="tablist" data-tab-group="Windows,Mac,Linux"><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-02-0" role="tab" type="button" aria-controls="tabs-panel-tabs-02-0" aria-selected="true" tabindex="0" data-state="selected"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Windows</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-02-1" role="tab" type="button" aria-controls="tabs-panel-tabs-02-1" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Mac</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-02-2" role="tab" type="button" aria-controls="tabs-panel-tabs-02-2" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Linux</span></span></button></div>
+</div>
+<div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-02-0" role="tabpanel" aria-labelledby="tabs-tab-tabs-02-0" aria-hidden="false" tabindex="0" data-state="selected"><p>Download Miniconda: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
  <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a></p>
 <p>Direct link: <a href="https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe" target="_blank" rel="noopener">https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
  <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a><br>
+Direct link: <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-arm64.exe" target="_blank" rel="noopener">https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-arm64.exe<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></a></p>
+<blockquote>
+  <p>How to <a href="https://cva4.com/tuts/tts/miniconda/" target="_blank" rel="noopener">Install Miniconda on Windows<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+</blockquote>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-02-1" role="tabpanel" aria-labelledby="tabs-tab-tabs-02-1" aria-hidden="true"><p>Download Miniconda: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+<p>Direct link: <a href="https://anaconda.com/api/installers/Miniconda3-latest-MacOSX-arm64.pkg" target="_blank" rel="noopener">https://anaconda.com/api/installers/Miniconda3-latest-MacOSX-arm64.pkg<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+<blockquote>
+  <p>How to <a href="https://cva4.com/tuts/tts/miniconda/#install-miniconda-on-macos" target="_blank" rel="noopener">Install Miniconda on MacOS<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+</blockquote>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-02-2" role="tabpanel" aria-labelledby="tabs-tab-tabs-02-2" aria-hidden="true"><p>Download Miniconda: <a href="https://www.anaconda.com/download/success?reg=skipped" target="_blank" rel="noopener">https://www.anaconda.com/download/success?reg=skipped<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+<p>Direct link: <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" target="_blank" rel="noopener">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a><br>
+Direct link: <a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh" target="_blank" rel="noopener">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+<blockquote>
+  <p>How to <a href="https://cva4.com/tuts/tts/miniconda/#install-miniconda-on-linux" target="_blank" rel="noopener">Install Miniconda on Linux<svg class="hx:inline hx:rtl:rotate-270 hx:align-baseline" height="1em" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a></p>
+</blockquote>
+</div></div>
+
 <h2 data-hextra-search-id="step-2-install-espeak-ng">Step 2. Install eSpeak NG<span class="hx:absolute hx:-mt-20" id="step-2-install-espeak-ng"></span>
     <a href="#step-2-install-espeak-ng" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>The library needs <code>espeak-ng</code> (Required for Windows) for text-to-phoneme conversion. On Windows:</p>
 <ol>
@@ -1167,7 +1348,7 @@ Demo: <a href="https://hf.co/spaces/hexgrad/Kokoro-TTS" target="_blank" rel="noo
     </div>
   </dialog>
     <script defer src="/js/main.min.b92364177596421c7ae15e83b3b0ed2c17ddcf4eedb8f07f9bbecc43aade8258.js" integrity="sha256-uSNkF3WWQhx64V6Ds7DtLBfdz07tuPB/m77MQ6reglg="></script>
-<script defer src="/js/flexsearch.433e941a8a573ebb9931fc16fc75266ab6b93f569ac2fb4f3dc66882e0416f4c.js" integrity="sha256-Qz6UGopXPruZMfwW/HUmara5P1aawvtPPcZoguBBb0w=" crossorigin="anonymous"></script><script defer src="/en.search.min.39ecd60c3646463e0e1aa81beb374131d8b4fa0198892e22fb95b8f37fcf4793.js" integrity="sha256-OezWDDZGRj4OGqgb6zdBMdi0&#43;gGYiS4i&#43;5W483/PR5M="></script>
+<script defer src="/js/flexsearch.433e941a8a573ebb9931fc16fc75266ab6b93f569ac2fb4f3dc66882e0416f4c.js" integrity="sha256-Qz6UGopXPruZMfwW/HUmara5P1aawvtPPcZoguBBb0w=" crossorigin="anonymous"></script><script defer src="/en.search.min.f188927efe022b62be80278069d8d841b962ff8691df4d14e2d101b73b5c19f0.js" integrity="sha256-8YiSfv4CK2K&#43;gCeAadjYQbli/4aR300U4tEBtztcGfA="></script>
     <script defer src="/en.search-dialog.min.fda123910557b5b3a328696105af51f85abc3cfc6784387c49b11b5b857b256f.js" integrity="sha256-/aEjkQVXtbOjKGlhBa9R&#43;Fq8PPxnhDh8SbEbW4V7JW8="></script>
   </body>
 </html>
