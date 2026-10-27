@@ -1,6 +1,6 @@
 ---
 linkTitle: ICE-012
-title: Install ICE-012 Audio TTS on Windows with Conda
+title: Install ICE-012 Audio TTS with Conda
 weight: 9
 cascade:
   type: docs
@@ -36,17 +36,11 @@ System requirements:
 {{< tabs >}}
 
   {{< tab name="CPU only" >}}
-Minimum requirements:
-  - CPU: Intel Core i3 or AMD Ryzen 3
-  - RAM: 8 GB.
-
-Recommended requirements:
-  - CPU: Intel Core i5 or AMD Ryzen 5
-  - RAM: 16 GB
-
-High-performance requirements:
-  - CPU: Intel Core i7/i9 or AMD Ryzen 7/9
-  - RAM: 32 GB
+| Requirements | CPU | RAM |
+| :--- | :--- | :--- |
+| Minimum | Intel Core i3 or AMD Ryzen 3 | 8 GB |
+| Recommended | Intel Core i5 or AMD Ryzen 5 | 16 GB |
+| High-performance | Intel Core i7/i9 or AMD Ryzen 7/9 | 32 GB |
   {{< /tab >}}
 
   {{< tab name="NVIDIA" >}}

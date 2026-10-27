@@ -1,6 +1,6 @@
 ---
 linkTitle: ICE-012
-title: Cài đặt ICE-012 TTS trên Windows bằng Conda
+title: Cài đặt ICE-012 TTS bằng Conda
 weight: 9
 cascade:
   type: docs
@@ -35,17 +35,11 @@ Website: https://dark.ps
 {{< tabs >}}
 
   {{< tab name="CPU only" >}}
-Yêu cầu tối thiểu:
-- CPU: Intel Core i3 hoặc AMD Ryzen 3
-- RAM: 8 GB
-
-Yêu cầu khuyến nghị:
-- CPU: Intel Core i5 hoặc AMD Ryzen 5
-- RAM: 16 GB
-
-Yêu cầu cho hiệu năng cao:
-- CPU: Intel Core i7/i9 hoặc AMD Ryzen 7/9
-- RAM: 32 GB
+| Mức yêu cầu | CPU | RAM |
+| :--- | :--- | :--- |
+| Tối thiểu | Intel Core i3 hoặc AMD Ryzen 3 | 8 GB |
+| Khuyến nghị | Intel Core i5 hoặc AMD Ryzen 5 | 16 GB |
+| Hiệu năng cao | Intel Core i7/i9 hoặc AMD Ryzen 7/9 | 32 GB |
   {{< /tab >}}
 
   {{< tab name="NVIDIA" >}}
@@ -108,7 +102,7 @@ Tải xuống Miniconda: https://www.anaconda.com/download/success?reg=skipped
 
 Liên kết trực tiếp: https://anaconda.com/api/installers/Miniconda3-latest-MacOSX-arm64.pkg
 
-> Cài đặt [Miniconda trên MacOS](Linux)
+> Cài đặt [Miniconda trên MacOS](https://cva4.com/vi/tuts/tts/miniconda/#c%c3%a0i-%c4%91%e1%ba%b7t-tr%c3%aan-macoslinux)
   {{< /tab >}}
 
   {{< tab name="Linux" >}}

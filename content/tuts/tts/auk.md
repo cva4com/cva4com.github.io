@@ -1,6 +1,6 @@
 ---
 linkTitle: AuK
-title: Install AuK TTS on Windows with Conda
+title: Install AuK TTS with Conda
 weight: 3
 cascade:
   type: docs
@@ -23,6 +23,7 @@ Demo: https://hf.co/spaces/tencent/AuK
 | AuK | Base model for high-quality generation | 🤗 [Hugging Face](https://huggingface.co/tencent/AuK) · 🤖 [ModelScope](https://modelscope.cn/models/Tencent-Hunyuan/AuK) |
 | AuK-Flash | Distilled model for fast 4-step inference | 🤗 [Hugging Face](https://huggingface.co/tencent/AuK-Flash) · 🤖 [ModelScope](https://modelscope.cn/models/Tencent-Hunyuan/AuK-Flash) |
 
+
 ## Prerequisites
 
 System requirements:
@@ -32,16 +33,18 @@ System requirements:
 *   **The GPU** is optional but HIGHLY Recommended for Performance. Recommendation a 12 GB card (e.g. RTX 3060 12GB, 4070)
 *   **Internet:** For downloading dependencies and models from Hugging Face Hub.
 
+{{< tabs >}}
 
-| Environment | Run this Command |
-| :-- | :-- |
-| CPU only  | pip3 install torch torchvision |
-| CUDA 11.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 |
-| CUDA 12.1 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 |
-| CUDA 12.6 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126 |
-| CUDA 12.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 |
-| CUDA 13.0 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130 |
+  {{< tab name="CPU only" >}}
+| Requirements | CPU | RAM |
+| :--- | :--- | :--- |
+| Minimum | Intel Core i3 or AMD Ryzen 3 | 8 GB |
+| Recommended | Intel Core i5 or AMD Ryzen 5 | 16 GB |
+| High-performance | Intel Core i7/i9 or AMD Ryzen 7/9 | 32 GB |
+  {{< /tab >}}
 
+  {{< tab name="NVIDIA" >}}
+[Install PyTorch for NVIDIA](https://pytorch.org/get-started/locally/)
 ![PyTorch](/images/2026/pytorch.png)
 
 Note: CUDA version check by command
@@ -51,6 +54,29 @@ nvidia-smi
 ```
 
 ![PyTorch](/images/2026/nvidia-smi.png)
+  {{< /tab >}}
+
+  {{< tab name="AMD" >}}
+[Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html)
+![PyTorch](/images/2026/ROCm.png)
+  {{< /tab >}}
+
+  {{< tab name="Apple Silicon" >}}
+PyTorch can be installed and used on macOS. Depending on your system and GPU capabilities, your experience with PyTorch on macOS may vary in terms of processing time.
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+| Environment | Run this Command |
+| :-- | :-- |
+| CPU only  | pip3 install torch torchvision |
+| Apple Silicon | pip3 install torch torchvision |
+| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
+| CUDA 11.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 |
+| CUDA 12.1 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121 |
+| CUDA 12.6 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126 |
+| CUDA 12.8 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128 |
+| CUDA 13.0 | pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130 |
 
 
 ## Video tutorial
@@ -61,17 +87,86 @@ nvidia-smi
 
 ## Step 1. Install Miniconda Package
 
-Download [Miniconda](https://cva4.com/tuts/tts/miniconda/): https://www.anaconda.com/download/success?reg=skipped
+{{< tabs >}}
 
-Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe
+  {{< tab name="Windows" >}}
+Download Miniconda: https://www.anaconda.com/download/success?reg=skipped
+
+Direct link: https://anaconda.com/api/installers/Miniconda3-latest-Windows-x86_64.exe  
+Direct link: https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-arm64.exe
 
 > How to [Install Miniconda on Windows](https://cva4.com/tuts/tts/miniconda/)
+  {{< /tab >}}
+
+  {{< tab name="Mac" >}}
+Download Miniconda: https://www.anaconda.com/download/success?reg=skipped
+
+Direct link: https://anaconda.com/api/installers/Miniconda3-latest-MacOSX-arm64.pkg
+
+> How to [Install Miniconda on MacOS](https://cva4.com/tuts/tts/miniconda/#install-miniconda-on-macos)
+  {{< /tab >}}
+
+  {{< tab name="Linux" >}}
+Download Miniconda: https://www.anaconda.com/download/success?reg=skipped
+
+Direct link: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  
+Direct link: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+
+> How to [Install Miniconda on Linux](https://cva4.com/tuts/tts/miniconda/#install-miniconda-on-linux)
+  {{< /tab >}}
+
+{{< /tabs >}}
 
 
 ## Step 2. Create Conda Environment
 
 Create a conda environment:
 
+{{< tabs >}}
+
+  {{< tab name="CPU only" >}}
+```yml
+name: auktts
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version (requires >= 3.10)
+  - python=3.10
+
+  # Handled via Conda to fix error: Microsoft Visual C++ 14.0 or greater is required
+  - pynini
+
+  - pip
+  - pip:
+      # PyTorch CPU only
+      - torch
+      - torchaudio
+      - torchvision
+
+      # Install AuK directly from GitHub. Core inference and CLI only
+      - git+https://github.com/Tencent-Hunyuan/AuK.git
+
+      # Optional: Allow run Gradio/ComfyUI nodes + Prompt Enhancer + ASR (web interface)
+      - gradio
+      - PyYAML
+      - silero-vad
+      - WeTextProcessing
+      - pyloudnorm
+      - openai
+      - tencentcloud-sdk-python-asr
+      - funasr
+      - modelscope
+      
+      # Optional: Fine-tuning. Recommendations for using the 24GB+ card
+      - ema-pytorch
+      - tensorboard
+      - matplotlib
+      - tqdm
+```
+  {{< /tab >}}
+
+  {{< tab name="NVIDIA" >}}
 ```yml
 name: auktts
 channels:
@@ -112,6 +207,56 @@ dependencies:
       - matplotlib
       - tqdm
 ```
+  {{< /tab >}}
+
+  {{< tab name="AMD" >}}
+> Coming soon!
+  {{< /tab >}}
+
+  {{< tab name="Apple Silicon" >}}
+```yml
+name: auktts
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version (requires >= 3.10)
+  - python=3.10
+
+  # Handled via Conda to fix error: Microsoft Visual C++ 14.0 or greater is required
+  - pynini
+
+  - pip
+  - pip:
+      # PyTorch MPS (Metal Performance Shaders)
+      - torch
+      - torchaudio
+      - torchvision
+
+      # Install AuK directly from GitHub. Core inference and CLI only
+      - git+https://github.com/Tencent-Hunyuan/AuK.git
+
+      # Optional: Allow run Gradio/ComfyUI nodes + Prompt Enhancer + ASR (web interface)
+      - gradio
+      - PyYAML
+      - silero-vad
+      - WeTextProcessing
+      - pyloudnorm
+      - openai
+      - tencentcloud-sdk-python-asr
+      - funasr
+      - modelscope
+      
+      # Optional: Fine-tuning. Recommendations for using the 24GB+ card
+      - ema-pytorch
+      - tensorboard
+      - matplotlib
+      - tqdm
+```
+  {{< /tab >}}
+
+{{< /tabs >}}
+
 
 Activate conda environment:
 
@@ -120,7 +265,7 @@ conda env create -f environment.yml
 conda activate auktts
 ```
 
-Clone NeuTTS from source (run after activating the environment)
+Clone AuK from source (run after activating the environment)
 
 ```bash
 git clone https://github.com/Tencent-Hunyuan/AuK
@@ -198,7 +343,6 @@ export TENCENTCLOUD_SECRET_ID="your-tencentcloud-secret-id"
 export TENCENTCLOUD_SECRET_KEY="your-tencentcloud-secret-key"
 export ASR_ENGINE_MODEL_TYPE="16k_zh_en"
 ```
-
 
 With the standard directory layout, the shortest command detects every installed variant under `ckpts/AuK` and `ckpts/AuK-Flash`:
 
