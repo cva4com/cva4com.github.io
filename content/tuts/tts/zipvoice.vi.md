@@ -284,7 +284,7 @@ cd ZipVoice
 Tải xuống bản ghi âm tham khảo
 
 ```bash
-curl -L -O "https://github.com/thewh1teagle/zipvoice-onnx/releases/download/model-files-v1.0/prompt_english_female1.wav"
+curl -L -O "http://cva4.com/audio/prompt_english_female1.wav"
 ```
 
 Mẫu âm thanh tham khảo: `prompt_english_female1.wav`

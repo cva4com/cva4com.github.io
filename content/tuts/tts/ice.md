@@ -276,7 +276,7 @@ The result will be the audio file `out.wav`
 Download the reference audio
 
 ```bash
-curl -L -O "https://github.com/thewh1teagle/zipvoice-onnx/releases/download/model-files-v1.0/prompt_english_female1.wav"
+curl -L -O "http://cva4.com/audio/prompt_english_female1.wav"
 ```
 
 Reference audio sample voice: `prompt_english_female1.wav`
