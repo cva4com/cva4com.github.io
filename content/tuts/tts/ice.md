@@ -81,8 +81,8 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube tMWyfCxGbGA >}} -->
+<!-- Coming soon! -->
+{{< youtube LXRTv9bbIXA >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -222,6 +222,8 @@ Activate conda environment:
 conda env create -f environment.yml
 conda activate ice-tts
 ```
+
+**Note**: `RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work` can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.
 
 
 ## Step 3. Run the Inference

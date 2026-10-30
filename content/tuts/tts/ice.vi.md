@@ -80,8 +80,8 @@ PyTorch có thể được cài đặt và sử dụng trên macOS. Tùy thuộc
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube tMWyfCxGbGA >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube LXRTv9bbIXA >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -221,6 +221,8 @@ Kích hoạt môi trường conda:
 conda env create -f environment.yml
 conda activate ice-tts
 ```
+
+**Lưu ý**: `RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work` có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.
 
 
 ## Bước 3. Chạy suy luận
