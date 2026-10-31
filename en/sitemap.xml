@@ -134,6 +134,18 @@
                 href="https://cva4.com/tuts/tts/chatterbox/"
                 />
   </url><url>
+    <loc>https://cva4.com/tuts/tts/cute/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/cute/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/cute/"
+                />
+  </url><url>
     <loc>https://cva4.com/tuts/tts/dia/</loc>
     <xhtml:link
                 rel="alternate"
@@ -746,6 +758,18 @@
                 href="https://cva4.com/tags/conda/"
                 />
   </url><url>
+    <loc>https://cva4.com/tags/cutetts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/cutetts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/cutetts/"
+                />
+  </url><url>
     <loc>https://cva4.com/tags/dia/</loc>
     <xhtml:link
                 rel="alternate"
@@ -852,6 +876,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://cva4.com/tags/open-weights/"
+                />
+  </url><url>
+    <loc>https://cva4.com/tags/oppo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/oppo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/oppo/"
                 />
   </url><url>
     <loc>https://cva4.com/tags/qwen3-tts/</loc>

@@ -131,11 +131,11 @@ Available Voices: &lt;a href=&#34;https://supertone-inc.github.io/supertonic-py/
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;CPU only&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;pip3 install torch torchvision&lt;/code&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;Apple Silicon&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;pip3 install torch torchvision&lt;/code&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;AMD ROCm&lt;/td&gt;

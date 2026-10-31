@@ -117,11 +117,11 @@ Website: &lt;a href=&#34;https://dark.ps&#34; target=&#34;_blank&#34; rel=&#34;n
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;CPU only&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;pip3 install torch torchvision&lt;/code&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;Apple Silicon&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;pip3 install torch torchvision&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;pip3 install torch torchvision&lt;/code&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;AMD ROCm&lt;/td&gt;
@@ -454,6 +454,13 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Kết quả sẽ là tệp âm thanh &lt;code&gt;clone.wav&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Tham khảo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://neuralexpedition.com/models/issue-102-ice-012-audio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Generate speech in almost any language with control over age, accent, pitch and style&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; aria-hidden=&#34;true&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
