@@ -69,8 +69,8 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 | Environment | Run this Command |
 | :-- | :-- |
-| CPU only  | pip3 install torch torchvision |
-| Apple Silicon | pip3 install torch torchvision |
+| CPU only  | `pip3 install torch torchvision` |
+| Apple Silicon | `pip3 install torch torchvision` |
 | AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
 | CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
 | CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` |

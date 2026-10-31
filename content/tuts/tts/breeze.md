@@ -66,7 +66,9 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 | Environment | Run this Command |
 | :-- | :-- |
-| CPU only  | pip3 install torch torchvision |
+| CPU only  | `pip3 install torch torchvision` |
+| Apple Silicon | `pip3 install torch torchvision` |
+| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
 | CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
 | CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` |
 | CUDA 12.6 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126` |
@@ -76,8 +78,8 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube tMWyfCxGbGA >}} -->
+<!-- Coming soon! -->
+{{< youtube MTmiJE2nqEA >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -307,7 +309,5 @@ curl -X POST http://127.0.0.1:7860/v1/audio/speech \
 The response is streaming mono 24 kHz signed 16-bit little-endian PCM. Start the API with `--fast-all` to enable the fast path.
 
 ----
-
 Reference:
-
 - [Breeze TTS 2 Is #1 on the Artificial Analysis Open-Weights TTS Leaderboard](https://breezeblue.ai/blog/breeze-tts-2-artificial-analysis-open-weights-no-1)

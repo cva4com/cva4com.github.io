@@ -1,7 +1,7 @@
 ---
 linkTitle: F5-TTS
 title: Cài đặt SWivid/F5-TTS bằng Conda
-weight: 7
+weight: 8
 cascade:
   type: docs
 tags:
@@ -69,12 +69,14 @@ PyTorch có thể được cài đặt và sử dụng trên macOS. Tùy thuộc
 
 | Environment | Run this Command |
 | :-- | :-- |
-| CPU only  | pip3 install torch torchaudio |
-| CUDA 11.8 | pip3 install torch torchaudio --index-url https://download.pytorch.org/whl/cu118 |
-| CUDA 12.1 | pip3 install torch torchaudio --index-url https://download.pytorch.org/whl/cu121 |
-| CUDA 12.6 | pip3 install torch torchaudio --index-url https://download.pytorch.org/whl/cu126 |
-| CUDA 12.8 | pip3 install torch torchaudio --index-url https://download.pytorch.org/whl/cu128 |
-| CUDA 13.0 | pip3 install torch torchaudio --index-url https://download.pytorch.org/whl/cu130 |
+| CPU only  | `pip3 install torch torchvision` |
+| Apple Silicon | `pip3 install torch torchvision` |
+| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
+| CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
+| CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` |
+| CUDA 12.6 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126` |
+| CUDA 12.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128` |
+| CUDA 13.0 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130` |
 
 
 ## Video hướng dẫn

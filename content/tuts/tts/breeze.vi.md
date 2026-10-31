@@ -65,7 +65,9 @@ PyTorch có thể được cài đặt và sử dụng trên macOS. Tùy thuộc
 
 | Environment | Run this Command |
 | :-- | :-- |
-| CPU only  | pip3 install torch torchvision |
+| CPU only  | `pip3 install torch torchvision` |
+| Apple Silicon | `pip3 install torch torchvision` |
+| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
 | CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
 | CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` |
 | CUDA 12.6 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126` |
@@ -75,8 +77,8 @@ PyTorch có thể được cài đặt và sử dụng trên macOS. Tùy thuộc
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube tMWyfCxGbGA >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube MTmiJE2nqEA >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -306,7 +308,5 @@ curl -X POST http://127.0.0.1:7860/v1/audio/speech \
 Phản hồi là tín hiệu PCM mono 24 kHz có dấu 16-bit little-endian. Khởi động API với tùy chọn này `--fast-all` để kích hoạt đường dẫn nhanh.
 
 ----
-
 Tham khảo:
-
 - [Breeze TTS 2 Is #1 on the Artificial Analysis Open-Weights TTS Leaderboard](https://breezeblue.ai/blog/breeze-tts-2-artificial-analysis-open-weights-no-1)
