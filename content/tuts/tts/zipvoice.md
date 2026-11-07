@@ -1,7 +1,7 @@
 ---
 linkTitle: ZipVoice
 title: Install ZipVoice TTS with Conda
-weight: 17
+weight: 18
 cascade:
   type: docs
 tags:

@@ -1,7 +1,7 @@
 ---
 linkTitle: F5-TTS
 title: Cài đặt SWivid/F5-TTS bằng Conda
-weight: 8
+weight: 9
 cascade:
   type: docs
 tags:

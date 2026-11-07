@@ -92,8 +92,8 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube LXRTv9bbIXA >}} -->
+<!-- Coming soon! -->
+{{< youtube sgcpZKKbrH0 >}}
 
 
 ## Step 1. Install Miniconda Package
@@ -225,7 +225,7 @@ conda env create -f environment.yml
 conda activate cutetts
 ```
 
-Clone and install CuteTTS from source (run after activating the environment)
+Clone CuteTTS from GitHub (run after activating the environment)
 
 ```bash
 git clone https://github.com/OPPO-Mente-Lab/CuteTTS.git
@@ -356,4 +356,4 @@ Try CuteTTS without coding:
 cutetts-demo --model-dir ./model --device auto --host 127.0.0.1 --port 7860
 ```
 
-Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860). The system will automatically download the required model weights from HuggingFace during this first run.
+Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860). The system will automatically load the model weights during this first run. Please wait for the model to be ready!

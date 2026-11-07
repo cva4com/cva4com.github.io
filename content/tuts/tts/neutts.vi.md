@@ -1,7 +1,7 @@
 ---
 linkTitle: NeuTTS
 title: Cài đặt NeuTTS bằng Conda
-weight: 11
+weight: 12
 cascade:
   type: docs
 tags:

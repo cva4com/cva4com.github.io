@@ -91,8 +91,8 @@ PyTorch có thể được cài đặt và sử dụng trên macOS. Tùy thuộc
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube LXRTv9bbIXA >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube sgcpZKKbrH0 >}}
 
 
 ## Bước 1. Cài đặt Miniconda
@@ -224,7 +224,7 @@ conda env create -f environment.yml
 conda activate cutetts
 ```
 
-Clone và cài CuteTTS từ source (chạy sau khi kích hoạt môi trường)
+Clone CuteTTS từ GitHub (chạy sau khi kích hoạt môi trường)
 
 ```bash
 git clone https://github.com/OPPO-Mente-Lab/CuteTTS.git
@@ -355,4 +355,4 @@ Sau khi cài đặt xong, bạn không cần viết code mà có thể bật nga
 cutetts-demo --model-dir ./model --device auto --host 127.0.0.1 --port 7860
 ```
 
-Mở trình duyệt và truy cập vào địa chỉ [http://127.0.0.1:7860](http://127.0.0.1:7860) để bắt đầu sử dụng. Hệ thống sẽ tự động tải các file Model (Trọng số cấu hình mã nguồn) từ HuggingFace trong lần đầu chạy.
+Mở trình duyệt và truy cập vào địa chỉ [http://127.0.0.1:7860](http://127.0.0.1:7860) để bắt đầu sử dụng. Hệ thống sẽ tự động tải các tệp Model (Trọng số cấu hình mã nguồn) trong lần đầu chạy. Vui lòng đợi cho đến khi mô hình sẵn sàng!

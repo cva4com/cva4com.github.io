@@ -1,7 +1,7 @@
 ---
 linkTitle: NeuTTS
 title: Install Neu TTS with Conda
-weight: 11
+weight: 12
 cascade:
   type: docs
 tags:

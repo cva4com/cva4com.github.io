@@ -1,7 +1,7 @@
 ---
 linkTitle: Supertonic-3
 title: Cài đặt Supertonic-3 bằng Conda
-weight: 15
+weight: 16
 cascade:
   type: docs
 tags:

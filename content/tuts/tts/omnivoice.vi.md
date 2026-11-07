@@ -1,7 +1,7 @@
 ---
 linkTitle: OmniVoice
 title: Cài đặt OmniVoice bằng Conda
-weight: 12
+weight: 13
 cascade:
   type: docs
 tags:

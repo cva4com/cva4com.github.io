@@ -1,7 +1,7 @@
 ---
 linkTitle: ICE-012
 title: Cài đặt ICE-012 TTS bằng Conda
-weight: 9
+weight: 10
 cascade:
   type: docs
 tags:

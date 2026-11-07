@@ -1,7 +1,7 @@
 ---
 linkTitle: Supertonic-3
 title: Install Supertonic-3 TTS with Conda
-weight: 15
+weight: 16
 cascade:
   type: docs
 tags:

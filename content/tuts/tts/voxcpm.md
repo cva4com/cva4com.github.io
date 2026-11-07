@@ -1,7 +1,7 @@
 ---
 linkTitle: VoxCPM2
 title: Install VoxCPM2 TTS with Conda
-weight: 16
+weight: 17
 cascade:
   type: docs
 tags:

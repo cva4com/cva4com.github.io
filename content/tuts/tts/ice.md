@@ -1,7 +1,7 @@
 ---
 linkTitle: ICE-012
 title: Install ICE-012 Audio TTS with Conda
-weight: 9
+weight: 10
 cascade:
   type: docs
 tags:
