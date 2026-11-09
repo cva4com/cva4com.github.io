@@ -158,6 +158,18 @@
                 href="https://cva4.com/vi/tuts/tts/dia/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/dots/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/dots/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/dots/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/f5-tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -254,18 +266,6 @@
                 href="https://cva4.com/vi/tuts/tts/supertonic-3/"
                 />
   </url><url>
-    <loc>https://cva4.com/vi/tuts/tts/voxcpm/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://cva4.com/tuts/tts/voxcpm/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/voxcpm/"
-                />
-  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -276,6 +276,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tuts/tts/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/voxcpm/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/voxcpm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/voxcpm/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/tts/zipvoice/</loc>
