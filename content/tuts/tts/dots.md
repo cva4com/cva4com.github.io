@@ -19,7 +19,7 @@ params:
 **dots.tts** is a **2B-parameter fully continuous, end-to-end autoregressive (AR) text-to-speech system**. The backbone pairs a semantic encoder, an LLM, and an autoregressive flow-matching acoustic head over a **48 kHz** AudioVAE, with no discrete tokens anywhere in the pipeline.
 
 GitHub: https://github.com/studio-dots-ai/dots.tts  
-Hugging Face: https://github.com/collections/dots-studio/dotstts  
+Hugging Face: https://hf.co/collections/dots-studio/dotstts  
 Playground: https://hf.co/spaces/dots-studio/dots.tts  
 Demo Page: https://studio-dots-ai.github.io/dots.tts-demo/  
 Report: https://arxiv.org/abs/2606.07080  
@@ -360,7 +360,7 @@ result = runtime.generate(
     guidance_scale=1.2,
 )
 
-sf.write("output.wav", result["audio"].float().cpu().squeeze().numpy(), result["sample_rate"])
+sf.write("clone.wav", result["audio"].float().cpu().squeeze().numpy(), result["sample_rate"])
 ```
 
 Run the script to clone voice:

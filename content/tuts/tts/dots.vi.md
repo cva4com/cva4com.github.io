@@ -19,7 +19,7 @@ params:
 **dots.tts** là một hệ thống chuyển văn bản thành giọng nói (TTS) dựa trên mô hình tự hồi quy (autoregressive - AR) từ đầu đến cuối (end-to-end), với cấu trúc hoàn toàn liên tục và quy mô **2 tỷ tham số**. Hệ thống này kết hợp một bộ mã hóa ngữ nghĩa, một mô hình ngôn ngữ lớn (LLM) và một thành phần tạo âm thanh (acoustic head) dựa trên cơ chế "flow-matching" tự hồi quy, vận hành trên nền tảng AudioVAE với tần số lấy mẫu **48 kHz**; toàn bộ quy trình xử lý hoàn toàn không sử dụng các token rời rạc (discrete tokens).
 
 GitHub: https://github.com/studio-dots-ai/dots.tts  
-Hugging Face: https://github.com/collections/dots-studio/dotstts  
+Hugging Face: https://hf.co/collections/dots-studio/dotstts  
 Playground: https://hf.co/spaces/dots-studio/dots.tts  
 Demo Page: https://studio-dots-ai.github.io/dots.tts-demo/  
 Report: https://arxiv.org/abs/2606.07080  
@@ -356,7 +356,7 @@ result = runtime.generate(
     guidance_scale=1.2,
 )
 
-sf.write("output.wav", result["audio"].float().cpu().squeeze().numpy(), result["sample_rate"])
+sf.write("clone.wav", result["audio"].float().cpu().squeeze().numpy(), result["sample_rate"])
 ```
 
 Chạy tập lệnh để sao chép giọng nói:
