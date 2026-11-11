@@ -718,7 +718,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-create-a-python-script&#34;&gt;Step 3. Create a Python Script&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-create-a-python-script&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-create-a-python-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Create a file named voxcpm_test.py:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;

@@ -6830,6 +6830,75 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
 &lt;p&gt;Mở trình duyệt và truy cập vào địa chỉ &lt;a href=&#34;http://127.0.0.1:7860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://127.0.0.1:7860&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; aria-hidden=&#34;true&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
  &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
 &lt;/svg&gt;&lt;/a&gt; để bắt đầu sử dụng. Hệ thống sẽ tự động tải các tệp Model (Trọng số cấu hình mã nguồn) trong lần đầu chạy. Vui lòng đợi cho đến khi mô hình sẵn sàng!&lt;/p&gt;
+&lt;h2 data-hextra-search-id=&#34;bảng-tổng-hợp-lỗi-và-cảnh-báo&#34;&gt;Bảng tổng hợp lỗi và cảnh báo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bảng-tổng-hợp-lỗi-và-cảnh-báo&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#b%e1%ba%a3ng-t%e1%bb%95ng-h%e1%bb%a3p-l%e1%bb%97i-v%c3%a0-c%e1%ba%a3nh-b%c3%a1o&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Loại&lt;/th&gt;
+          &lt;th&gt;Thông báo (rút gọn)&lt;/th&gt;
+          &lt;th&gt;Mức độ&lt;/th&gt;
+          &lt;th&gt;Nguyên nhân&lt;/th&gt;
+          &lt;th&gt;Cách xử lý&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;subprocess-exited-with-error&lt;/code&gt; / &lt;code&gt;failed-wheel-build-for-install&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Failed building wheel for pynini&lt;/code&gt; và &lt;code&gt;Microsoft Visual C++ 14.0 or greater is required&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Lỗi&lt;/strong&gt; (chặn cài đặt)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;pynini&lt;/code&gt; không có wheel dựng sẵn cho Windows, pip phải build từ source, cần MSVC và OpenFst&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;conda install -c conda-forge pynini&lt;/code&gt; rồi mới &lt;code&gt;pip install dots.tts&lt;/code&gt;. Nếu không resolve được: &lt;code&gt;pynini=2.1.6&lt;/code&gt;. Chỉ cài Build Tools là không đủ.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;SetuptoolsDeprecationWarning&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;project.license as a TOML table is deprecated&lt;/code&gt; và &lt;code&gt;License classifiers are deprecated&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Cảnh báo, bỏ qua&lt;/td&gt;
+          &lt;td&gt;Do &lt;code&gt;pyproject.toml&lt;/code&gt; của chính &lt;code&gt;pynini&lt;/code&gt; dùng cú pháp license cũ. Hạn chót setuptools là 2027-02-18.&lt;/td&gt;
+          &lt;td&gt;Không cần làm gì. Đây chỉ là log nhiễu trong lúc build, không phải nguyên nhân lỗi #1.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;RuntimeError&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;torch (2.14.1) and torchaudio (2.11.1) minor versions do not match&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Lỗi&lt;/strong&gt; (chặn chạy)&lt;/td&gt;
+          &lt;td&gt;pip kéo &lt;code&gt;torch&lt;/code&gt; và &lt;code&gt;torchaudio&lt;/code&gt; lệch minor&lt;/td&gt;
+          &lt;td&gt;Gỡ cả hai rồi cài lại cùng lúc, cùng phiên bản: &lt;code&gt;pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu&lt;/code&gt; (CPU), hoặc &lt;code&gt;/whl/cu128&lt;/code&gt; (GPU).&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;RuntimeError&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;CUDA is not available; torch will run on CPU ... Half-precision (bfloat16) is not reliable on CPU ... pass precision=&#39;float32&#39;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Lỗi&lt;/strong&gt; (chặn chạy)&lt;/td&gt;
+          &lt;td&gt;Mặc định chạy bfloat16, không ổn định trên CPU&lt;/td&gt;
+          &lt;td&gt;Truyền &lt;code&gt;precision=&amp;quot;float32&amp;quot;&lt;/code&gt; (Python: &lt;code&gt;DotsTtsRuntime.from_pretrained(..., precision=&amp;quot;float32&amp;quot;)&lt;/code&gt;). Với CLI, kiểm tra tên cờ bằng &lt;code&gt;dots.tts --help&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;UserWarning&lt;/code&gt; (huggingface_hub)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cache-system uses symlinks by default ... your machine does not support them&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Cảnh báo, bỏ qua&lt;/td&gt;
+          &lt;td&gt;Windows không cho tạo symlink khi chưa bật Developer Mode hoặc chưa chạy quyền admin&lt;/td&gt;
+          &lt;td&gt;Cache vẫn hoạt động, chỉ tốn thêm ổ đĩa. Bật Developer Mode, hoặc tắt cảnh báo: &lt;code&gt;setx HF_HUB_DISABLE_SYMLINKS_WARNING 1&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Warning (huggingface_hub)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Cảnh báo, bỏ qua&lt;/td&gt;
+          &lt;td&gt;Tải model khi chưa đăng nhập, bị giới hạn tốc độ&lt;/td&gt;
+          &lt;td&gt;Tạo token Read tại huggingface.co/settings/tokens, rồi &lt;code&gt;setx HF_TOKEN hf_xxx&lt;/code&gt; hoặc &lt;code&gt;hf auth login&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;FutureWarning&lt;/code&gt; (torch)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Cảnh báo, bỏ qua&lt;/td&gt;
+          &lt;td&gt;Code của &lt;code&gt;dots_tts&lt;/code&gt; dùng API cũ của torch&lt;/td&gt;
+          &lt;td&gt;Không cần làm gì, do thư viện chứ không phải do môi trường của bạn.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Thông tin quan trọng khác&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Thứ tự xử lý&lt;/strong&gt;: cài &lt;code&gt;pynini&lt;/code&gt; bằng conda → khớp torch/torchaudio → precision &lt;code&gt;float32&lt;/code&gt; nếu dùng CPU.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sửa lại một chi tiết trước đó&lt;/strong&gt;: lệnh đăng nhập Hugging Face bản mới là &lt;code&gt;hf auth login&lt;/code&gt;, không phải &lt;code&gt;huggingface-cli login&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tránh lỗi lặp lại&lt;/strong&gt;: dùng file &lt;code&gt;environment-cpu.yml&lt;/code&gt; hoặc &lt;code&gt;environment-gpu.yml&lt;/code&gt; ở trên, vì đã pin sẵn &lt;code&gt;torch&lt;/code&gt;/&lt;code&gt;torchaudio&lt;/code&gt; cùng phiên bản và cài &lt;code&gt;pynini&lt;/code&gt; từ conda-forge.&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -7647,7 +7716,15 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Lưu ý&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;bước-3-chạy-suy-luận&#34;&gt;Bước 3. Chạy suy luận&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bước-3-chạy-suy-luận&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-ch%e1%ba%a1y-suy-lu%e1%ba%adn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 data-hextra-search-id=&#34;cli-inference&#34;&gt;CLI Inference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cli-inference&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cli-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Mẫu âm thanh tham khảo:&lt;/p&gt;
@@ -8491,7 +8568,15 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Lưu ý&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;bước-3-chạy-suy-luận&#34;&gt;Bước 3. Chạy suy luận&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bước-3-chạy-suy-luận&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-ch%e1%ba%a1y-suy-lu%e1%ba%adn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tạo một tệp có tên &lt;code&gt;02.py&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -11034,7 +11119,15 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Lưu ý&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;bước-3-tạo-một-tệp-python&#34;&gt;Bước 3. Tạo một tệp Python&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bước-3-tạo-một-tệp-python&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-t%e1%ba%a1o-m%e1%bb%99t-t%e1%bb%87p-python&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tạo một tệp có tên omnivoice_tts_test.py:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -14343,7 +14436,15 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Lưu ý&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;bước-3-tạo-một-tệp-python&#34;&gt;Bước 3. Tạo một tệp Python&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bước-3-tạo-một-tệp-python&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-t%e1%ba%a1o-m%e1%bb%99t-t%e1%bb%87p-python&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Tạo một tệp có tên voxcpm_test.py:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -15307,7 +15408,15 @@ Liên kết trực tiếp: &lt;a href=&#34;https://repo.anaconda.com/miniconda/M
   &lt;source src=&#34;https://cva4.com/audio/prompt_english_female1.wav&#34; type=&#34;audio/mpeg&#34;&gt;
   Your browser does not support the audio element.
 &lt;/audio&gt;
-&lt;p&gt;&lt;strong&gt;Lưu ý&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Có thể được bỏ qua nếu bạn chỉ làm việc với các tệp âm thanh định dạng WAV, vì Pydub hỗ trợ đọc và ghi tệp WAV mà không cần đến FFmpeg. Tuy nhiên, FFmpeg là bắt buộc nếu bạn muốn xử lý các định dạng âm thanh khác như MP3, OGG, FLAC, hoặc thực hiện chuyển đổi định dạng âm thanh.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;bước-3-chạy-suy-luận&#34;&gt;Bước 3. Chạy suy luận&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bước-3-chạy-suy-luận&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#b%c6%b0%e1%bb%9bc-3-ch%e1%ba%a1y-suy-lu%e1%ba%adn&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Liên kết cố định đến phần này&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Chạy ZipVoice Single-speaker&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;

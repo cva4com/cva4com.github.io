@@ -6845,6 +6845,74 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
 &lt;p&gt;Open your browser and navigate to &lt;a href=&#34;http://127.0.0.1:7860&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://127.0.0.1:7860&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; aria-hidden=&#34;true&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
  &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
 &lt;/svg&gt;&lt;/a&gt;. The system will automatically load the model weights during this first run. Please wait for the model to be ready!&lt;/p&gt;
+&lt;h2 data-hextra-search-id=&#34;error-and-warning&#34;&gt;Error and Warning&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;error-and-warning&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#error-and-warning&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Order&lt;/th&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Message (shortened)&lt;/th&gt;
+          &lt;th&gt;Impact&lt;/th&gt;
+          &lt;th&gt;Fix&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;subprocess-exited-with-error&lt;/code&gt; / &lt;code&gt;failed-wheel-build-for-install&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Failed building wheel for pynini&lt;/code&gt;, &lt;code&gt;Microsoft Visual C++ 14.0 or greater is required&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Blocks installation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Install &lt;code&gt;pynini&lt;/code&gt; from conda-forge before &lt;code&gt;pip install dots.tts&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;SetuptoolsDeprecationWarning&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;project.license as a TOML table is deprecated&lt;/code&gt;, &lt;code&gt;License classifiers are deprecated&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;None (ignore)&lt;/td&gt;
+          &lt;td&gt;Nothing to do. It&amp;rsquo;s build-log noise from &lt;code&gt;pynini&lt;/code&gt;&amp;rsquo;s own packaging.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;RuntimeError&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;torch (2.14.1) and torchaudio (2.11.1) minor versions do not match&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Blocks running&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Uninstall both, then reinstall the same version together: &lt;code&gt;pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu&lt;/code&gt; (or &lt;code&gt;/whl/cu128&lt;/code&gt; for GPU)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;UserWarning&lt;/code&gt; (huggingface_hub)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;cache-system uses symlinks by default ... your machine does not support them&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Uses extra disk space only&lt;/td&gt;
+          &lt;td&gt;Enable Developer Mode, or silence it with &lt;code&gt;setx HF_HUB_DISABLE_SYMLINKS_WARNING 1&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Warning&lt;/code&gt; (huggingface_hub)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Slower downloads, rate limits&lt;/td&gt;
+          &lt;td&gt;Create a Read token, then &lt;code&gt;setx HF_TOKEN hf_xxx&lt;/code&gt; or &lt;code&gt;hf auth login&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;FutureWarning&lt;/code&gt; (torch)&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;None (ignore)&lt;/td&gt;
+          &lt;td&gt;Nothing to do. It comes from the &lt;code&gt;dots_tts&lt;/code&gt; code.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;RuntimeError&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;CUDA is not available; torch will run on CPU ... bfloat16 is not reliable on CPU ... pass precision=&#39;float32&#39;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Blocks running on CPU&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Pass &lt;code&gt;precision=&amp;quot;float32&amp;quot;&lt;/code&gt; (Python: &lt;code&gt;DotsTtsRuntime.from_pretrained(..., precision=&amp;quot;float32&amp;quot;)&lt;/code&gt;). For the CLI, check the flag name with &lt;code&gt;dots.tts --help&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Notes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To avoid repeating errors, use the &lt;code&gt;environment-cpu.yml&lt;/code&gt; or &lt;code&gt;environment-gpu.yml&lt;/code&gt; files from earlier. They install &lt;code&gt;pynini&lt;/code&gt; from conda-forge and pin &lt;code&gt;torch&lt;/code&gt; and &lt;code&gt;torchaudio&lt;/code&gt; to the same version.&lt;/li&gt;
+&lt;li&gt;Correction to my earlier advice: the newer Hugging Face login command is &lt;code&gt;hf auth login&lt;/code&gt;, not &lt;code&gt;huggingface-cli login&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -7663,7 +7731,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-run-the-inference&#34;&gt;Step 3. Run the Inference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-run-the-inference&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-run-the-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 data-hextra-search-id=&#34;cli-inference&#34;&gt;CLI Inference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cli-inference&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cli-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Reference audio sample voice:&lt;/p&gt;
@@ -8508,7 +8584,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-run-the-inference&#34;&gt;Step 3. Run the Inference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-run-the-inference&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-run-the-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Create a file named &lt;code&gt;02.py&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -11054,7 +11138,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-create-a-python-script&#34;&gt;Step 3. Create a Python Script&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-create-a-python-script&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-create-a-python-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Create a file named omnivoice_tts_test.py:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -14367,7 +14459,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-create-a-python-script&#34;&gt;Step 3. Create a Python Script&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-create-a-python-script&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-create-a-python-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Create a file named voxcpm_test.py:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -15332,7 +15432,15 @@ Direct link: &lt;a href=&#34;https://repo.anaconda.com/miniconda/Miniconda3-late
   &lt;source src=&#34;https://cva4.com/audio/prompt_english_female1.wav&#34; type=&#34;audio/mpeg&#34;&gt;
   Your browser does not support the audio element.
 &lt;/audio&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;RuntimeWarning: Couldn&#39;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/code&gt; can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;
+&lt;div
+  data-alert=&#34;warning&#34; data-alert-fold=&#34;-&#34; class=&#34;hextra-alert&#34;
+&gt;
+  &lt;button type=&#34;button&#34; class=&#34;hextra-alert-toggle&#34; aria-expanded=&#34;false&#34;&gt;
+    &lt;span class=&#34;hextra-alert-title&#34;&gt;&lt;svg height=16px class=&#34;hextra-alert-icon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hextra-alert-title-text&#34;&gt;&lt;strong&gt;RuntimeWarning&lt;/strong&gt;: Couldn&amp;rsquo;t find ffmpeg or avconv - defaulting to ffmpeg, but may not work&lt;/span&gt;
+    &lt;/span&gt;&lt;svg class=&#34;hextra-alert-chevron&#34; focusable=&#34;false&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 5l7 7-7 7&#34;/&gt;&lt;/svg&gt;&lt;/button&gt;
+
+  &lt;div class=&#34;hextra-alert-content&#34;&gt;&lt;div class=&#34;hextra-alert-content-inner&#34;&gt;&lt;p&gt;Can be safely ignored if you only work with WAV audio files, as Pydub supports reading and writing WAV files natively without FFmpeg. However, FFmpeg is required for processing other audio formats such as MP3, OGG, and FLAC, as well as for audio format conversion.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 data-hextra-search-id=&#34;step-3-run-the-inference&#34;&gt;Step 3. Run the Inference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-run-the-inference&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-run-the-inference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Inference of a single sentence&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
