@@ -420,3 +420,19 @@ python apps/gradio/app.py --model-name-or-path dots-studio/dots.tts-soar --preci
 ```
 
 Open your browser and navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860). The system will automatically load the model weights during this first run. Please wait for the model to be ready!
+
+## Error and Warning
+
+| Order | Type | Message (shortened) | Impact | Fix |
+|---|------|---------------------|----------|-----|
+| 1 | `subprocess-exited-with-error` / `failed-wheel-build-for-install` | `Failed building wheel for pynini`, `Microsoft Visual C++ 14.0 or greater is required` | **Blocks installation** | Install `pynini` from conda-forge before `pip install dots.tts` |
+| 2 | `SetuptoolsDeprecationWarning` | `project.license as a TOML table is deprecated`, `License classifiers are deprecated` | None (ignore) | Nothing to do. It's build-log noise from `pynini`'s own packaging. |
+| 3 | `RuntimeError` | `torch (2.14.1) and torchaudio (2.11.1) minor versions do not match` | **Blocks running** | Uninstall both, then reinstall the same version together: `pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu` (or `/whl/cu128` for GPU) |
+| 4 | `UserWarning` (huggingface_hub) | `cache-system uses symlinks by default ... your machine does not support them` | Uses extra disk space only | Enable Developer Mode, or silence it with `setx HF_HUB_DISABLE_SYMLINKS_WARNING 1` |
+| 5 | `Warning` (huggingface_hub) | `You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN` | Slower downloads, rate limits | Create a Read token, then `setx HF_TOKEN hf_xxx` or `hf auth login` |
+| 6 | `FutureWarning` (torch) | `torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm` | None (ignore) | Nothing to do. It comes from the `dots_tts` code. |
+| 7 | `RuntimeError` | `CUDA is not available; torch will run on CPU ... bfloat16 is not reliable on CPU ... pass precision='float32'` | **Blocks running on CPU** | Pass `precision="float32"` (Python: `DotsTtsRuntime.from_pretrained(..., precision="float32")`). For the CLI, check the flag name with `dots.tts --help`. |
+
+Notes
+- To avoid repeating errors, use the `environment-cpu.yml` or `environment-gpu.yml` files from earlier. They install `pynini` from conda-forge and pin `torch` and `torchaudio` to the same version.
+- Correction to my earlier advice: the newer Hugging Face login command is `hf auth login`, not `huggingface-cli login`.

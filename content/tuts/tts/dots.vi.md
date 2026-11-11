@@ -414,3 +414,21 @@ python apps/gradio/app.py --model-name-or-path dots-studio/dots.tts-soar --preci
 ```
 
 Mở trình duyệt và truy cập vào địa chỉ [http://127.0.0.1:7860](http://127.0.0.1:7860) để bắt đầu sử dụng. Hệ thống sẽ tự động tải các tệp Model (Trọng số cấu hình mã nguồn) trong lần đầu chạy. Vui lòng đợi cho đến khi mô hình sẵn sàng!
+
+
+## Bảng tổng hợp lỗi và cảnh báo
+
+| Loại | Thông báo (rút gọn) | Mức độ | Nguyên nhân | Cách xử lý |
+|------|---------------------|--------|-------------|------------|
+| `subprocess-exited-with-error` / `failed-wheel-build-for-install` | `Failed building wheel for pynini` và `Microsoft Visual C++ 14.0 or greater is required` | **Lỗi** (chặn cài đặt) | `pynini` không có wheel dựng sẵn cho Windows, pip phải build từ source, cần MSVC và OpenFst | `conda install -c conda-forge pynini` rồi mới `pip install dots.tts`. Nếu không resolve được: `pynini=2.1.6`. Chỉ cài Build Tools là không đủ. |
+| `SetuptoolsDeprecationWarning` | `project.license as a TOML table is deprecated` và `License classifiers are deprecated` | Cảnh báo, bỏ qua | Do `pyproject.toml` của chính `pynini` dùng cú pháp license cũ. Hạn chót setuptools là 2027-02-18. | Không cần làm gì. Đây chỉ là log nhiễu trong lúc build, không phải nguyên nhân lỗi #1. |
+| `RuntimeError` | `torch (2.14.1) and torchaudio (2.11.1) minor versions do not match` | **Lỗi** (chặn chạy) | pip kéo `torch` và `torchaudio` lệch minor | Gỡ cả hai rồi cài lại cùng lúc, cùng phiên bản: `pip install torch==2.8.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cpu` (CPU), hoặc `/whl/cu128` (GPU). |
+| `RuntimeError` | `CUDA is not available; torch will run on CPU ... Half-precision (bfloat16) is not reliable on CPU ... pass precision='float32'` | **Lỗi** (chặn chạy) | Mặc định chạy bfloat16, không ổn định trên CPU | Truyền `precision="float32"` (Python: `DotsTtsRuntime.from_pretrained(..., precision="float32")`). Với CLI, kiểm tra tên cờ bằng `dots.tts --help`. |
+| `UserWarning` (huggingface_hub) | `cache-system uses symlinks by default ... your machine does not support them` | Cảnh báo, bỏ qua | Windows không cho tạo symlink khi chưa bật Developer Mode hoặc chưa chạy quyền admin | Cache vẫn hoạt động, chỉ tốn thêm ổ đĩa. Bật Developer Mode, hoặc tắt cảnh báo: `setx HF_HUB_DISABLE_SYMLINKS_WARNING 1`. |
+| Warning (huggingface_hub) | `You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN` | Cảnh báo, bỏ qua | Tải model khi chưa đăng nhập, bị giới hạn tốc độ | Tạo token Read tại huggingface.co/settings/tokens, rồi `setx HF_TOKEN hf_xxx` hoặc `hf auth login`. |
+| `FutureWarning` (torch) | `torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm` | Cảnh báo, bỏ qua | Code của `dots_tts` dùng API cũ của torch | Không cần làm gì, do thư viện chứ không phải do môi trường của bạn. |
+
+Thông tin quan trọng khác
+- **Thứ tự xử lý**: cài `pynini` bằng conda → khớp torch/torchaudio → precision `float32` nếu dùng CPU.
+- **Sửa lại một chi tiết trước đó**: lệnh đăng nhập Hugging Face bản mới là `hf auth login`, không phải `huggingface-cli login`.
+- **Tránh lỗi lặp lại**: dùng file `environment-cpu.yml` hoặc `environment-gpu.yml` ở trên, vì đã pin sẵn `torch`/`torchaudio` cùng phiên bản và cài `pynini` từ conda-forge.
