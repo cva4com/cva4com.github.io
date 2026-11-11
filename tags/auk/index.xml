@@ -233,6 +233,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;Environment&lt;/th&gt;
+          &lt;th&gt;2.15.0&lt;/th&gt;
           &lt;th&gt;2.14.1&lt;/th&gt;
           &lt;th&gt;2.14.0&lt;/th&gt;
           &lt;th&gt;2.13.0&lt;/th&gt;
@@ -302,9 +303,11 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu118&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -353,6 +356,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
@@ -375,6 +379,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu124&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -410,6 +415,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu126&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
@@ -445,6 +451,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu128&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -488,6 +495,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -515,6 +523,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu130&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
@@ -555,6 +564,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;✅&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
@@ -585,6 +595,7 @@ pip index versions torchvision --index-url https://download.pytorch.org/whl/cu11
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;cu134&lt;/td&gt;
+          &lt;td&gt;✅&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
