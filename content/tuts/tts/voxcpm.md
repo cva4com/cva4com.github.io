@@ -64,16 +64,44 @@ PyTorch can be installed and used on macOS. Depending on your system and GPU cap
 
 {{< /tabs >}}
 
-| Environment | Run this Command |
-| :-- | :-- |
-| CPU only  | `pip3 install torch torchvision` |
-| Apple Silicon | `pip3 install torch torchvision` |
-| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) |
-| CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
-| CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` |
-| CUDA 12.6 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126` |
-| CUDA 12.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128` |
-| CUDA 13.0 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130` |
+| Environment | Run this Command | Architecture |
+| :-- | :-- | :-- |
+| CPU only  | `pip3 install torch torchvision` | IA-32 and Intel 64 |
+| Apple Silicon | `pip3 install torch torchvision` | |
+| AMD ROCm | [Install PyTorch for ROCm](https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/frameworks/pytorch/install.html) | |
+| CUDA 11.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` | Kepler/Maxwell → Ada Lovelace, Hopper |
+| CUDA 12.1 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121` | Kepler/Maxwell → Ada Lovelace, Hopper |
+| CUDA 12.4 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124` | Kepler/Maxwell → Ada Lovelace, Hopper |
+| CUDA 12.6 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126` | Maxwell → Hopper |
+| CUDA 12.8 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128` | Volta → Blackwell |
+| CUDA 12.9 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu129` | Volta → Blackwell |
+| CUDA 13.0 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130` | Turing → Blackwell |
+| CUDA 13.2 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu132` | Turing → Blackwell |
+| CUDA 13.4 | `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu134` | Turing → Blackwell |
+
+PyTorch Available versions:
+
+```
+pip index versions torch
+pip index versions torchaudio
+pip index versions torchvision
+pip index versions torch --index-url https://download.pytorch.org/whl/cu118
+pip index versions torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip index versions torchvision --index-url https://download.pytorch.org/whl/cu118
+```
+
+| Environment | 2.14.1 | 2.14.0 | 2.13.0 | 2.12.1 | 2.12.0 | 2.11.0 | 2.10.0 | 2.9.1 | 2.9.0 | 2.8.0 | 2.7.1 | 2.7.0 | 2.6.0 | 2.5.1 | 2.5.0 | 2.4.1 | 2.4.0 | 2.3.1 | 2.3.0 | 2.2.2 | 2.2.1 | 2.2.0 | 2.1.2 | 2.1.1 | 2.1.0 | 2.0.1 | 2.0.0 | 1.13.1 | 1.13.0 | 1.12.1 | 1.12.0 | 1.11.0 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cpu | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| cu118 |  |  |  |  |  |  |  |  |  |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |
+| cu121 |  |  |  |  |  |  |  |  |  |  |  |  |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |
+| cu124 |  |  |  |  |  |  |  |  |  |  |  |  | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu126 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu128 |  |  |  |  |  | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu129 |  |  |  |  |  |  |  |  | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu130 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu132 | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| cu134 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 
 ## Video tutorial
