@@ -6,8 +6,8 @@ cascade:
   type: docs
 tags:
   - TTS
-  - OPPO
-  - CuteTTS
+  - dots
+  - dots.tts
   - Open Weights
 params:
   tabs:

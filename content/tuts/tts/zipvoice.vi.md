@@ -1,7 +1,7 @@
 ---
 linkTitle: ZipVoice
 title: Cài đặt ZipVoice bằng Conda
-weight: 18
+weight: 19
 cascade:
   type: docs
 tags:

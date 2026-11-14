@@ -1,7 +1,7 @@
 ---
 linkTitle: SoproTTS
 title: Cài đặt SoproTTS bằng Conda
-weight: 15
+weight: 16
 cascade:
   type: docs
 tags:

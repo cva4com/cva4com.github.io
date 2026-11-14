@@ -1,7 +1,7 @@
 ---
 linkTitle: Qwen3-TTS
 title: Cài đặt Qwen3-TTS bằng Conda
-weight: 14
+weight: 15
 # prev: /tts/tts-open-weights
 # next: /tts/a
 cascade:
