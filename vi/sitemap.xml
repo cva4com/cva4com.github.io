@@ -206,6 +206,18 @@
                 href="https://cva4.com/vi/tuts/tts/kokoro/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/korva/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/korva/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/korva/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/neutts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -254,18 +266,6 @@
                 href="https://cva4.com/vi/tuts/tts/sopro/"
                 />
   </url><url>
-    <loc>https://cva4.com/vi/tuts/tts/supertonic-3/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://cva4.com/tuts/tts/supertonic-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://cva4.com/vi/tuts/tts/supertonic-3/"
-                />
-  </url><url>
     <loc>https://cva4.com/vi/tuts/tts/miniconda/</loc>
     <xhtml:link
                 rel="alternate"
@@ -276,6 +276,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tuts/tts/miniconda/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tuts/tts/supertonic-3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tuts/tts/supertonic-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tuts/tts/supertonic-3/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tuts/tts/voxcpm/</loc>
@@ -770,6 +782,30 @@
                 href="https://cva4.com/vi/tags/dia/"
                 />
   </url><url>
+    <loc>https://cva4.com/vi/tags/dots/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/dots/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/dots/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/dots.tts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/dots.tts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/dots.tts/"
+                />
+  </url><url>
     <loc>https://cva4.com/vi/tags/f5-tts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -828,6 +864,30 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://cva4.com/vi/tags/kokoro/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/korva/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/korva/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/korva/"
+                />
+  </url><url>
+    <loc>https://cva4.com/vi/tags/korvatts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://cva4.com/tags/korvatts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://cva4.com/vi/tags/korvatts/"
                 />
   </url><url>
     <loc>https://cva4.com/vi/tags/miniconda/</loc>
