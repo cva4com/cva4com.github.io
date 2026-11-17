@@ -56,8 +56,8 @@ ONNX Runtime không phát hành bản build riêng cho từng tag `cuXXX` như P
 
 ## Video hướng dẫn
 
-Sắp ra mắt!
-<!-- {{< youtube mqFtFIAlvB4 >}} -->
+<!-- Sắp ra mắt! -->
+{{< youtube RyjC3iA5lzs >}}
 
 
 ## Bước 1. Cài đặt Miniconda

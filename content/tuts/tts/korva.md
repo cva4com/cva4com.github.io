@@ -57,8 +57,8 @@ ONNX Runtime doesn't publish a separate build per `cuXXX` tag the way PyTorch do
 
 ## Video tutorial
 
-Coming soon!
-<!-- {{< youtube mqFtFIAlvB4 >}} -->
+<!-- Coming soon! -->
+{{< youtube RyjC3iA5lzs >}}
 
 
 ## Step 1. Install Miniconda Package
